@@ -13,10 +13,10 @@ class PoiTest {
 
     @Test fun layersAndCounts() {
         val by = fs.groupingBy { it.k }.eachCount()
-        assertEquals(44, by["poi_food"]); assertEquals(17, by["poi_travel"]); assertEquals(10, by["poi_school"])
+        assertEquals(42, by["poi_food"]); assertEquals(17, by["poi_travel"]); assertEquals(10, by["poi_school"])
         assertEquals(8, by["poi_zone"]); assertEquals(5, by["poi_mil"]); assertEquals(1, by["poi_comm"])
         val food = fs.filter { it.k == "poi_food" }.groupingBy { it.props.optString("cat") }.eachCount()
-        assertEquals(32, food["prepared"]); assertEquals(12, food["grocery"])
+        assertEquals(30, food["prepared"]); assertEquals(12, food["grocery"])
     }
 
     @Test fun everyPlaceHasNameColourSourcesAndTitle() {
@@ -57,5 +57,20 @@ class PoiTest {
         val html = """<a href="https://github.com/ChiniakVictor/sovereign-apps/releases/download/kodiak-maps-android-v1.4.1/kodiak-maps-1.4.1.apk">x</a>"""
         assertEquals("1.4.1", UpdateCheck.latestFrom(html)!!.first)
         assertTrue(UpdateCheck.compare("1.4.1", "1.4") > 0)
+    }
+
+    @Test fun closedRestaurantsAreGone() {
+        // Victor 2026-10-24: Road's End and Kalsin Bay Inn are closed for good.
+        val names = fs.map { it.props.optString("name") }
+        assertFalse(names.any { it.contains("Road's End", true) || it.contains("Roads End", true) })
+        assertFalse(names.any { it.contains("Kalsin Bay Inn", true) })
+        listOf("Olds River Inn Restaurant & Lounge", "The Rendezvous Bar & Grill", "Java Flats", "Bell's Flats Little Store").forEach { assertTrue(it, it in names) }
+        assertEquals(fs.size, fs.map { it.props.optString("id") }.toSet().size)
+    }
+
+    @Test fun update142IsNewerThan141() {
+        val html = """<a href="https://github.com/ChiniakVictor/sovereign-apps/releases/download/kodiak-maps-android-v1.4.2/kodiak-maps-1.4.2.apk">x</a>"""
+        assertEquals("1.4.2", UpdateCheck.latestFrom(html)!!.first)
+        assertTrue(UpdateCheck.compare("1.4.2", "1.4.1") > 0)
     }
 }
