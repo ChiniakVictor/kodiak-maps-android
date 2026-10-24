@@ -1,0 +1,18 @@
+{
+  "version": 8,
+  "name": "OpenTopoMap (Kodiak Maps)",
+  "sources": {
+    "otm": {
+      "type": "raster",
+      "tiles": ["https://a.tile.opentopomap.org/{z}/{x}/{y}.png", "https://b.tile.opentopomap.org/{z}/{x}/{y}.png", "https://c.tile.opentopomap.org/{z}/{x}/{y}.png"],
+      "tileSize": 256,
+      "minzoom": 0,
+      "maxzoom": 17,
+      "attribution": "© OpenStreetMap contributors, SRTM | style © OpenTopoMap (CC-BY-SA)"
+    }
+  },
+  "layers": [
+    { "id": "background", "type": "background", "paint": { "background-color": "#20242a" } },
+    { "id": "usgs-topo", "type": "raster", "source": "otm", "paint": { "raster-fade-duration": 0 } }
+  ]
+}

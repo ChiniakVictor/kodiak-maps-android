@@ -1,0 +1,633 @@
+{
+ "year": 2026,
+ "lastUpdated": "2026-10-12",
+ "checkUrl": "https://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sw_sportfish",
+ "freshPdf": "https://www.adfg.alaska.gov/static/regulations/fishregulations/PDFs/Southwest/2026sw_sfregs_kodiak_fresh.pdf",
+ "saltPdf": "https://www.adfg.alaska.gov/static/regulations/fishregulations/PDFs/Southwest/2026sw_sfregs_kodiak_akpen_aleutian_salt.pdf",
+ "eoUrl": "https://www.adfg.alaska.gov/sf/EONR/index.cfm?ADFG=area.list&AreaID=7",
+ "eoNote": "Emergency orders (EOs) can open, close or change any of these rules at any time. Check current ADF&G regulations and emergency orders before fishing.",
+ "general": [
+  "Fishing open year-round for all species unless noted (Kodiak fresh water, p. 24).",
+  "Road Zone = fresh waters east of a line south from Crag Point (Anton Larsen Bay) to the westernmost point of Saltery Cove, incl. Woody & Long islands (p. 24).",
+  "Road Zone fresh water: rainbow/steelhead catch-and-release only except stocked lakes (p. 24).",
+  "Nov 1\u2013Apr 30: only unbaited artificial lures or flies in Road Zone fresh waters (not stocked lakes, Chiniak & Barry lagoons). p. 24",
+  "Kalsin Pond outlet stream, Chiniak Hwy culvert to ADF&G marker ~150 ft downstream: closed year-round (p. 25).",
+  "Island Lake Creek: closed year-round to all salmon fishing (p. 25)."
+ ],
+ "sets": {
+  "road_fresh": {
+   "title": "Kodiak Road Zone fresh water (general)",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "King salmon",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "20 in or longer: 2 per day, 2 in possession; annual limit 5, harvest record required. Less than 20 in: 10 per day, 10 in possession.",
+     "cite": "p. 24, General regs \u2013 King salmon"
+    },
+    {
+     "sp": "Chum, coho, pink & sockeye salmon (combined)",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "20 in or longer: 5 per day, 5 in possession, only 2 of which may be sockeye. Jan 1\u2013Sep 15: only 2 may be coho; Sep 16\u2013Dec 31: only 1 may be coho. Less than 20 in: 10 per day, 10 in possession.",
+     "cite": "p. 24, General regs \u2013 Road Zone"
+    },
+    {
+     "sp": "Rainbow trout / steelhead",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Catch-and-release only; release immediately.",
+     "cite": "p. 24, General regs \u2013 Road Zone"
+    },
+    {
+     "sp": "Dolly Varden / Arctic char",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 24"
+    },
+    {
+     "sp": "Other finfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "No limit.",
+     "cite": "p. 24"
+    }
+   ],
+   "gear": [
+    "Nov 1\u2013Apr 30: only unbaited artificial lures or flies in Road Zone fresh waters (not stocked lakes, Chiniak & Barry lagoons). p. 24"
+   ]
+  },
+  "remote_fresh": {
+   "title": "Kodiak Remote Zone fresh water (general)",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "King salmon",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "20 in or longer: 2 per day, 2 in possession; annual limit 5, harvest record required. Less than 20 in: 10 per day, 10 in possession.",
+     "cite": "p. 24, General regs \u2013 King salmon"
+    },
+    {
+     "sp": "Chum, coho, pink & sockeye salmon (combined)",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "20 in or longer: 5 per day, 10 in possession. Less than 20 in: 10 per day, 10 in possession.",
+     "cite": "p. 24, Remote Zone"
+    },
+    {
+     "sp": "Rainbow trout / steelhead",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "2 per day, 2 in possession, only 1 of which may be 20 in or longer; annual limit 2, harvest record required.",
+     "cite": "p. 24, Remote Zone"
+    },
+    {
+     "sp": "Dolly Varden / Arctic char",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 24"
+    },
+    {
+     "sp": "Other finfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "No limit.",
+     "cite": "p. 24"
+    }
+   ],
+   "gear": []
+  },
+  "stocked": {
+   "title": "Road Zone stocked lake",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "Rainbow trout",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, only 1 of which may be 20 in or longer. No annual limit.",
+     "cite": "p. 26, Special regs \u2013 Road Zone Stocked Lakes"
+    },
+    {
+     "sp": "Other species",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": null,
+     "cite": "p. 24 general regs"
+    }
+   ],
+   "gear": [
+    "Bait restriction (Nov 1\u2013Apr 30) does not apply to stocked lakes. p. 24"
+   ],
+   "notes": [
+    "Open year-round to sport fishing. p. 26"
+   ]
+  },
+  "pillar": {
+   "title": "Pillar Creek",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "Coho salmon",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "2 per day (year-round). Other salmon limits: see regs.",
+     "cite": "p. 25, Special regs \u2013 Pillar Creek (below highway)"
+    },
+    {
+     "sp": "Chum, coho, pink & sockeye salmon (combined)",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "20 in or longer: 5 per day, 5 in possession, only 2 of which may be sockeye. Jan 1\u2013Sep 15: only 2 may be coho; Sep 16\u2013Dec 31: only 1 may be coho. Less than 20 in: 10 per day, 10 in possession.",
+     "cite": "p. 24, General regs \u2013 Road Zone"
+    },
+    {
+     "sp": "Dolly Varden / Arctic char",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 24"
+    },
+    {
+     "sp": "Other finfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "No limit.",
+     "cite": "p. 24"
+    }
+   ],
+   "gear": [
+    "Nov 1\u2013Apr 30: only unbaited artificial lures or flies in Road Zone fresh waters (not stocked lakes, Chiniak & Barry lagoons). p. 24"
+   ],
+   "closures": [
+    "Above the highway: closed year-round to sport fishing. p. 25"
+   ]
+  },
+  "monashka": {
+   "title": "Monashka Creek",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "Coho salmon",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "2 per day (year-round). Other salmon limits: see regs.",
+     "cite": "p. 25, Special regs \u2013 Monashka Creek"
+    },
+    {
+     "sp": "Chum, coho, pink & sockeye salmon (combined)",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "20 in or longer: 5 per day, 5 in possession, only 2 of which may be sockeye. Jan 1\u2013Sep 15: only 2 may be coho; Sep 16\u2013Dec 31: only 1 may be coho. Less than 20 in: 10 per day, 10 in possession.",
+     "cite": "p. 24, General regs \u2013 Road Zone"
+    },
+    {
+     "sp": "Dolly Varden / Arctic char",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 24"
+    },
+    {
+     "sp": "Other finfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "No limit.",
+     "cite": "p. 24"
+    }
+   ],
+   "gear": [
+    "Nov 1\u2013Apr 30: only unbaited artificial lures or flies in Road Zone fresh waters (not stocked lakes, Chiniak & Barry lagoons). p. 24"
+   ],
+   "closures": [
+    "Upstream of ADF&G markers ~50 yards above the Monashka Highway: closed year-round to sport fishing. p. 25"
+   ]
+  },
+  "sacramento": {
+   "title": "Sacramento River",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "Coho salmon",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "2 per day (year-round). Other salmon limits: see regs.",
+     "cite": "p. 25, Special regs \u2013 Sacramento River"
+    },
+    {
+     "sp": "Rainbow trout / steelhead",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Catch-and-release only; release immediately.",
+     "cite": "p. 24, General regs \u2013 Road Zone"
+    },
+    {
+     "sp": "Dolly Varden / Arctic char",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 24"
+    },
+    {
+     "sp": "Other finfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "No limit.",
+     "cite": "p. 24"
+    }
+   ],
+   "gear": [
+    "Nov 1\u2013Apr 30: only unbaited artificial lures or flies in Road Zone fresh waters (not stocked lakes, Chiniak & Barry lagoons). p. 24"
+   ]
+  },
+  "miam": {
+   "title": "Lake Miam drainage",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "Coho salmon",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "2 per day (year-round). Other salmon limits: see regs.",
+     "cite": "p. 25, Special regs \u2013 Lake Miam drainage"
+    },
+    {
+     "sp": "Rainbow trout / steelhead",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Catch-and-release only; release immediately.",
+     "cite": "p. 24, General regs \u2013 Road Zone"
+    },
+    {
+     "sp": "Dolly Varden / Arctic char",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 24"
+    },
+    {
+     "sp": "Other finfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "No limit.",
+     "cite": "p. 24"
+    }
+   ],
+   "gear": [
+    "Nov 1\u2013Apr 30: only unbaited artificial lures or flies in Road Zone fresh waters (not stocked lakes, Chiniak & Barry lagoons). p. 24"
+   ]
+  },
+  "saltery": {
+   "title": "Saltery Cove streams",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "Chum, coho, pink & sockeye salmon (combined)",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "5 per day, 5 in possession, only 2 of which may be coho, but all 5 may be sockeye.",
+     "cite": "p. 25, Special regs \u2013 Saltery Cove streams"
+    },
+    {
+     "sp": "Rainbow trout / steelhead",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Catch-and-release only; release immediately.",
+     "cite": "p. 24, General regs \u2013 Road Zone"
+    },
+    {
+     "sp": "Dolly Varden / Arctic char",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 24"
+    },
+    {
+     "sp": "Other finfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "No limit.",
+     "cite": "p. 24"
+    }
+   ],
+   "gear": [
+    "Nov 1\u2013Apr 30: only unbaited artificial lures or flies in Road Zone fresh waters (not stocked lakes, Chiniak & Barry lagoons). p. 24"
+   ],
+   "notes": [
+    "Open year-round to sport fishing. p. 25"
+   ]
+  },
+  "dogsalmon": {
+   "title": "Dog Salmon drainage (incl. Frazer Lake)",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "King salmon",
+     "open": [
+      [
+       "01-01",
+       "07-25"
+      ]
+     ],
+     "limit": "Catch-and-release only; may not be removed from the water.",
+     "cite": "p. 25, Special regs \u2013 Dog Salmon drainage"
+    },
+    {
+     "sp": "Other species",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Remote Zone general limits (p. 24).",
+     "cite": "p. 24\u201325"
+    }
+   ],
+   "gear": [
+    "Jan 1\u2013Jul 25: bait prohibited for all species. p. 25"
+   ],
+   "closures": [
+    "Dog Salmon River from the Frazer Fish Pass weir to an ADF&G marker 200 yards downstream: closed to all sport fishing Jun 1\u2013Aug 31. p. 25"
+   ]
+  },
+  "karluk": {
+   "title": "Karluk River drainage",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "King salmon",
+     "open": [],
+     "limit": "Closed to king salmon fishing in 2026 by emergency order.",
+     "cite": "p. 24\u201325"
+    },
+    {
+     "sp": "Other species",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Remote Zone general limits (p. 24).",
+     "cite": "p. 25"
+    }
+   ],
+   "gear": [
+    "2026 by EO: only one unbaited, single-hook artificial lure. p. 25"
+   ]
+  },
+  "ayakulik": {
+   "title": "Ayakulik River drainage",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak Island Fresh Water",
+   "rules": [
+    {
+     "sp": "King salmon",
+     "open": [],
+     "limit": "Closed to king salmon fishing in 2026 by emergency order.",
+     "cite": "p. 24\u201325"
+    },
+    {
+     "sp": "Other species",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Remote Zone general limits (p. 24).",
+     "cite": "p. 25"
+    }
+   ],
+   "gear": [
+    "2026 by EO: only one unbaited, single-hook artificial lure. p. 25"
+   ]
+  },
+  "salt_road": {
+   "title": "Kodiak Island salt water (Road Zone)",
+   "book": "2026 Southwest Alaska Sport Fishing Regulations Summary \u2013 Kodiak/AK Pen/Aleutians Salt Water",
+   "rules": [
+    {
+     "sp": "King salmon",
+     "open": [
+      [
+       "04-01",
+       "09-15"
+      ]
+     ],
+     "limit": "2026 by EO, waters around Kodiak Island: Apr 1\u2013Sep 15, 1 per day, 1 in possession, any size. Outside those dates: see regs.",
+     "cite": "p. 21, General regs \u2013 King salmon"
+    },
+    {
+     "sp": "Chum, coho, pink & sockeye salmon (combined)",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Road Zone: 5 per day, 5 in possession, only 2 sockeye. Jan 1\u2013Sep 15: only 2 coho; Sep 16\u2013Dec 31: only 1 coho. See special regs for stocked areas.",
+     "cite": "p. 21"
+    },
+    {
+     "sp": "Halibut",
+     "open": [
+      [
+       "02-01",
+       "12-31"
+      ]
+     ],
+     "limit": "Unguided: 2 per day, 4 in possession. Charter/size rules: federal regs.",
+     "cite": "p. 22"
+    },
+    {
+     "sp": "Lingcod",
+     "open": [
+      [
+       "07-01",
+       "12-31"
+      ]
+     ],
+     "limit": "2 per day, 4 in possession, no size limit (Kodiak, except N. Afognak/Shuyak).",
+     "cite": "p. 21"
+    },
+    {
+     "sp": "Rockfish",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "2026 by EO (east side north of Dangerous Cape): 5 per day, 10 in possession; only 2/day, 4 in possession of a single species; only 1/day, 2 in possession yelloweye; only 1/day, 2 in possession black rockfish.",
+     "cite": "p. 22\u201323"
+    },
+    {
+     "sp": "Dolly Varden",
+     "open": [
+      [
+       "01-01",
+       "12-31"
+      ]
+     ],
+     "limit": "10 per day, 10 in possession, no size limit.",
+     "cite": "p. 21"
+    },
+    {
+     "sp": "Tanner crab",
+     "open": null,
+     "limit": "Males only: 6 per day, 6 in possession, 5\u00bd in or more. Seasons/closures: see regs.",
+     "cite": "p. 22"
+    },
+    {
+     "sp": "King crab",
+     "open": [],
+     "limit": "Kodiak Area: closed to all king crab species.",
+     "cite": "p. 22"
+    },
+    {
+     "sp": "Dungeness crab",
+     "open": null,
+     "limit": "Males only: 12 per day, 12 in possession, 6\u00bd in or more. Season: see regs.",
+     "cite": "p. 22"
+    }
+   ],
+   "gear": [],
+   "notes": [
+    "Monashka Bay, Mill Bay & Mission Beach salt water: coho 2 per day, 2 in possession; snagging rules differ \u2013 see p. 23."
+   ]
+  }
+ }
+}
