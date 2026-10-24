@@ -41,4 +41,21 @@ class PoiTest {
         assertEquals("1.10", UpdateCheck.latestFrom(html)!!.first)
         assertTrue(UpdateCheck.compare("1.10", "1.9") > 0)
     }
+
+    @Test fun chiniakSchoolAndLibraryAreSeparate() {
+        fun pt(id: String) = fs.first { it.props.optString("id") == id }.point!!
+        val s = pt("sch_chiniak"); val l = pt("comm0")
+        // School on the KIB "CHINIAK SCHOOL" tract (42650 Chiniak Hwy); library at the KIB Tsunami Shelter parcel (43235 Spruce Way).
+        assertEquals(57.61352, s[0], 1e-4); assertEquals(-152.23467, s[1], 1e-4)  // point = [lat, lon]
+        assertEquals(57.61170, l[0], 1e-4); assertEquals(-152.23390, l[1], 1e-4)
+        val dy = (s[0] - l[0]) * 110540.0; val dx = (s[1] - l[1]) * 111320.0 * Math.cos(Math.toRadians(57.6))
+        assertTrue("school/library too close", Math.hypot(dx, dy) > 150.0)
+        assertFalse(fs.first { it.props.optString("id") == "comm0" }.props.optString("rows").contains("approximate", ignoreCase = true))
+    }
+
+    @Test fun githubAssetNameParsesAsUpdate() {
+        val html = """<a href="https://github.com/ChiniakVictor/sovereign-apps/releases/download/kodiak-maps-android-v1.4.1/kodiak-maps-1.4.1.apk">x</a>"""
+        assertEquals("1.4.1", UpdateCheck.latestFrom(html)!!.first)
+        assertTrue(UpdateCheck.compare("1.4.1", "1.4") > 0)
+    }
 }
