@@ -281,14 +281,6 @@ fun TrailMap(
         PoiMap.apply(st, inKodiak, PoiPrefs.state.value)
     }
     LaunchedEffect(styleReady, inKodiak, poi) { handle.style?.let { PoiMap.apply(it, inKodiak, poi) } }
-    // kadiak.org historic map overlay (part of the Military layer): one at a time, under the POI dots.
-    val histId by HistMaps.overlay.collectAsState()
-    val histAlpha by HistMaps.opacity.collectAsState()
-    LaunchedEffect(styleReady, inKodiak, poi.mil, histId, histAlpha) {
-        val st = handle.style ?: return@LaunchedEffect
-        HistMaps.load(ctxPoi)
-        runCatching { HistMaps.apply(st, ctxPoi, histId, histAlpha, inKodiak && poi.mil) }
-    }
     LaunchedEffect(styleReady, tides) {
         val st = handle.style ?: return@LaunchedEffect; val t = tides ?: return@LaunchedEffect
         if (st.getImage("tide-icon") == null) st.addImage("tide-icon", labelBitmap("≈ Tide", 0xFF80DEEA.toInt(), false))

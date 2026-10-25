@@ -51,16 +51,16 @@ fun PoiDetails(f: KFeature, phone: PhoneFix?, metric: Boolean, onNavigate: () ->
         if (f.point != null) OutlinedButton(onNavigate) { Text("➤ Go") }
     }
     poiRows(f).forEach { (l, v) ->
+        // v1.5.2: the structure's one-line summary reads first, full width and bold
+        if (l == "Summary") { Text(v, fontSize = 14.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)); return@forEach }
         Row(Modifier.padding(vertical = 2.dp)) {
             Text(l, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.width(96.dp))
-            Text(v, fontSize = 13.sp)
+            Text(v, fontSize = if (l == "Sources") 11.sp else 13.sp)
         }
     }
     p.optString("note").takeIf { it.isNotBlank() }?.let { Text(it, fontSize = 12.sp, color = Color(0xFFFFB74D), modifier = Modifier.padding(top = 6.dp)) }
-    if (f.k == "poi_mil") HistAttachments(csv(p.optString("imgs")), csv(p.optString("ovl")))
 }
 
-private fun csv(s: String) = s.split(',').map { it.trim() }.filter { it.isNotEmpty() && it != "null" }
 
 /** Switches for the Layers dialog. All OFF until the user turns them on. */
 @Composable
@@ -79,8 +79,7 @@ fun PoiLayerSwitches() {
     if (s.food) FoodLegend()
     sw("Travel", "Airports, ferry, floatplanes, harbors, air taxis", Color(0xFF29B6F6), s.travel) { v -> PoiPrefs.update(ctx) { it.copy(travel = v) } }
     sw("Schools", "KIBSD schools and attendance areas", Color(0xFFE53935), s.schools) { v -> PoiPrefs.update(ctx) { it.copy(schools = v) } }
-    sw("Military history", "WWII and Cold War sites: Chiniak, Long Island, Fort Abercrombie, Buskin + field-GPS points and kadiak.org historic maps", Color(0xFF8D6E63), s.mil) { v -> PoiPrefs.update(ctx) { it.copy(mil = v) } }
-    if (s.mil) TextButton({ HistMaps.library.value = true }, Modifier.padding(start = 14.dp)) { Text("🗺 Historic maps (kadiak.org) & 1965 structure list ›", fontSize = 13.sp) }
+    sw("Military history", "WWII and Cold War sites: Chiniak, Long Island, Fort Abercrombie, Buskin + field-GPS points and features traced from kadiak.org old maps (zoom in)", Color(0xFF8D6E63), s.mil) { v -> PoiPrefs.update(ctx) { it.copy(mil = v) } }
     sw("Community", "Chiniak Public Library", Color(0xFFAB47BC), s.community) { v -> PoiPrefs.update(ctx) { it.copy(community = v) } }
 }
 

@@ -193,6 +193,7 @@ object KGeo {
             val lines = ArrayList<List<DoubleArray>>(); val polys = ArrayList<List<DoubleArray>>(); var pt: DoubleArray? = null
             when (g.getString("type")) {
                 "Point" -> pt = doubleArrayOf(c.getDouble(1), c.getDouble(0))
+                "MultiPoint" -> { val p = ll(c); if (p.isNotEmpty()) pt = doubleArrayOf(p.sumOf { it[0] } / p.size, p.sumOf { it[1] } / p.size) }
                 "LineString" -> lines += ll(c)
                 "MultiLineString" -> for (j in 0 until c.length()) lines += ll(c.getJSONArray(j))
                 "Polygon" -> polys += ll(c.getJSONArray(0))

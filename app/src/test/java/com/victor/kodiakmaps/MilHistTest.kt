@@ -1,29 +1,28 @@
 package com.victor.kodiakmaps
 
 import com.victor.kodiakmaps.core.KGeo
-import com.victor.kodiakmaps.ui.HistMaps
 import com.victor.kodiakmaps.ui.UpdateCheck
 import org.junit.Assert.*
 import org.junit.Test
 import java.io.File
 
-/** v1.5: field-GPS military points (mil_extra.py) and kadiak.org historic maps. */
+/** v1.5: field-GPS military points (mil_extra.py); v1.5.1: features traced from the kadiak.org old maps (mil_hist.py). */
 class MilHistTest {
     private val fs = KGeo.parse(File("src/main/assets/kodiak/poi.geojson").readText())
     private val mil = fs.filter { it.k == "poi_mil" }
+    private val mil15 = mil.filter { !id(it).startsWith("milh_") }
     private fun id(f: com.victor.kodiakmaps.core.KFeature) = f.props.optString("id")
-    private val detail = mil.filter { it.props.has("detail") }
+    private val detail = mil.filter { it.props.has("detail") && !id(it).startsWith("milh_") }
     private val summary = mil.filter { id(it).startsWith("milg_") }
     private val single = mil.filter { id(it).startsWith("milq_") }
     private val original = mil.filter { id(it).matches(Regex("mil\\d")) }
-    private val hist = HistMaps.parse(File("src/main/assets/kodiak/hist/index.json").readText())
 
     private fun distM(a: DoubleArray, b: DoubleArray): Double {
         val dy = (a[0] - b[0]) * 111132.0; val dx = (a[1] - b[1]) * 111320.0 * Math.cos(Math.toRadians(a[0])); return Math.hypot(dx, dy)
     }
 
     @Test fun counts() {
-        assertEquals(92, mil.size)
+        assertEquals(92, mil15.size); assertEquals(154 + Hist1965Test.COUNTS.values.sum(), mil.size)
         assertEquals(72, detail.size); assertEquals(8, summary.size); assertEquals(7, single.size); assertEquals(5, original.size)
         val g = detail.groupingBy { it.props.optString("grp") }.eachCount()
         assertEquals(mapOf("BAT1" to 3, "BAT2" to 1, "BAT3" to 2, "BUSKIN" to 10, "BAT4" to 23, "LICAMP" to 3, "BAT5" to 9, "BAT6" to 10, "SL23" to 4, "SL25" to 7), g)
@@ -36,7 +35,7 @@ class MilHistTest {
     }
 
     @Test fun coordinatesInRange() {
-        mil.forEach { f -> val p = f.point!!
+        mil15.forEach { f -> val p = f.point!!
             assertTrue(f.title, p[0] in 56.5..58.7 && p[1] in -154.9..-151.5) }  // Kodiak archipelago
         (detail + single + summary).forEach { f -> val p = f.point!!
             assertTrue(f.title, p[0] in 57.55..57.95 && p[1] in -152.70..-152.10) }  // surveyed sites: Chiniak, Buskin, Long Island, Fort Abercrombie, Spruce Island, Kizhuyak
@@ -74,32 +73,77 @@ class MilHistTest {
             assertTrue("${s.title} lists ${d.title}", s.props.optString("rows").contains(d.title + " · ")) } }
     }
 
-    @Test fun historicMapsBundledAndReferenced() {
-        val dir = File("src/main/assets/kodiak/hist")
-        assertEquals("Source: kadiak.org (Kodiak Historical Army/Navy site)", hist.credit)
-        assertEquals(32, hist.items.size)
-        hist.items.forEach { assertTrue(it.file, File(dir, it.file).isFile); it.ovlFile?.let { o -> assertTrue(o, File(dir, o).isFile) } }
-        assertTrue(File(dir, hist.structFile).readLines().size > 1800)
-        val ids = hist.items.map { it.id }.toSet()
-        mil.forEach { f -> (f.props.optString("imgs").split(',') + f.props.optString("ovl").split(',')).filter { it.isNotBlank() }.forEach { assertTrue("${f.title}: $it", it in ids) } }
-        mil.forEach { f -> f.props.optString("ovl").split(',').filter { it.isNotBlank() }.forEach { o -> assertTrue(o, hist.items.first { it.id == o }.corners != null) } }
-        assertTrue(dir.walk().filter { it.isFile }.sumOf { it.length() } < 5_000_000L)
+    // ---- v1.5.1: features traced from the kadiak.org old maps replace the bundled map images
+    private val traced = mil.filter { id(it).startsWith("milh_") && it.props.optString("src_map") !in Hist1965Test.SHEETS }   // v1.5.3: the 1965 Navy sheets are checked in Hist1965Test
+    private fun rows(f: com.victor.kodiakmaps.core.KFeature) = f.props.optString("rows").split('\u001f').associate { it.substringBefore('\u001e') to it.substringAfter('\u001e') }
+    private fun allPts(f: com.victor.kodiakmaps.core.KFeature) = listOfNotNull(f.point) + f.lines.flatten() + f.polys.flatten()
+
+    @Test fun tracedFeatureCounts() {
+        assertEquals(62, traced.size)
+        val bySheet = traced.groupingBy { it.props.optString("src_map") }.eachCount()
+        assertEquals(mapOf("chinmap2" to 3, "chinmap3" to 6, "chinmap5" to 2, "chinmap7" to 5, "lilnav3" to 31, "track9" to 15), bySheet)
+        val shapes = traced.groupingBy { it.props.optString("shape") }.eachCount()
+        assertEquals(mapOf("pt" to 47, "ln" to 8, "poly" to 7), shapes)
+        // points are detail points (zoom 14+), lines/polygons are not
+        traced.forEach { f -> assertEquals(f.title, f.props.optString("shape") == "pt", f.props.has("detail")) }
+        listOf("Composite Bldg.", "Tower C", "P.O.L. Tank", "AR-1 Low Band Array", "DW-1 Wide Band Doublet Trans Antenna No. 5", "VAM", "D20",
+            "Steel Mat Runway – Miller Field", "U.S. Naval Reservation Boundary").forEach { n -> assertTrue(n, traced.any { it.title == n }) }
+        assertTrue(traced.any { it.title.startsWith("U.S. Air Force Installation") })
     }
 
-    @Test fun overlaysAreSaneParallelograms() {
-        val ov = hist.items.filter { it.corners != null }
-        assertEquals(setOf("chiniak1949topo", "chiniak1949topo2", "li_map"), ov.map { it.id }.toSet())
-        ov.forEach { o -> val c = o.corners!!
-            assertEquals(4, c.size)
-            c.forEach { assertTrue(o.id, it[1] in 57.4..57.9 && it[0] in -152.6..-152.0) }
-            // affine fit: TL + BR == TR + BL
-            assertEquals(o.id, c[0][0] + c[2][0], c[1][0] + c[3][0], 1e-4); assertEquals(o.id, c[0][1] + c[2][1], c[1][1] + c[3][1], 1e-4)
-            assertNotNull(o.verify)
+    @Test fun tracedFeaturesPlacedSourcedAndAccurate() {
+        traced.forEach { f ->
+            val r = rows(f)
+            assertEquals(f.title, "kadiak.org (Kodiak Historical Army/Navy site)", r["Source"])
+            assertTrue(f.title, r.containsKey("Source map") && r.containsKey("How it was placed") && r.containsKey("On the map"))
+            val acc = f.props.getInt("acc_m"); assertTrue("${f.title} ±$acc", acc in 20..51)
+            assertTrue(f.title, r["Approx. accuracy"]!!.startsWith("± $acc m"))
+            assertTrue(f.title, f.props.optString("shape") == "pt" || f.point == null || f.polys.isNotEmpty())
+            val pts = allPts(f); assertTrue(f.title, pts.isNotEmpty())
+            pts.forEach { p -> assertTrue(f.title, p[0] in 57.57..57.65 && p[1] in -152.25..-152.12) }  // Chiniak peninsula
+            assertFalse(f.props.has("imgs") || f.props.has("ovl"))
         }
-        // the Long Island map covers the BAT4/BAT5 survey points
-        val li = ov.first { it.id == "li_map" }.corners!!
-        listOf("BAT4 GUN1/DP", "BAT5 GUN1/DP").forEach { l -> val p = detail.first { it.title == l }.point!!
-            assertTrue(l, p[0] in li.minOf { it[1] }..li.maxOf { it[1] } && p[1] in li.minOf { it[0] }..li.maxOf { it[0] }) }
+        // the 226.7-acre Air Force installation polygon really is ~226.7 acres (outline only)
+        val af = traced.first { it.title.startsWith("U.S. Air Force Installation") }; val ring = af.polys[0]
+        val lat0 = Math.toRadians(ring[0][0]); var a = 0.0
+        for (i in 0 until ring.size - 1) { val (y1, x1) = ring[i][0] * 111132.0 to ring[i][1] * 111320.0 * Math.cos(lat0); val (y2, x2) = ring[i + 1][0] * 111132.0 to ring[i + 1][1] * 111320.0 * Math.cos(lat0); a += x1 * y2 - x2 * y1 }
+        assertEquals(226.7, Math.abs(a) / 2 / 4046.86, 6.0); assertEquals(0, af.props.optInt("fill", 1))
+    }
+
+    @Test fun tracedFeaturesDoNotDuplicateGpsPoints() {
+        // the old-map gun circles / structure that are the same thing as a field-GPS point were merged into that card, not added again
+        listOf("BAT1 GUN1", "BAT1 GUN 2", "BAT1 EBC", "BAT2 GUN1").forEach { l -> val g = detail.first { it.title == l }
+            assertTrue(l, rows(g)["Old map"]!!.contains("kadiak.org"))
+            traced.mapNotNull { it.point?.let { p -> it.title to p } }.forEach { (t, p) -> assertTrue("$t duplicates $l", distM(p, g.point!!) > 30.0) } }
+        assertEquals(3, traced.count { it.title.startsWith("Circle") })   // chinmap7 circles 2–4
+        listOf("mil0", "mil1", "mil2", "mil4").forEach { i -> assertTrue(i, rows(original.first { id(it) == i }).containsKey("Old maps")) }
+        assertEquals(traced.size, traced.map { it.title + allPts(it).first()[0] }.toSet().size)
+    }
+
+    @Test fun structureListOnlyOnMatchedFeatures() {
+        val sl = traced.filter { rows(it).containsKey("1965 structure list") }
+        assertEquals(20, sl.size)
+        sl.forEach { f -> assertEquals(f.title, "lilnav3", f.props.optString("src_map")); assertFalse(f.title, f.title.contains("?")) }
+        assertTrue(rows(traced.first { it.title == "D20" })["1965 structure list"]!!.startsWith("D-20 · recreation building"))
+        assertTrue(rows(traced.first { it.title == "AR-1 Low Band Array" })["1965 structure list"]!!.contains("I-21"))
+        traced.filter { it.props.optString("src_map") == "lilnav3" }.forEach { assertTrue(it.title, rows(it)["Site"]!!.startsWith("Cape Chiniak NSGA")) }
+    }
+
+    @Test fun oldMapImagesNoLongerBundled() {
+        assertFalse(File("src/main/assets/kodiak/hist").exists())
+        assertFalse(File("src/main/java/com/victor/kodiakmaps/ui/HistMaps.kt").exists())
+        assertTrue(mil.none { it.props.has("imgs") || it.props.has("ovl") })
+    }
+
+    @Test fun multiPointParses() {
+        val f = KGeo.parse("""{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"k":"poi_mil"},"geometry":{"type":"MultiPoint","coordinates":[[-152.2,57.6],[-152.1,57.7]]}}]}""").single()
+        assertEquals(57.65, f.point!![0], 1e-9); assertEquals(-152.15, f.point!![1], 1e-9)
+    }
+
+    @Test fun update151IsNewerThan150() {
+        val html = """<a href="https://github.com/ChiniakVictor/sovereign-apps/releases/download/kodiak-maps-android-v1.5.1/kodiak-maps-1.5.1.apk">x</a>"""
+        assertEquals("1.5.1", UpdateCheck.latestFrom(html)!!.first)
+        assertTrue(UpdateCheck.compare("1.5.1", "1.5") > 0)
     }
 
     @Test fun update150IsNewerThan142() {

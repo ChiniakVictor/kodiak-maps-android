@@ -20,8 +20,8 @@ android {
         applicationId = "com.victor.kodiakmaps"
         minSdk = 26
         targetSdk = 35
-        versionCode = 10
-        versionName = "1.5"
+        versionCode = 13
+        versionName = "1.5.3"
         ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64") }
     }
 
