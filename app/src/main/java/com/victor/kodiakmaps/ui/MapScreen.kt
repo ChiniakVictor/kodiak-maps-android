@@ -50,6 +50,7 @@ fun MapScreen(vm: AppViewModel, handle: MapHandle) {
     val phone by vm.phone.collectAsState()
     val heading by vm.heading.collectAsState()
     val settings by vm.settings.collectAsState()
+    val poiState by PoiPrefs.state.collectAsState()
     val cam by handle.camera.collectAsState()
     val mbtiles by OfflineMaps.mbtiles.collectAsState()
     val pins by vm.pins.collectAsState()
@@ -214,6 +215,7 @@ fun MapScreen(vm: AppViewModel, handle: MapHandle) {
         LayerRail(settings, kodiak?.logJson != null, onHot = { kSel = null; vm.selectedPin.value = null; panel = Panel.HOT; openSheet() }, onTides = { kSel = null; vm.selectedPin.value = null; panel = Panel.TIDES; openSheet() }, Modifier.align(Alignment.TopStart).tourTarget("rail")
             .padding(top = topPad + if (near != null) 52.dp else 28.dp, bottom = sheetH + 30.dp), onMore = { showLayers = true })
 
+        if (poiState.mil) HistOverlayCard(Modifier.align(Alignment.TopCenter).padding(top = topPad + if (near != null) 52.dp else 26.dp, start = 64.dp, end = 56.dp))
         UpdateButton(Modifier.align(Alignment.BottomCenter).padding(bottom = sheetH + 22.dp))
 
         // ---------------- scale bar + attribution (bottom-left, above the sheet)
@@ -276,6 +278,7 @@ fun MapScreen(vm: AppViewModel, handle: MapHandle) {
 
     if (showDownload) DownloadDialog(handle, settings.base) { showDownload = false }
     if (showLayers) LayersDialog { showLayers = false }
+    HistDialogs { h -> PoiPrefs.update(ctx) { it.copy(mil = true) }; h.corners?.let { c -> handle.fit(c.map { LatLng(it[1], it[0]) }) } }
     newPinAt?.let { (la, lo) -> PinDialog(la, lo, phone?.alt?.takeIf { newPinAt == phone?.let { p -> p.lat to p.lon } }?.roundToInt(), null,
         onSave = { vm.savePin(it); newPinAt = null; vm.selectedPin.value = it.id; openSheet() }, onDismiss = { newPinAt = null }) }
     editPin?.let { e -> PinDialog(e.lat, e.lon, e.alt, e, onSave = { vm.savePin(it); editPin = null }, onDismiss = { editPin = null }) }
@@ -358,6 +361,7 @@ private fun LayerRail(st: com.victor.kodiakmaps.data.Settings, hasLog: Boolean, 
     var info by remember { mutableStateOf<RailItem?>(null) }
     LaunchedEffect(Unit) { PoiPrefs.load(ctx) }
     val poi by PoiPrefs.state.collectAsState()
+    val histOn = HistMaps.overlay.collectAsState().value != null
     fun poiItem(label: String, icon: String, on: Boolean, color: Color, desc: String, f: (PoiPrefs.S) -> PoiPrefs.S) =
         RailItem(label, icon, on, color, desc, act = { PoiPrefs.update(ctx, f) }) { it }
     val items = listOfNotNull(
@@ -374,7 +378,8 @@ private fun LayerRail(st: com.victor.kodiakmaps.data.Settings, hasLog: Boolean, 
         poiItem("Food", "🍴", poi.food, Color(0xFFFF7043), "Food: orange = ready to eat (restaurants, coffee, food trucks), green = groceries / uncooked (stores, seafood, farmers market). Tap a dot for address, phone, hours, website and sources. Base-only places are marked restricted.") { it.copy(food = !it.food) },
         poiItem("Travel", "✈", poi.travel, Color(0xFF29B6F6), "Travel: blue = airports, teal = floatplane bases, indigo = AMHS ferry terminals, grey = harbors, yellow = air charter / air taxi offices. Tap for airlines, phone, website and schedule links (schedules are not stored — always check the operator).") { it.copy(travel = !it.travel) },
         poiItem("Schools", "🏫", poi.schools, Color(0xFFE53935), "KIBSD schools with shaded attendance areas, one colour per school. Tap a school for grades, phone, principal and history; tap a shaded area for its boundary source. Town areas are approximate (derived).") { it.copy(schools = !it.schools) },
-        poiItem("Military", "★", poi.mil, Color(0xFF8D6E63), "Military history near Chiniak: WWII Fort J.H. Smith, Miller Field, Chiniak tracking station and more. Each card shows how sure the location is.") { it.copy(mil = !it.mil) },
+        poiItem("Military", "★", poi.mil, Color(0xFF8D6E63), "Military history: WWII Fort J.H. Smith, Miller Field, Chiniak tracking station, plus field-GPS points for Batteries 1–6 (Chiniak, Buskin, Long Island, Fort Abercrombie), searchlights and more. Each battery shows as one star; zoom in to 14+ to see every surveyed point. Cards show how sure the location is and kadiak.org historic maps (some can be laid over the map with an opacity slider: use 🗺 Old maps).") { it.copy(mil = !it.mil) },
+        if (poi.mil) RailItem("Old maps", "🗺", histOn, Color(0xFFBCAAA4), "Historic maps from kadiak.org (Kodiak Historical Army/Navy site): view any map full screen, lay a fitted map over this one with an opacity slider, and read the 1965 Navy structure list. Bundled, works offline.", act = { HistMaps.library.value = true }) { it } else null,
         poiItem("Library", "📚", poi.community, Color(0xFFAB47BC), "Community: Chiniak Public Library (hours, phone).") { it.copy(community = !it.community) },
         RailItem(if (st.base == "otm") "OpenTopo" else "USGS", "🗺", true, Color(0xFF82B1FF), "Base map: tap to switch between USGS topo and OpenTopoMap.") { it.copy(base = if (it.base == "otm") "usgs" else "otm") },
     )

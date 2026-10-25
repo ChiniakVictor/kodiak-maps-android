@@ -15,8 +15,10 @@ import org.json.JSONObject
 /** Food / Travel / Military history / Schools (+ attendance areas) / Community points from assets/kodiak/poi.geojson. All default OFF. */
 object PoiMap {
     const val SRC = "kd-poi"
-    val TAP = arrayOf("kd-poi-icon", "kd-poi-pt", "kd-poi-zone-fill", "kd-poi-zone-line")
-    private val ALL = listOf("kd-poi-zone-fill", "kd-poi-zone-line", "kd-poi-pt", "kd-poi-icon", "kd-poi-label")
+    val TAP = arrayOf("kd-poi-icon", "kd-poi-pt", "kd-poi-dpt", "kd-poi-zone-fill", "kd-poi-zone-line")
+    private val ALL = listOf("kd-poi-zone-fill", "kd-poi-zone-line", "kd-poi-pt", "kd-poi-icon", "kd-poi-dpt", "kd-poi-label")
+    /** Detail points (field-GPS survey points, property detail=1) only show from this zoom so the map is not cluttered; their group summary shows at every zoom. */
+    const val DETAIL_MIN_ZOOM = 14f
     val ICON = mapOf("poi_food" to "🍴", "poi_travel" to "✈", "poi_mil" to "★", "poi_school" to "🏫", "poi_comm" to "📚")
     @Volatile var json: String? = null; private set
     @Volatile var labels: List<Pair<String, Int>> = emptyList(); private set
@@ -45,6 +47,9 @@ object PoiMap {
         st.addLayer(CircleLayer("kd-poi-pt", SRC).withFilter(neq(get("k"), literal("poi_zone"))).withProperties(hidden,
             circleColor(col), circleRadius(interpolate(linear(), zoom(), stop(8, 6f), stop(14, 11f), stop(17, 14f))),
             circleStrokeColor("#FFFFFF"), circleStrokeWidth(2f)))
+        st.addLayer(CircleLayer("kd-poi-dpt", SRC).withFilter(all(neq(get("k"), literal("poi_zone")), has("detail"))).withProperties(hidden,
+            circleColor(col), circleRadius(interpolate(linear(), zoom(), stop(14, 4.5f), stop(17, 8f))),
+            circleStrokeColor("#FFFFFF"), circleStrokeWidth(1.5f)).also { it.minZoom = DETAIL_MIN_ZOOM })
         st.addLayer(SymbolLayer("kd-poi-icon", SRC).withFilter(neq(get("k"), literal("poi_zone"))).withProperties(hidden,
             iconImage(concat(literal("poi-ic-"), get("k"))), iconSize(interpolate(linear(), zoom(), stop(8, 0.45f), stop(14, 0.7f))), iconAllowOverlap(true), iconIgnorePlacement(true)))
         st.addLayer(SymbolLayer("kd-poi-label", SRC).withFilter(all(has("label"), neq(get("k"), literal("poi_zone")))).withProperties(hidden,
@@ -73,17 +78,19 @@ object PoiMap {
             if (s.schools) add("poi_school"); if (s.community) add("poi_comm")
         }
         val ptFilter: Expression = if (kinds.isEmpty()) eq(get("k"), literal("__none__")) else any(*kinds.map { eq(get("k"), literal(it)) }.toTypedArray())
-        listOf("kd-poi-pt", "kd-poi-icon").forEach { (st.getLayer(it) as? CircleLayer)?.setFilter(ptFilter); (st.getLayer(it) as? SymbolLayer)?.setFilter(ptFilter) }
+        val mainFilter = all(ptFilter, Expression.not(has("detail")))
+        listOf("kd-poi-pt", "kd-poi-icon").forEach { (st.getLayer(it) as? CircleLayer)?.setFilter(mainFilter); (st.getLayer(it) as? SymbolLayer)?.setFilter(mainFilter) }
+        (st.getLayer("kd-poi-dpt") as? CircleLayer)?.setFilter(all(ptFilter, has("detail")))
         (st.getLayer("kd-poi-label") as? SymbolLayer)?.setFilter(all(has("label"), ptFilter))
         val pv = if (inArea && kinds.isNotEmpty()) Property.VISIBLE else Property.NONE
         val zv = if (inArea && s.schools) Property.VISIBLE else Property.NONE
-        listOf("kd-poi-pt", "kd-poi-icon", "kd-poi-label").forEach { st.getLayer(it)?.setProperties(visibility(pv)) }
+        listOf("kd-poi-pt", "kd-poi-icon", "kd-poi-dpt", "kd-poi-label").forEach { st.getLayer(it)?.setProperties(visibility(pv)) }
         listOf("kd-poi-zone-fill", "kd-poi-zone-line").forEach { st.getLayer(it)?.setProperties(visibility(zv)) }
     }
 
     /** Tapped POI (points win over attendance areas), as a KFeature for the detail sheet. */
     fun pickPoint(m: MapLibreMap, box: android.graphics.RectF): KFeature? =
-        byId(runCatching { m.queryRenderedFeatures(box, "kd-poi-icon", "kd-poi-pt") }.getOrNull()?.firstOrNull()?.getStringProperty("id"))
+        byId(runCatching { m.queryRenderedFeatures(box, "kd-poi-icon", "kd-poi-pt", "kd-poi-dpt") }.getOrNull()?.firstOrNull()?.getStringProperty("id"))
     /** Attendance area under the tap (checked last, so other layers win). */
     fun pickZone(m: MapLibreMap, pt: android.graphics.PointF): KFeature? =
         byId(runCatching { m.queryRenderedFeatures(pt, "kd-poi-zone-fill") }.getOrNull()?.firstOrNull()?.getStringProperty("id"))

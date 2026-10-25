@@ -1,8 +1,8 @@
 # Kodiak Maps for Android
 
-Source code for Kodiak Maps for Android 1.4, made by Victor.
+Source code for Kodiak Maps for Android 1.5, made by Victor.
 
-An offline map app for Kodiak Island: USGS topo or OpenTopoMap base maps, offline area downloads, GPS position and tracks, trails, ANCSA 17(b) easements, road and land layers, fishing spots and regulations, tides and points of interest.
+An offline map app for Kodiak Island: USGS topo or OpenTopoMap base maps, offline area downloads, GPS position and tracks, trails, ANCSA 17(b) easements, road and land layers, fishing spots and regulations, tides and points of interest. The military layer includes historic Army/Navy maps from [kadiak.org](http://kadiak.org/) (credited in the app) and field-GPS-surveyed WWII sites.
 
 ## Download
 
