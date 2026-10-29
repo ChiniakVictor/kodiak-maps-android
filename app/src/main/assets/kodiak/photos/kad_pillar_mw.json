@@ -1,0 +1,23 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, 1955 Pillar Mountain Microwave",
+  "label": "kadiak.org — 1955 Pillar Mt. microwave",
+  "url": "https://www.kadiak.org/pillar/1955microwave.html",
+  "note": "1955 microwave relay site on Pillar Mountain, before White Alice (kadiak.org)."
+ },
+ "photos": {
+  "k_pillar_rodger71378": {
+   "file": "kadiak/pillar_mw/pillar_rodger71378.webp",
+   "w": 1000,
+   "h": 677,
+   "caption": "[1955 Pillar Mountain relay site. Page text: 'Background in the picture was positively identified and placed the microwave site on Pillar Mountain at the location of the old White Alice tech control building.']",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/pillar/rodger71378.jpg"
+  }
+ },
+ "features": {
+  "kd_pillar": [
+   "k_pillar_rodger71378"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, BD-74 switchboard, Long Island",
+  "label": "kadiak.org — BD-74 switchboard",
+  "url": "https://www.kadiak.org/long_is/bd74.html",
+  "note": "BD-74 telephone switchboard from the Long Island battery bunker (kadiak.org)."
+ },
+ "photos": {
+  "k_long_is_bd74": {
+   "file": "kadiak/deer_bd74/long_is_bd74.webp",
+   "w": 609,
+   "h": 839,
+   "caption": "[BD-74 telephone switchboard (the Long Island battery bunker had one on its lower level).]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/long_is/bd74.jpg"
+  },
+  "k_long_is_bd74_1_nara": {
+   "file": "kadiak/deer_bd74/long_is_bd74_1_nara.webp",
+   "w": 1000,
+   "h": 779,
+   "caption": "Left to right: BD-74-H1, BD-74-J, BD-74-H6 at the factory. NARA 342-88-001-2777.",
+   "credit": "National Archives photo NARA 342-88-001-2777, via kadiak.org",
+   "orig": "https://www.kadiak.org/long_is/bd74_1_nara.jpg"
+  }
+ },
+ "features": {
+  "milg_bat5": [
+   "k_long_is_bd74",
+   "k_long_is_bd74_1_nara"
+  ]
+ }
+}

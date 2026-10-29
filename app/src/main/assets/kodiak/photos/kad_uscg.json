@@ -1,0 +1,50 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, USCG Base",
+  "label": "kadiak.org — USCG Base",
+  "url": "https://www.kadiak.org/uscg/index.html",
+  "note": "Coast Guard Base Kodiak, the former Naval Operating Base (kadiak.org)."
+ },
+ "photos": {
+  "k_uscg_img023": {
+   "file": "kadiak/uscg/uscg_img023.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "1998 Sept 30, from Pillar Mt. 1. Hangar One 2. Hangar Two 3. Hangar Three 4. Fire Station 5. Golden Anchor, Resturant Club 6. Cutter Pier 7. Fuel Pier 8. Marginal Pier, derelict 9. Airport Control Tower 10. Peterson Elementary School",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/uscg/img023.jpg"
+  },
+  "k_uscg_hgr3": {
+   "file": "kadiak/uscg/uscg_hgr3.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "Hangar 3 1999 April",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/uscg/hgr3.jpg"
+  },
+  "k_uscg_ramps": {
+   "file": "kadiak/uscg/uscg_ramps.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "Seaplane ramps Womens Bay 1999 April",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/uscg/ramps.jpg"
+  },
+  "k_uscg_2002_7": {
+   "file": "kadiak/uscg/uscg_2002_7.webp",
+   "w": 1000,
+   "h": 657,
+   "caption": "Concete pad is site of just demolished building 25, Fighter Hangar. Hangar 3 beyond. 2002 July 15",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/uscg/2002_7.jpg"
+  }
+ },
+ "features": {
+  "kd_navy": [
+   "k_uscg_img023",
+   "k_uscg_hgr3",
+   "k_uscg_ramps",
+   "k_uscg_2002_7"
+  ]
+ }
+}

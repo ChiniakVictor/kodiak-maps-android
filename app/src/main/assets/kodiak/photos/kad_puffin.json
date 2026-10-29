@@ -1,0 +1,113 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History, Puffin Island",
+  "label": "kadiak.org — Puffin Island",
+  "url": "https://www.kadiak.org/puffin/puffin.html",
+  "note": "Battery 7 (anti-motor-torpedo-boat), Puffin Island. Photos by Curt Law and Joe Stevens, 22 Aug 1998 (kadiak.org)."
+ },
+ "photos": {
+  "k_puffin_puffin": {
+   "file": "kadiak/puffin/puffin_puffin.webp",
+   "w": 1000,
+   "h": 214,
+   "caption": "[Puffin Island. Page text: 'This was the WWII site of Battery 7 of the Kodiak Harbor Defenses, an anti motor torpedo boat battery'.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/puffin/puffin.jpg"
+  },
+  "k_puffin_map1": {
+   "file": "kadiak/puffin/puffin_map1.webp",
+   "w": 1006,
+   "h": 750,
+   "caption": "Puffin Island map. Drawn from two others and field survey. The location of the 220 by 13 foot pier is approximate.",
+   "credit": "Map: kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/puffin/map1.jpg"
+  },
+  "k_puffin_aug23_06": {
+   "file": "kadiak/puffin/puffin_aug23_06.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Distant Electrical Control (DEC) bunker, structure No. 18. Kalsin Bay and Middle Bay in the background.",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/aug23_06.jpg"
+  },
+  "k_puffin_aug23_04": {
+   "file": "kadiak/puffin/puffin_aug23_04.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Generator house, structure No. 7",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/aug23_04.jpg"
+  },
+  "k_puffin_aug23_05": {
+   "file": "kadiak/puffin/puffin_aug23_05.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Recreation hall, structure No. 6",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/aug23_05.jpg"
+  },
+  "k_puffin_aug23_08": {
+   "file": "kadiak/puffin/puffin_aug23_08.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "EM barracks, structure No. 1. Gun emplacement is on the ridge beyond. All the little white dots are sea gulls.",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/aug23_08.jpg"
+  },
+  "k_puffin_aug23_10": {
+   "file": "kadiak/puffin/puffin_aug23_10.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Covered ramp leading to underground battle allowance magazine, structure No. 14.",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/aug23_10.jpg"
+  },
+  "k_puffin_aug23_13": {
+   "file": "kadiak/puffin/puffin_aug23_13.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "There are two mounts for 90 milimeter guns. These were described as \"anti-PT-boat\" guns. Both mounts are east of the magazine. Two more guns were on mobile mounts. The pits are concrete and about four feet deep.",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/aug23_13.jpg"
+  },
+  "k_puffin_puffin13": {
+   "file": "kadiak/puffin/puffin_puffin13.webp",
+   "w": 349,
+   "h": 241,
+   "caption": "Small arms magazine, structure No. 15. Same construction as magazine, structure No. 16, not shown.",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/puffin13.jpg"
+  },
+  "k_puffin_puffin10": {
+   "file": "kadiak/puffin/puffin_puffin10.webp",
+   "w": 354,
+   "h": 241,
+   "caption": "Searchlight bunker No. 11. Lighting wiring still in place. No communications wiring found. This is very difficult to enter. It requires climbing down a steep, grassy, cliff with a fifty-foot drop-off to the surf and rocks below. The erosion around this bunker is severe.",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/puffin10.jpg"
+  },
+  "k_puffin_puffin4": {
+   "file": "kadiak/puffin/puffin_puffin4.webp",
+   "w": 352,
+   "h": 241,
+   "caption": "Puffin Island from the south. The searchlight bunker, structure No. 17, also shown in photo 20 above, and the DEC bunker, structure No. 18, also shown in photos 6 and 15.",
+   "credit": "Photo: Curt Law, AL7LQ, and Joe Stevens, WL7AML, 22 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/puffin/puffin4.jpg"
+  }
+ },
+ "features": {
+  "kd_puffin": [
+   "k_puffin_puffin",
+   "k_puffin_map1",
+   "k_puffin_aug23_06",
+   "k_puffin_aug23_04",
+   "k_puffin_aug23_05",
+   "k_puffin_aug23_08",
+   "k_puffin_aug23_10",
+   "k_puffin_aug23_13",
+   "k_puffin_puffin13",
+   "k_puffin_puffin10",
+   "k_puffin_puffin4"
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, SCR-582 radar, Long Island",
+  "label": "kadiak.org — SCR-582 radar, Long Island",
+  "url": "https://www.kadiak.org/long_is/scr582.html",
+  "note": "SCR-582 radar at Deer Point, Long Island (kadiak.org)."
+ },
+ "photos": {
+  "k_long_is_dan": {
+   "file": "kadiak/deer_scr582/long_is_dan.webp",
+   "w": 189,
+   "h": 337,
+   "caption": "[Dan Vesper at Long Island, March 8, 1944 (as labelled on the page).]",
+   "credit": "WWII photo via kadiak.org",
+   "orig": "https://www.kadiak.org/long_is/dan.jpg"
+  }
+ },
+ "features": {
+  "milg_bat4": [
+   "k_long_is_dan"
+  ]
+ }
+}

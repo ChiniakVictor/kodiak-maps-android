@@ -1,0 +1,89 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Woody Island",
+  "label": "kadiak.org — Woody Island",
+  "url": "https://www.kadiak.org/woody_is/index.html",
+  "note": "Woody Island: 1911 Navy wireless station, CAA/FAA station (kadiak.org)."
+ },
+ "photos": {
+  "k_woody_is_wi": {
+   "file": "kadiak/woody/woody_is_wi.webp",
+   "w": 523,
+   "h": 336,
+   "caption": "[Woody Island, taken from Pillar Mt. at about 1300 feet.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/woody_is/wi.jpg"
+  },
+  "k_woody_is_woody_usn_radio_1915": {
+   "file": "kadiak/woody/woody_is_woody_usn_radio_1915.webp",
+   "w": 806,
+   "h": 510,
+   "caption": "[Navy wireless station, Woody Island. Page note: 'The photo on the right is a post card dated 1915 owned by Trish Hampton.']",
+   "credit": "Post card dated 1915, owned by Trish Hampton (via kadiak.org)",
+   "orig": "https://www.kadiak.org/woody_is/woody_usn_radio_1915.jpg"
+  },
+  "k_woody_is_wireless_house": {
+   "file": "kadiak/woody/woody_is_wireless_house.webp",
+   "w": 369,
+   "h": 214,
+   "caption": "[Navy wireless house, Woody Island.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/woody_is/wireless_house.jpg"
+  },
+  "k_woody_is_woodyradio1915": {
+   "file": "kadiak/woody/woody_is_woodyradio1915.webp",
+   "w": 611,
+   "h": 384,
+   "caption": "[Woody Island Navy radio station, 1915 (from the file name).]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/woody_is/woodyradio1915.jpg"
+  },
+  "k_woody_is_wood_is_radio": {
+   "file": "kadiak/woody/woody_is_wood_is_radio.webp",
+   "w": 719,
+   "h": 409,
+   "caption": "[Wood Island Navy radio station.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/woody_is/wood_is_radio.jpg"
+  },
+  "k_woody_is_wood_is_radio2": {
+   "file": "kadiak/woody/woody_is_wood_is_radio2.webp",
+   "w": 710,
+   "h": 395,
+   "caption": "[Wood Island Navy radio station, second view.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/woody_is/wood_is_radio2.jpg"
+  },
+  "k_woody_is_radio1": {
+   "file": "kadiak/woody/woody_is_radio1.webp",
+   "w": 1082,
+   "h": 1400,
+   "caption": "January 8, 1942, drawn by GRA. DR. D8-61-6 General Plan Radio Facilities. Civil Aeronautics Administration, 8th region, Anchorage. Scale 1 inch = 500 feet.",
+   "credit": "CAA drawing via kadiak.org",
+   "orig": "https://www.kadiak.org/woody_is/radio1.jpg"
+  },
+  "k_woody_is_navy1": {
+   "file": "kadiak/woody/woody_is_navy1.webp",
+   "w": 1082,
+   "h": 1400,
+   "caption": "Portion of map showing Barracks, Mess, BOQ, Pump House.",
+   "credit": "Map via kadiak.org",
+   "orig": "https://www.kadiak.org/woody_is/navy1.jpg"
+  }
+ },
+ "features": {
+  "kd_woody": [
+   "k_woody_is_wi",
+   "k_woody_is_woody_usn_radio_1915",
+   "k_woody_is_wireless_house",
+   "k_woody_is_woodyradio1915",
+   "k_woody_is_wood_is_radio",
+   "k_woody_is_wood_is_radio2",
+   "k_woody_is_radio1",
+   "k_woody_is_navy1"
+  ],
+  "kd_woody_range": [
+   "k_woody_is_radio1"
+  ]
+ }
+}

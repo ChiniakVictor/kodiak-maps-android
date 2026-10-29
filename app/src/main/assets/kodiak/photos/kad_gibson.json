@@ -1,0 +1,122 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History, Gibson Cove and Deadman's Curve",
+  "label": "kadiak.org — Gibson Cove & Deadman's Curve",
+  "url": "https://www.kadiak.org/gibson/index.html",
+  "note": "Fort Greely harbor-defense structures at Gibson Cove supporting Battery 3 (kadiak.org, Joe Stevens)."
+ },
+ "photos": {
+  "k_gibson_oct24_01": {
+   "file": "kadiak/gibson/gibson_oct24_01.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "1998 This Base End Station (BES) is just above the sharp turn at Dead Man's Curve.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/oct24_01.jpg"
+  },
+  "k_gibson_oct24_02": {
+   "file": "kadiak/gibson/gibson_oct24_02.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "1998 Base End Station. Heavy steel plate shutters over windows.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/oct24_02.jpg"
+  },
+  "k_gibson_21": {
+   "file": "kadiak/gibson/gibson_21.webp",
+   "w": 400,
+   "h": 600,
+   "caption": "1998 Windows have inch thick steel shields on tracks. BES.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/21.jpg"
+  },
+  "k_gibson_18": {
+   "file": "kadiak/gibson/gibson_18.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "1998 Cable vault in floor, BES.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/18.jpg"
+  },
+  "k_gibson_oct24_03": {
+   "file": "kadiak/gibson/gibson_oct24_03.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "1998 Base End Station. Rear wall that once hosted two bunks.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/oct24_03.jpg"
+  },
+  "k_gibson_dmc_base": {
+   "file": "kadiak/gibson/gibson_dmc_base.webp",
+   "w": 606,
+   "h": 297,
+   "caption": "1999 Base End Station. From below on Gibson Cove Road.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1999",
+   "orig": "https://www.kadiak.org/gibson/dmc_base.jpg"
+  },
+  "k_gibson_img025": {
+   "file": "kadiak/gibson/gibson_img025.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "1998 Base End Station. View from Pillar Mt. October 1998",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/img025.jpg"
+  },
+  "k_gibson_16": {
+   "file": "kadiak/gibson/gibson_16.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "1998 The searchlight station is just past the quarry, uphill of the highway. It is almost completely obscured by the trees. The west DEC (now gone) is visible as a dot just at the far edge of the quarry entrance. This view is from near the Base End Station.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/16.jpg"
+  },
+  "k_gibson_oct24_10": {
+   "file": "kadiak/gibson/gibson_oct24_10.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "1998 Searchlight bunker.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/oct24_10.jpg"
+  },
+  "k_gibson_12": {
+   "file": "kadiak/gibson/gibson_12.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "1998 West Distant Electrical Control bunker. Was destroyed 1999.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/12.jpg"
+  },
+  "k_gibson_nov01_01": {
+   "file": "kadiak/gibson/gibson_nov01_01.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "1998 East DEC.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/gibson/nov01_01.jpg"
+  },
+  "k_gibson_qap99a": {
+   "file": "kadiak/gibson/gibson_qap99a.webp",
+   "w": 612,
+   "h": 480,
+   "caption": "June 1999 highway work by Quality Asphalt Paving photo by Stevens",
+   "credit": "Photo: Joe Stevens, June 1999 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/gibson/qap99a.jpg"
+  }
+ },
+ "features": {
+  "milq_0": [
+   "k_gibson_oct24_01",
+   "k_gibson_oct24_02",
+   "k_gibson_21",
+   "k_gibson_18",
+   "k_gibson_oct24_03",
+   "k_gibson_dmc_base",
+   "k_gibson_img025",
+   "k_gibson_16",
+   "k_gibson_oct24_10",
+   "k_gibson_12",
+   "k_gibson_nov01_01",
+   "k_gibson_qap99a"
+  ]
+ }
+}

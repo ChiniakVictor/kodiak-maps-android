@@ -1,0 +1,114 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (Chiniak USCG 1945)",
+  "label": "kadiak.org — Chiniak USCG 1945 (Lloyd Johnson)",
+  "url": "https://www.kadiak.org/chiniak/cg.html",
+  "note": "Photos courtesy Lloyd Johnson (USCG Chiniak 1945–46) and others, via kadiak.org (Joe Stevens)."
+ },
+ "photos": {
+  "cg1": {
+   "file": "chiniak/chiniak_mar21_21.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Foundation of the HF DF (HuffDuff) that Lloyd operated in 1945.",
+   "credit": "Photo: Curt Law, AL7LQ, 21 March 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/mar21_21.jpg"
+  },
+  "cg3": {
+   "file": "chiniak/chiniak_lloyd_1.webp",
+   "w": 327,
+   "h": 300,
+   "caption": "Low Frequency DF building located about a mile from the HF DF. (H-12 on map below)",
+   "credit": "Photo courtesy Lloyd Johnson (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lloyd_1.jpg"
+  },
+  "cg4": {
+   "file": "chiniak/chiniak_lloyd_2.webp",
+   "w": 270,
+   "h": 421,
+   "caption": "Bob Perone and Joe Ropell circa 1947.",
+   "credit": "Photo courtesy Lloyd Johnson (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lloyd_2.jpg"
+  },
+  "cg5": {
+   "file": "chiniak/chiniak_lloyd_3.webp",
+   "w": 589,
+   "h": 374,
+   "caption": "Quonset Hut #2 circa 1947, located near Chiniak Lagoon, about where the Navy had antenna DW-2. (I-14 on map below)",
+   "credit": "Photo courtesy Lloyd Johnson (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lloyd_3.jpg"
+  },
+  "cg6": {
+   "file": "chiniak/chiniak_lloyd_4.webp",
+   "w": 800,
+   "h": 683,
+   "caption": "February 1947 photo mosaic.",
+   "credit": "Photo courtesy Lloyd Johnson (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lloyd_4.jpg"
+  },
+  "cg9": {
+   "file": "chiniak/chiniak_lfdf1946.webp",
+   "w": 189,
+   "h": 289,
+   "caption": "Lloyd Johnson at the LF DF receiver in 1946.",
+   "credit": "Photo courtesy Lloyd Johnson (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lfdf1946.jpg"
+  },
+  "cgmap4": {
+   "file": "chiniak/maps_chinmap4.webp",
+   "w": 652,
+   "h": 608,
+   "caption": "Map circa 1960",
+   "credit": "Map: U.S. Navy Cape Chiniak sheet, c. 1960 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/maps/chinmap4.jpg"
+  },
+  "cgdab1": {
+   "file": "chiniak/chiniak_lloyd_dab_3.webp",
+   "w": 580,
+   "h": 339,
+   "caption": "[DAB-3 HF DF equipment. Page text: 'Attached pictures are courtesy Ferman Williams and Dennis Dowling, both veterans of the WW2 USCG Alaska & Aleutian DF Net.']",
+   "credit": "Courtesy Ferman Williams and Dennis Dowling, via Lloyd Johnson (kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lloyd_dab-3.jpg"
+  },
+  "cgdab2": {
+   "file": "chiniak/chiniak_lloyd_hfdf.webp",
+   "w": 450,
+   "h": 313,
+   "caption": "[DAB-3 HF DF equipment. Page text: 'Attached pictures are courtesy Ferman Williams and Dennis Dowling, both veterans of the WW2 USCG Alaska & Aleutian DF Net.']",
+   "credit": "Courtesy Ferman Williams and Dennis Dowling, via Lloyd Johnson (kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lloyd_hfdf.jpg"
+  },
+  "cgdab3": {
+   "file": "chiniak/chiniak_lloyd_dabrcvr.webp",
+   "w": 314,
+   "h": 192,
+   "caption": "[DAB-3 HF DF equipment. Page text: 'Attached pictures are courtesy Ferman Williams and Dennis Dowling, both veterans of the WW2 USCG Alaska & Aleutian DF Net.']",
+   "credit": "Courtesy Ferman Williams and Dennis Dowling, via Lloyd Johnson (kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/lloyd_dabrcvr.jpg"
+  }
+ },
+ "features": {
+  "chm_hfdf": [
+   "cg1",
+   "cg4",
+   "cg6",
+   "cgmap4",
+   "cgdab1",
+   "cgdab2",
+   "cgdab3"
+  ],
+  "chm_lfdf": [
+   "cg3",
+   "cg9",
+   "cgmap4"
+  ],
+  "chm_quonJ": [
+   "cg4",
+   "cg5"
+  ],
+  "chm_q2": [
+   "cg5",
+   "cgmap4"
+  ]
+ }
+}

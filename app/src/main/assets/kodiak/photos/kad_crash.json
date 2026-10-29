@@ -1,0 +1,86 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Crashes and Wrecks",
+  "label": "kadiak.org — Crashes and Wrecks",
+  "url": "https://www.kadiak.org/crash/index.html",
+  "note": "P2V-7 crash, 10 January 1963, north side of Old Womens Mountain (kadiak.org). Other wrecks on the page are not placed."
+ },
+ "photos": {
+  "k_crash_p2v_7": {
+   "file": "kadiak/crash/crash_p2v_7.webp",
+   "w": 400,
+   "h": 183,
+   "caption": "[P2V-7 crash site, January 10, 1963. Page text: 'It is located on the north side of Old Womens Mountain just above the Devil's Creek gulch behind Aviation Hill housing'.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/crash/p2v-7.jpg"
+  },
+  "k_crash_may08_11": {
+   "file": "kadiak/crash/crash_may08_11.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[P2V-7 wreckage, digital photo taken May 8, 2001.]",
+   "credit": "Photo: Curt Law, 8 May 2001 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/crash/may08_11.jpg"
+  },
+  "k_crash_may08_13": {
+   "file": "kadiak/crash/crash_may08_13.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[P2V-7 wreckage, digital photo taken May 8, 2001.]",
+   "credit": "Photo: Curt Law, 8 May 2001 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/crash/may08_13.jpg"
+  },
+  "k_crash_may08_15": {
+   "file": "kadiak/crash/crash_may08_15.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[P2V-7 wreckage, digital photo taken May 8, 2001.]",
+   "credit": "Photo: Curt Law, 8 May 2001 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/crash/may08_15.jpg"
+  },
+  "k_crash_may08_19": {
+   "file": "kadiak/crash/crash_may08_19.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[P2V-7 wreckage, digital photo taken May 8, 2001.]",
+   "credit": "Photo: Curt Law, 8 May 2001 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/crash/may08_19.jpg"
+  },
+  "k_crash_may08_21": {
+   "file": "kadiak/crash/crash_may08_21.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[P2V-7 wreckage, digital photo taken May 8, 2001.]",
+   "credit": "Photo: Curt Law, 8 May 2001 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/crash/may08_21.jpg"
+  },
+  "k_crash_may08_25": {
+   "file": "kadiak/crash/crash_may08_25.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[P2V-7 wreckage, digital photo taken May 8, 2001.]",
+   "credit": "Photo: Curt Law, 8 May 2001 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/crash/may08_25.jpg"
+  },
+  "k_crash_may08_27": {
+   "file": "kadiak/crash/crash_may08_27.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Some equipment nomenclature tags still readable: TF-158/APS-20B, TG-8A/APA-69 serial 73CPK, AS-407/APS-20B, nosewheel door P2V-7 serial A28 226 p/n 517486.",
+   "credit": "Photo: Curt Law, 8 May 2001 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/crash/may08_27.jpg"
+  }
+ },
+ "features": {
+  "milq_6": [
+   "k_crash_p2v_7",
+   "k_crash_may08_11",
+   "k_crash_may08_13",
+   "k_crash_may08_15",
+   "k_crash_may08_19",
+   "k_crash_may08_21",
+   "k_crash_may08_25",
+   "k_crash_may08_27"
+  ]
+ }
+}

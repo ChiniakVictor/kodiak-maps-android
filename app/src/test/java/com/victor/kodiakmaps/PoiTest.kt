@@ -14,7 +14,7 @@ class PoiTest {
     @Test fun layersAndCounts() {
         val by = fs.groupingBy { it.k }.eachCount()
         assertEquals(42, by["poi_food"]); assertEquals(17, by["poi_travel"]); assertEquals(10, by["poi_school"])
-        assertEquals(8, by["poi_zone"]); assertEquals(154 + Hist1965Test.COUNTS.values.sum(), by["poi_mil"]); assertEquals(1, by["poi_comm"])   // v1.5.3: poi_mil + 1965 Navy sheets
+        assertEquals(8, by["poi_zone"]); assertEquals(MilHistTest.MIL_NOW + Hist1965Test.COUNTS.values.sum(), by["poi_mil"]); assertEquals(1, by["poi_comm"])   // v1.5.3: poi_mil + 1965 Navy sheets
         val food = fs.filter { it.k == "poi_food" }.groupingBy { it.props.optString("cat") }.eachCount()
         assertEquals(30, food["prepared"]); assertEquals(12, food["grocery"])
     }

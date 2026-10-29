@@ -1,0 +1,68 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (World War II Plotting Bunker at Chiniak)",
+  "label": "kadiak.org — WWII Plotting Bunker at Chiniak",
+  "url": "https://www.kadiak.org/chiniak/command.html",
+  "note": "Photos and captions from kadiak.org (Kodiak Military History Museum site). Text by Joe Stevens; photos by Joe Stevens and Curt Law."
+ },
+ "photos": {
+  "cmd2": {
+   "file": "cmdbunker/cmd2.webp",
+   "w": 432,
+   "h": 332,
+   "caption": "2 - This interior paneled door had apparently been on the switchboard room.",
+   "credit": "Photo: Joe Stevens / Curt Law, 31 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/aug02_02.jpg"
+  },
+  "cmd3": {
+   "file": "cmdbunker/cmd3.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "3 - Even though the details of this command bunker are somewhat different from the one at Abercrombie, the entrance doors are similar with two entrances. One is larger and could have been just for equipment movement. The larger door is single thick. There are air vents within the walls just outside the large door.",
+   "credit": "Photo: Joe Stevens / Curt Law, 31 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/aug02_03.jpg"
+  },
+  "cmd4": {
+   "file": "cmdbunker/cmd4.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "4 - The smaller of the two entrances has a reefer type latch on the inside of the door.",
+   "credit": "Photo: Joe Stevens / Curt Law, 31 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/aug02_04.jpg"
+  },
+  "cmd5": {
+   "file": "cmdbunker/cmd5.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "5 - The outer door is very heavy steel as if to resist bomb blasts. The walls of the main rooms are more than four feet thick. This view is from the outside of the bunker. This bunker is underground and is overgrown. It is hard to find. There is evidence of frequent campfires just outside.",
+   "credit": "Photo: Joe Stevens / Curt Law, 31 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/aug02_05.jpg"
+  },
+  "cmd7": {
+   "file": "cmdbunker/cmd7.webp",
+   "w": 480,
+   "h": 336,
+   "caption": "7 - Even when you get close it's hard to see this bunker.",
+   "credit": "Photo: Joe Stevens / Curt Law (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinbnk2.jpg"
+  },
+  "cmd8": {
+   "file": "cmdbunker/cmd8.webp",
+   "w": 650,
+   "h": 608,
+   "caption": "8 - Map of part of Ft. J. H. Smith showing the location of the plotting room.",
+   "credit": "Map: kadiak.org (U.S. Navy Chiniak sheet, plotting room circled in red)",
+   "orig": "https://www.kadiak.org/maps/chinma_3.jpg"
+  }
+ },
+ "features": {
+  "milh_plot_b1": [
+   "cmd2",
+   "cmd3",
+   "cmd4",
+   "cmd5",
+   "cmd7",
+   "cmd8"
+  ]
+ }
+}

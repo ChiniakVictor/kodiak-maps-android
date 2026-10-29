@@ -1,0 +1,293 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (Air Force Tracking Station at Chiniak)",
+  "url": "https://www.kadiak.org/af_track/af.html",
+  "note": "Photos and captions from kadiak.org (Kodiak Military History Museum site). Captions in [brackets] are short descriptions added by Kodiak Maps where the page has none.",
+  "label": "kadiak.org — Air Force Tracking Station at Chiniak"
+ },
+ "photos": {
+  "first_team": {
+   "file": "aftrack/first_team.webp",
+   "w": 1000,
+   "h": 800,
+   "caption": "First satellite tracking team, September 1959. Back row: Don Jacob, Dale Thompson, Dixie McGehee, Joe Weitzell, Bobby Smith, Jim Warren, Marion Reed, Jim Swarthout. First row: Floyd (Smitty) Smith, Dick Sewell, Frank Lopez, Bob Martin, Stan Shoup, Hank Ciano, Stan Frisby, Jerry Brookman. Kneeling: Bill Emerson, Cliff Spencer, Lee Louffbrow, Bob Grilli, Lou Espinoza, Gene Banks, Reuben Dominquez, Bill farley.",
+   "credit": "Image courtesy of Bob Grill, Houston Texas, 2015 May (via kadiak.org)",
+   "orig": "https://www.kadiak.org/af_track/first_team.jpg"
+  },
+  "gate1998": {
+   "file": "aftrack/gate1998.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "1 - Entrance gate from the main \"highway\" (1998).",
+   "credit": "kadiak.org — 1998 photo",
+   "orig": "https://www.kadiak.org/af_track/1.jpg"
+  },
+  "track1": {
+   "file": "aftrack/track1.webp",
+   "w": 392,
+   "h": 266,
+   "caption": "1 - Entrance gate from the main \"highway\" (1984).",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track1.jpg"
+  },
+  "track2": {
+   "file": "aftrack/track2.webp",
+   "w": 392,
+   "h": 272,
+   "caption": "2 - Main building on the left, graveyard shift bunks with prelort radar behind. The prelort antenna dome was rigid. (2000 note: The antenna may survive behind the Chiniak post office and the dome at the Gibson Cove highway shop.)",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track2.jpg"
+  },
+  "track3": {
+   "file": "aftrack/track3.webp",
+   "w": 382,
+   "h": 262,
+   "caption": "3 - View from T hill back toward main facility. The lake on the left was the source of drinking water.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track3.jpg"
+  },
+  "track4": {
+   "file": "aftrack/track4.webp",
+   "w": 388,
+   "h": 266,
+   "caption": "4 - Helix antenna mount and day crew bunks. The dome for the helix antenna was inflated. Bob Hornel kept it blown up.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track4.jpg"
+  },
+  "track5": {
+   "file": "aftrack/track5.webp",
+   "w": 392,
+   "h": 266,
+   "caption": "5 - Substation, water tanks, helix antenna mount \"C\".",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track5.jpg"
+  },
+  "track6": {
+   "file": "aftrack/track6.webp",
+   "w": 392,
+   "h": 266,
+   "caption": "6 - This garage building was built as the facility was being closed. It was never used by the Air Force but was used during 1998 as the headquarters for a logging operation. The supply building is just visible on the left along with a corner of the main building.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track6.jpg"
+  },
+  "track7": {
+   "file": "aftrack/track7.webp",
+   "w": 392,
+   "h": 268,
+   "caption": "7 - Bore sight tower. Aluminum scaffolding with stairs. This tower was used with surveying instruments to align antennas.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track7.jpg"
+  },
+  "comp1998": {
+   "file": "aftrack/comp1998.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "8 - Composite building (1998).",
+   "credit": "kadiak.org — 1998 photo",
+   "orig": "https://www.kadiak.org/af_track/8.jpg"
+  },
+  "track8": {
+   "file": "aftrack/track8.webp",
+   "w": 392,
+   "h": 266,
+   "caption": "8 - Composite building. Roof area with vents is the chow hall, just beyond is a blank flat roof over the secure area. Beyond that are the eight muffler exhaust stacks of the main power plant generators. On the right is the Prelort tower with missing antenna.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track8.jpg"
+  },
+  "track9": {
+   "file": "aftrack/track9.webp",
+   "w": 720,
+   "h": 570,
+   "caption": "9 - Topo map detail of site.",
+   "credit": "kadiak.org — map detail",
+   "orig": "https://www.kadiak.org/af_track/track9.jpg"
+  },
+  "secure1998": {
+   "file": "aftrack/secure1998.webp",
+   "w": 497,
+   "h": 446,
+   "caption": "10 - 1998 photo of telephone equipment in the secure area. The roof has been gone for several years.",
+   "credit": "kadiak.org — 1998 photo",
+   "orig": "https://www.kadiak.org/af_track/ln927_01.jpg"
+  },
+  "track11": {
+   "file": "aftrack/track11.webp",
+   "w": 686,
+   "h": 976,
+   "caption": "11 - Bore-sight tower and housing trailers from antenna \"D\". Microwave dish was Lenkurt 74 radio to Pillar Mt. Lenkurt 45 mux was used.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track11.jpg"
+  },
+  "track12": {
+   "file": "aftrack/track12.webp",
+   "w": 686,
+   "h": 976,
+   "caption": "12 - Close-up of bore-sight tower with helix antenna.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track12.jpg"
+  },
+  "track13": {
+   "file": "aftrack/track13.webp",
+   "w": 976,
+   "h": 686,
+   "caption": "13 - Generator room showing 8 exhaust pipes and fiberglass radome.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track13.jpg"
+  },
+  "track14": {
+   "file": "aftrack/track14.webp",
+   "w": 976,
+   "h": 686,
+   "caption": "14 - Back of the composite building.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track14.jpg"
+  },
+  "track15": {
+   "file": "aftrack/track15.webp",
+   "w": 686,
+   "h": 976,
+   "caption": "15 - USCG 400 MHz relay site. \"T\" hill portion of AF station. In 1984 this site had a diesel generator running full-time to power the radio relay from Kodiak to Narrow Cape LorSta. In 2000, the tower is still standing but the building is gone. The tower was removed sometime around 2002.",
+   "credit": "kadiak.org — January 1984 photo",
+   "orig": "https://www.kadiak.org/af_track/track15.jpg"
+  },
+  "vfw24": {
+   "file": "aftrack/vfw24.webp",
+   "w": 681,
+   "h": 544,
+   "caption": "[Undated aerial view of the station — no caption on the page]",
+   "credit": "VFW collection, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/../vfw/pic24.jpg"
+  },
+  "vfw25": {
+   "file": "aftrack/vfw25.webp",
+   "w": 681,
+   "h": 540,
+   "caption": "[Undated aerial view of the station area — no caption on the page]",
+   "credit": "VFW collection, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/../vfw/pic25.jpg"
+  },
+  "aerial1": {
+   "file": "aftrack/aerial1.webp",
+   "w": 1000,
+   "h": 796,
+   "caption": "[Undated colour aerial view of the station in snow — no caption on the page]",
+   "credit": "Bill Beaty estate, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/aerial_color1.jpg"
+  },
+  "aerial1d": {
+   "file": "aftrack/aerial1d.webp",
+   "w": 1000,
+   "h": 522,
+   "caption": "[Detail of the colour aerial view above]",
+   "credit": "Bill Beaty estate, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/aerial_color1%2B.jpg"
+  },
+  "aerial2": {
+   "file": "aftrack/aerial2.webp",
+   "w": 1000,
+   "h": 785,
+   "caption": "[Undated colour aerial view of the station in snow — no caption on the page]",
+   "credit": "Bill Beaty estate, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/aerial_color2.jpg"
+  },
+  "aerial2d": {
+   "file": "aftrack/aerial2d.webp",
+   "w": 1000,
+   "h": 509,
+   "caption": "[Detail of the colour aerial view above]",
+   "credit": "Bill Beaty estate, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/aerial_color2%2B.jpg"
+  },
+  "early_l": {
+   "file": "aftrack/early_l.webp",
+   "w": 1000,
+   "h": 690,
+   "caption": "[Undated early overall view of the tracking station, left half — no caption on the page]",
+   "credit": "Bill Beaty estate, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/early_ts_overall_left.jpg"
+  },
+  "early_r": {
+   "file": "aftrack/early_r.webp",
+   "w": 1000,
+   "h": 684,
+   "caption": "[Undated early overall view of the tracking station, right half — no caption on the page]",
+   "credit": "Bill Beaty estate, via kadiak.org",
+   "orig": "https://www.kadiak.org/af_track/early_ts_overall_right.jpg"
+  }
+ },
+ "features": {
+  "mil2": [
+   "first_team",
+   "gate1998",
+   "track1",
+   "track2",
+   "track3",
+   "track4",
+   "track5",
+   "track6",
+   "track7",
+   "comp1998",
+   "track8",
+   "track9",
+   "secure1998",
+   "track11",
+   "track12",
+   "track13",
+   "track14",
+   "track15",
+   "vfw24",
+   "vfw25",
+   "aerial1",
+   "aerial1d",
+   "aerial2",
+   "aerial2d",
+   "early_l",
+   "early_r"
+  ],
+  "milh_13": [
+   "track2",
+   "track8",
+   "comp1998",
+   "secure1998",
+   "track13",
+   "track14",
+   "track9"
+  ],
+  "milh_14": [
+   "track11",
+   "track9"
+  ],
+  "milh_15": [
+   "track5",
+   "track4",
+   "track9"
+  ],
+  "milh_17": [
+   "track5",
+   "track9"
+  ],
+  "milh_16": [
+   "track5",
+   "track9"
+  ],
+  "milh_aft_garage": [
+   "track6"
+  ],
+  "milh_61": [
+   "track9",
+   "vfw24",
+   "vfw25",
+   "aerial1",
+   "aerial2",
+   "early_l",
+   "early_r",
+   "track3",
+   "track15"
+  ],
+  "milh_25": [
+   "gate1998",
+   "track1",
+   "track9"
+  ]
+ }
+}

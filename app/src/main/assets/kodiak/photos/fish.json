@@ -1,0 +1,343 @@
+{
+ "source": {
+  "title": "Fishing spot photos",
+  "url": "https://commons.wikimedia.org/",
+  "note": "Per-photo credit, licence and link shown with each photo. EXIF/GPS stripped.",
+  "label": "Wikimedia Commons",
+  "heading": "Photos"
+ },
+ "photos": {
+  "c001": {
+   "file": "places/c001_fishing_the_mouth_35689300301.webp",
+   "w": 1280,
+   "h": 854,
+   "caption": "A lone angler watches for early sockeye at the mouth of the Buskin River",
+   "credit": "Photo: Lisa Hupp/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fishing_the_mouth_(35689300301).jpg"
+  },
+  "c004": {
+   "file": "places/c004_buskin_river_8431812030.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "Buskin River",
+   "credit": "Photo: USFWS (Salmon Camp participant) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Buskin_River_(8431812030).jpg"
+  },
+  "c005": {
+   "file": "places/c005_silver_scales_35821584865.webp",
+   "w": 1280,
+   "h": 853,
+   "caption": "A fresh salmon just in from the ocean, Buskin River",
+   "credit": "Photo: Lisa Hupp/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Silver_scales_(35821584865).jpg"
+  },
+  "c007": {
+   "file": "places/c007_buskin_lake_30161061411.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "Buskin Lake",
+   "credit": "Photo: naql",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Buskin_Lake_(30161061411).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c008": {
+   "file": "places/c008_looking_for_crayfish_35432179850.webp",
+   "w": 1280,
+   "h": 853,
+   "caption": "Turning over rocks in the shallows of Buskin Lake to check for invasive signal crayfish",
+   "credit": "Photo: Lisa Hupp/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Looking_for_crayfish_(35432179850).jpg"
+  },
+  "c009": {
+   "file": "places/c009_lake_monitoring_35010719893.webp",
+   "w": 1280,
+   "h": 853,
+   "caption": "A Sun'aq Tribe biologist monitoring Buskin Lake for invasive species",
+   "credit": "Photo: Lisa Hupp/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Lake_monitoring_(35010719893).jpg"
+  },
+  "c010": {
+   "file": "places/c010_1975_karluk_river_8448205241.webp",
+   "w": 1176,
+   "h": 1069,
+   "caption": "Karluk River, 1975 (Kodiak Refuge annual report)",
+   "credit": "Photo: USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:(1975)_Karluk_River_(8448205241).jpg"
+  },
+  "c011": {
+   "file": "places/c011_fmib_34764_lower_karluk_river_showing_mo.webp",
+   "w": 676,
+   "h": 484,
+   "caption": "Lower Karluk River, showing the mouth in the distance (historic)",
+   "credit": "Photo: Ward T. Bower (U.S. Bureau of Fisheries) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:FMIB_34764_Lower_Karluk_River,_Showing_Mouth_in_Distance.jpeg"
+  },
+  "c012": {
+   "file": "places/c012_fmib_34236_karluk_river_source_karluk_la.webp",
+   "w": 1058,
+   "h": 739,
+   "caption": "Karluk River source, Karluk Lake in the foreground (historic)",
+   "credit": "Photo: Tarleton H. Bean (U.S. Fish Commission) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:FMIB_34236_Karluk_River_Source-_Karluk_Lake_in_Foreground.jpeg"
+  },
+  "c013": {
+   "file": "places/c013_fmib_34203_seining_salmon_in_karluk_rive.webp",
+   "w": 1077,
+   "h": 730,
+   "caption": "Seining salmon in the Karluk River (historic)",
+   "credit": "Photo: Tarleton H. Bean (U.S. Fish Commission) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:FMIB_34203_Seining_Salmon_in_Karluk_River.jpeg"
+  },
+  "c016": {
+   "file": "places/c016_dog_salmon_falls_17623887923.webp",
+   "w": 1280,
+   "h": 832,
+   "caption": "Dog Salmon Falls",
+   "credit": "Photo: Lisa Hupp/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Dog_Salmon_Falls_(17623887923).jpg"
+  },
+  "c017": {
+   "file": "places/c017_dog_salmon_river_18056705268.webp",
+   "w": 1280,
+   "h": 854,
+   "caption": "Dog Salmon River",
+   "credit": "Photo: Lisa Hupp/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Dog_Salmon_River_(18056705268).jpg"
+  },
+  "c018": {
+   "file": "places/c018_dog_salmon_river_in_the_kodiak_refuge_51.webp",
+   "w": 1280,
+   "h": 852,
+   "caption": "A fork of the Dog Salmon River in the Kodiak Refuge",
+   "credit": "Photo: Steve Hillebrand/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Dog_Salmon_River_in_the_Kodiak_Refuge_(51123922162).jpg"
+  },
+  "c019": {
+   "file": "places/c019_frazer_lake_7376790450.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "Fireweed at Frazer Lake",
+   "credit": "Photo: USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Frazer_Lake_(7376790450).jpg"
+  },
+  "c020": {
+   "file": "places/c020_frazer_lake_fish_ladder_and_falls.webp",
+   "w": 1280,
+   "h": 831,
+   "caption": "Frazer Lake fish ladder and falls",
+   "credit": "Photo: William Troyer/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Frazer_lake_fish_ladder_and_falls.jpg"
+  },
+  "c021": {
+   "file": "places/c021_1979_dog_salmon_creek_8449289682.webp",
+   "w": 1280,
+   "h": 875,
+   "caption": "Fish ladder on Dog Salmon Creek from the air, 1979 (Kodiak Refuge annual report)",
+   "credit": "Photo: USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:(1979)_Dog_Salmon_Creek_(8449289682).jpg"
+  },
+  "c022": {
+   "file": "places/c022_fishing_for_sockeye_8385103488.webp",
+   "w": 1280,
+   "h": 493,
+   "caption": "A Kodiak brown bear with a sockeye on the Dog Salmon River",
+   "credit": "Photo: Lisa Hupp/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fishing_for_Sockeye_(8385103488).jpg"
+  },
+  "c023": {
+   "file": "places/c023_1979_ayakulik_river_8448204965.webp",
+   "w": 1280,
+   "h": 1015,
+   "caption": "Ayakulik River flats from the air, 1979 (Kodiak Refuge annual report)",
+   "credit": "Photo: USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:(1979)_Ayakulik_River_(8448204965).jpg"
+  },
+  "c024": {
+   "file": "places/c024_fmib_34132_cascades_in_afognak_river.webp",
+   "w": 721,
+   "h": 515,
+   "caption": "Cascades in the Afognak River (historic drawing)",
+   "credit": "Photo: Tarleton H. Bean (U.S. Fish Commission) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:FMIB_34132_Cascades_in_Afognak_River.jpeg"
+  },
+  "c025": {
+   "file": "places/c025_fmib_35453_salmon_weir_afognak_river.webp",
+   "w": 659,
+   "h": 413,
+   "caption": "Salmon weir on the Afognak River (historic)",
+   "credit": "Photo: Ward T. Bower (U.S. Bureau of Fisheries) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:FMIB_35453_Salmon_Weir,_Afognak_River.jpeg"
+  },
+  "c026": {
+   "file": "places/c026_210713_pasagshak_51311481176.webp",
+   "w": 1280,
+   "h": 693,
+   "caption": "Fishing the Pasagshak River, July 2021",
+   "credit": "Photo: James Brooks",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:210713_Pasagshak_(51311481176).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c028": {
+   "file": "places/c028_pink_salmon_kodiak_9666803092.webp",
+   "w": 1280,
+   "h": 971,
+   "caption": "Pink (humpy) salmon migrating up Sargent Creek",
+   "credit": "Photo: K. Mueller/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Pink_salmon,_Kodiak_(9666803092).jpg"
+  },
+  "c029": {
+   "file": "places/c029_chiniak_bay_kodiak_nwr.webp",
+   "w": 1050,
+   "h": 706,
+   "caption": "Chiniak Bay",
+   "credit": "Photo: David Menke/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Chiniak_Bay_Kodiak_NWR.jpg"
+  },
+  "c030": {
+   "file": "places/c030_emperor_geese_kodiak_nwr.webp",
+   "w": 1280,
+   "h": 841,
+   "caption": "Emperor geese on the rocks of Chiniak Bay",
+   "credit": "Photo: David Menke/USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Emperor_Geese_Kodiak_NWR.jpg"
+  },
+  "c032": {
+   "file": "places/c032_st_paul_harbor_kodiak.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "St. Paul Harbor",
+   "credit": "Photo: NancyHeise (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:St_Paul_Harbor_Kodiak.JPG"
+  },
+  "c033": {
+   "file": "places/c033_kodiak_alaska_28771197558.webp",
+   "w": 1280,
+   "h": 854,
+   "caption": "Fishing vessels in St. Paul Harbor, May 2018",
+   "credit": "Photo: Dennis Schroeder/NREL (U.S. Dept. of Energy) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Kodiak,_Alaska_(28771197558).jpg"
+  },
+  "c034": {
+   "file": "places/c034_fshing_vessel_from_above.webp",
+   "w": 847,
+   "h": 1280,
+   "caption": "A fishing vessel and gear from above, St. Paul Harbor",
+   "credit": "Photo: Charlie Ess (NOAA Photo Library) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fshing_vessel_from_above.jpg"
+  },
+  "c037": {
+   "file": "places/c037_dredging_of_st_hermans_harbor_in_kodiak_.webp",
+   "w": 800,
+   "h": 600,
+   "caption": "Dredging St. Herman Harbor",
+   "credit": "Photo: U.S. Army Corps of Engineers",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Dredging_of_St._Hermans_Harbor_in_Kodiak_(10019360253).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "v_roslyn": {
+   "file": "places/v_roslyn.webp",
+   "w": 1280,
+   "h": 720,
+   "caption": "Looking over Roslyn beach",
+   "credit": "Photo: Victor",
+   "label": "kodiakking.com",
+   "url": "https://kodiakking.com/pictures/"
+  },
+  "v_dogbay": {
+   "file": "places/v_dogbay.webp",
+   "w": 1280,
+   "h": 956,
+   "caption": "Kayaking by Dog Bay (St. Herman Harbor)",
+   "credit": "Photo: Victor",
+   "label": "kodiakking.com",
+   "url": "https://kodiakking.com/pictures/"
+  }
+ },
+ "features": {
+  "fish:Buskin River": [
+   "c001",
+   "c004",
+   "c005"
+  ],
+  "fish:Buskin Lake": [
+   "c007",
+   "c008",
+   "c009"
+  ],
+  "fish:Karluk River": [
+   "c010",
+   "c011",
+   "c012",
+   "c013"
+  ],
+  "fish:Dog Salmon River/Frazer Lake drainage": [
+   "c016",
+   "c017",
+   "c018",
+   "c019",
+   "c020",
+   "c021",
+   "c022"
+  ],
+  "fish:Ayakulik River": [
+   "c023"
+  ],
+  "fish:Afognak River": [
+   "c024",
+   "c025"
+  ],
+  "fish:Pasagshak River": [
+   "c026"
+  ],
+  "fish:Sargent Creek": [
+   "c028"
+  ],
+  "fish:Chiniak Bay": [
+   "c029",
+   "c030"
+  ],
+  "fish:St Paul Harbor": [
+   "c032",
+   "c033",
+   "c034"
+  ],
+  "fish:St Herman Harbor": [
+   "v_dogbay",
+   "c037"
+  ],
+  "fish:Roslyn Creek": [
+   "v_roslyn"
+  ]
+ }
+}

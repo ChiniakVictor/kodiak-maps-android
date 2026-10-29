@@ -1,0 +1,41 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (Isador Island, War Reserve Magazine)",
+  "label": "kadiak.org — Isador Island",
+  "url": "https://www.kadiak.org/chiniak/isador.html",
+  "note": "Photos by Joe Stevens (4 July 1999), via kadiak.org."
+ },
+ "photos": {
+  "isador6": {
+   "file": "chiniak/chiniak_isador6.webp",
+   "w": 347,
+   "h": 480,
+   "caption": "[Isador Island, no caption on the page. Page text: 'The only structure is the underground War Reserve Magazine. It is similar in floor plan to the one at Ft. Abercrombie except it only has one entrance.']",
+   "credit": "Photo: Joe Stevens, 4 July 1999 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/isador6.jpg"
+  },
+  "isador2": {
+   "file": "chiniak/chiniak_isador2.webp",
+   "w": 640,
+   "h": 462,
+   "caption": "[Isador Island, no caption on the page. Page text: 'The only structure is the underground War Reserve Magazine. It is similar in floor plan to the one at Ft. Abercrombie except it only has one entrance.']",
+   "credit": "Photo: Joe Stevens, 4 July 1999 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/isador2.jpg"
+  },
+  "isador4": {
+   "file": "chiniak/chiniak_isador4.webp",
+   "w": 640,
+   "h": 462,
+   "caption": "[Isador Island, no caption on the page. Page text: 'The only structure is the underground War Reserve Magazine. It is similar in floor plan to the one at Ft. Abercrombie except it only has one entrance.']",
+   "credit": "Photo: Joe Stevens, 4 July 1999 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/isador4.jpg"
+  }
+ },
+ "features": {
+  "milh_5": [
+   "isador6",
+   "isador2",
+   "isador4"
+  ]
+ }
+}

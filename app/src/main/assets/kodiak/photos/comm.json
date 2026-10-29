@@ -1,0 +1,25 @@
+{
+ "source": {
+  "title": "Library photo",
+  "url": "https://commons.wikimedia.org/",
+  "note": "Per-photo credit, licence and link shown with each photo. EXIF/GPS stripped.",
+  "label": "Wikimedia Commons",
+  "heading": "Photos"
+ },
+ "photos": {
+  "v_library": {
+   "file": "places/v_library.webp",
+   "w": 1280,
+   "h": 210,
+   "caption": "Chiniak Public Library sign, Nov 2024",
+   "credit": "Photo: Victor",
+   "label": "chiniak.org",
+   "url": "https://chiniak.org/"
+  }
+ },
+ "features": {
+  "comm0": [
+   "v_library"
+  ]
+ }
+}

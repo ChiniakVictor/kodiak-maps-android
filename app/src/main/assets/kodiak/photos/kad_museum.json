@@ -1,0 +1,50 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History Museum",
+  "label": "kadiak.org — Military History Museum",
+  "url": "https://www.kadiak.org/museum/museum.html",
+  "note": "Kodiak Military History Museum, in the Ready Ammunition bunker at Miller Point (kadiak.org, Joe Stevens)."
+ },
+ "photos": {
+  "k_maps_museum_google_earth2": {
+   "file": "kadiak/museum/maps_museum_google_earth2.webp",
+   "w": 888,
+   "h": 743,
+   "caption": "[Google Earth view of Miller Point. Page text: 'The Kodiak Military History Museum is located in the Ready Ammunition bunker at Miller Point in Fort Abercrombie.']",
+   "credit": "Google Earth image via kadiak.org",
+   "orig": "https://www.kadiak.org/maps/museum-google-earth2.jpg"
+  },
+  "k_museum_baudot": {
+   "file": "kadiak/museum/museum_baudot.webp",
+   "w": 936,
+   "h": 361,
+   "caption": "[Museum exhibit. Listed beside it on the page: 'Typewriters Working Strowger telephone system.']",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/museum/baudot.jpg"
+  },
+  "k_museum_wing": {
+   "file": "kadiak/museum/museum_wing.webp",
+   "w": 640,
+   "h": 421,
+   "caption": "P-40 wing piece",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/museum/wing.jpg"
+  },
+  "k_museum_15apr2010_3971": {
+   "file": "kadiak/museum/museum_15apr2010_3971.webp",
+   "w": 640,
+   "h": 853,
+   "caption": "Automatic Electric Company Strowger telephone system being installed Spring 2010. Three digit dialing to duplicate what the Kodiak Navy had during WWII. Equipped with 10 lines for demonstration.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/museum/15apr2010_3971.jpg"
+  }
+ },
+ "features": {
+  "milq_2": [
+   "k_maps_museum_google_earth2",
+   "k_museum_baudot",
+   "k_museum_wing",
+   "k_museum_15apr2010_3971"
+  ]
+ }
+}

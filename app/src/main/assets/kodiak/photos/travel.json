@@ -1,0 +1,163 @@
+{
+ "source": {
+  "title": "Harbor and travel photos",
+  "url": "https://commons.wikimedia.org/",
+  "note": "Per-photo credit, licence and link shown with each photo. EXIF/GPS stripped.",
+  "label": "Wikimedia Commons",
+  "heading": "Photos"
+ },
+ "photos": {
+  "c032": {
+   "file": "places/c032_st_paul_harbor_kodiak.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "St. Paul Harbor",
+   "credit": "Photo: NancyHeise (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:St_Paul_Harbor_Kodiak.JPG"
+  },
+  "c033": {
+   "file": "places/c033_kodiak_alaska_28771197558.webp",
+   "w": 1280,
+   "h": 854,
+   "caption": "Fishing vessels in St. Paul Harbor, May 2018",
+   "credit": "Photo: Dennis Schroeder/NREL (U.S. Dept. of Energy) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Kodiak,_Alaska_(28771197558).jpg"
+  },
+  "c034": {
+   "file": "places/c034_fshing_vessel_from_above.webp",
+   "w": 847,
+   "h": 1280,
+   "caption": "A fishing vessel and gear from above, St. Paul Harbor",
+   "credit": "Photo: Charlie Ess (NOAA Photo Library) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fshing_vessel_from_above.jpg"
+  },
+  "c037": {
+   "file": "places/c037_dredging_of_st_hermans_harbor_in_kodiak_.webp",
+   "w": 800,
+   "h": 600,
+   "caption": "Dredging St. Herman Harbor",
+   "credit": "Photo: U.S. Army Corps of Engineers",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Dredging_of_St._Hermans_Harbor_in_Kodiak_(10019360253).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c038": {
+   "file": "places/c038_adq_aerial_map.webp",
+   "w": 591,
+   "h": 536,
+   "caption": "Kodiak Airport (ADQ) from the air",
+   "credit": "Photo: FAA Alaskan Region (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:ADQ-Aerial_Map.jpg"
+  },
+  "c039": {
+   "file": "places/c039_c_130_crew_practices_takeoffs_and_landin.webp",
+   "w": 1280,
+   "h": 851,
+   "caption": "A Coast Guard C-130 practicing takeoffs and landings at Kodiak Airport, 2005",
+   "credit": "Photo: CPO Paul Roszkowski/USCG (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:C-130_crew_practices_takeoffs_and_landings_DVIDS1077423.jpg"
+  },
+  "c040": {
+   "file": "places/c040_kodiak_island_air_station_1.webp",
+   "w": 1280,
+   "h": 831,
+   "caption": "The runways at Kodiak Airport / Coast Guard Air Station from the air, 1989",
+   "credit": "Photo: SPC Jeff Parks/USCG (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Kodiak_Island_Air_Station_1.jpg"
+  },
+  "c041": {
+   "file": "places/c041_kdk_c.webp",
+   "w": 591,
+   "h": 416,
+   "caption": "Kodiak Municipal Airport (KDK) from the air",
+   "credit": "Photo: FAA Alaskan Region (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:KDK-c.jpg"
+  },
+  "c042": {
+   "file": "places/c042_kodiak_airways_grumman_g_21_goose_at_the.webp",
+   "w": 1280,
+   "h": 1085,
+   "caption": "Kodiak Airways Grumman Goose at the Kodiak Municipal Airport, 1964",
+   "credit": "Photo: John Atherton",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Kodiak_Airways_Grumman_G-21_Goose_at_the_Kodiak,_Alaska,_Municipal_Airport,_1964_(2073570117).jpg",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "c043": {
+   "file": "places/c043_2018_11_04_mv_tustumena_imo_6421086_18_0.webp",
+   "w": 1280,
+   "h": 857,
+   "caption": "The ferry Tustumena at the Kodiak dock, Nov 2018",
+   "credit": "Photo: Gordon Leggett",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:2018-11-04_MV_TUSTUMENA_-_IMO_6421086_18-09-05.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "c044": {
+   "file": "places/c044_210712_tustumena_51310741662.webp",
+   "w": 1280,
+   "h": 852,
+   "caption": "The Tustumena arriving in Kodiak, July 2021",
+   "credit": "Photo: James Brooks",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:210712_Tustumena_(51310741662).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c045": {
+   "file": "places/c045_mv_tustumena_at_kodiak.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "The Tustumena at Kodiak",
+   "credit": "Photo: Nader Moussa",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:MV_Tustumena_at_Kodiak.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "v_dogbay": {
+   "file": "places/v_dogbay.webp",
+   "w": 1280,
+   "h": 956,
+   "caption": "Kayaking by Dog Bay (St. Herman Harbor)",
+   "credit": "Photo: Victor",
+   "label": "kodiakking.com",
+   "url": "https://kodiakking.com/pictures/"
+  }
+ },
+ "features": {
+  "trav8": [
+   "c032",
+   "c033",
+   "c034"
+  ],
+  "trav9": [
+   "v_dogbay",
+   "c037"
+  ],
+  "trav0": [
+   "c038",
+   "c039",
+   "c040"
+  ],
+  "trav1": [
+   "c041",
+   "c042"
+  ],
+  "trav4": [
+   "c043",
+   "c044",
+   "c045"
+  ]
+ }
+}

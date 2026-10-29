@@ -1,0 +1,113 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History: Spruce Cape",
+  "label": "kadiak.org — Spruce Cape",
+  "url": "https://www.kadiak.org/spruce_cape/index.html",
+  "note": "WWII Searchlight 20 and DEC, Navy light and signal tower sites, and the 1951 USCG loran station at Spruce Cape (kadiak.org)."
+ },
+ "photos": {
+  "k_photos_brian_glass_sprucecape": {
+   "file": "kadiak/spruce/photos_brian_glass_sprucecape.webp",
+   "w": 913,
+   "h": 731,
+   "caption": "[Spruce Cape loran monitoring station, from Brian Glass's 1981 photos.]",
+   "credit": "Photo: Brian Glass, c. 1981 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/photos/brian_glass/sprucecape.jpg"
+  },
+  "k_spruce_cape_apr08_03": {
+   "file": "kadiak/spruce/spruce_cape_apr08_03.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Searchlight 20 seen from it's DEC. Reference annex exhibit 40B.",
+   "credit": "Photo: C. Law, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/apr08_03.jpg"
+  },
+  "k_spruce_cape_apr08_04": {
+   "file": "kadiak/spruce/spruce_cape_apr08_04.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Communications antenna from 1951 loran station.",
+   "credit": "Photo: C. Law, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/apr08_04.jpg"
+  },
+  "k_spruce_cape_apr08_08": {
+   "file": "kadiak/spruce/spruce_cape_apr08_08.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "USCG survery marker dated 1950 at old loran transmitting antenna site. (Present loran monitoring antenna.)",
+   "credit": "Photo: C. Law, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/apr08_08.jpg"
+  },
+  "k_spruce_cape_1": {
+   "file": "kadiak/spruce/spruce_cape_1.webp",
+   "w": 976,
+   "h": 686,
+   "caption": "WWII DEC for S/L 20 seen from S/L.",
+   "credit": "Photo: J. Stevens, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/1.jpg"
+  },
+  "k_spruce_cape_2": {
+   "file": "kadiak/spruce/spruce_cape_2.webp",
+   "w": 976,
+   "h": 686,
+   "caption": "Sea side of WWII S/L 20. (Building used for storage.)",
+   "credit": "Photo: J. Stevens, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/2.jpg"
+  },
+  "k_spruce_cape_5": {
+   "file": "kadiak/spruce/spruce_cape_5.webp",
+   "w": 667,
+   "h": 1000,
+   "caption": "WWII DEC for S/L 20 closest to tip of cape, shows day boards and beacon",
+   "credit": "Photo: J. Stevens, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/5.jpg"
+  },
+  "k_spruce_cape_11": {
+   "file": "kadiak/spruce/spruce_cape_11.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "Inside of one of the two unexplained underground structures. The photo is looking in one door and out the other which comes out through a short four foot high tunnel to the beach.",
+   "credit": "Photo: J. Stevens, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/11.jpg"
+  },
+  "k_spruce_cape_13": {
+   "file": "kadiak/spruce/spruce_cape_13.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "Quonset huts from the 1951 Loran station. Slated for demolition in 2000. Modern structures in background. View toward west.",
+   "credit": "Photo: J. Stevens, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/13.jpg"
+  },
+  "k_spruce_cape_15": {
+   "file": "kadiak/spruce/spruce_cape_15.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "Generators described in text and power panels.",
+   "credit": "Photo: J. Stevens, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/spruce_cape/15.jpg"
+  },
+  "k_photos_brian_glass_backyard": {
+   "file": "kadiak/spruce/photos_brian_glass_backyard.webp",
+   "w": 467,
+   "h": 326,
+   "caption": "Picture of Quonset huts taken from Spruce Cape Point during summer of 1981 on the longest day of the year at 10:00PM.",
+   "credit": "Photo: Brian Glass, 1981 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/photos/brian_glass/backyard.jpg"
+  }
+ },
+ "features": {
+  "kd_spruce": [
+   "k_photos_brian_glass_sprucecape",
+   "k_spruce_cape_apr08_03",
+   "k_spruce_cape_apr08_04",
+   "k_spruce_cape_apr08_08",
+   "k_spruce_cape_1",
+   "k_spruce_cape_2",
+   "k_spruce_cape_5",
+   "k_spruce_cape_11",
+   "k_spruce_cape_13",
+   "k_spruce_cape_15",
+   "k_photos_brian_glass_backyard"
+  ]
+ }
+}

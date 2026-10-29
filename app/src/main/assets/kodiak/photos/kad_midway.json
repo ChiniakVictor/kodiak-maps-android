@@ -1,0 +1,68 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History, Midway Point",
+  "label": "kadiak.org — Midway Point",
+  "url": "https://www.kadiak.org/midway/index.html",
+  "note": "Searchlights 9 and 10 and their Distant Electric Control bunker, Midway Point, Chiniak (kadiak.org)."
+ },
+ "photos": {
+  "k_midway_midway_april_61l_010": {
+   "file": "kadiak/midway/midway_midway_april_61l_010.webp",
+   "w": 1000,
+   "h": 660,
+   "caption": "[Midway Point, April 1961. Page credit: 'Photo by Carrol Adcock 1961'.]",
+   "credit": "Photo: Carrol Adcock, 1961 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/midway/midway_april_61l_010.jpg"
+  },
+  "k_midway_midway1": {
+   "file": "kadiak/midway/midway_midway1.webp",
+   "w": 1000,
+   "h": 387,
+   "caption": "DEC bunker on left, Searchlight No. 9, view from top of Searchlight No. 10.",
+   "credit": "Photo: J. Stevens, March 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/midway/midway1.jpg"
+  },
+  "k_midway_midway2_774x1045": {
+   "file": "kadiak/midway/midway_midway2_774x1045.webp",
+   "w": 741,
+   "h": 1000,
+   "caption": "[Midway Point bunker.]",
+   "credit": "Photo: Randy Weisser, fall 2020 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/midway/midway2_774x1045.jpg"
+  },
+  "k_midway_cliff": {
+   "file": "kadiak/midway/midway_cliff.webp",
+   "w": 1000,
+   "h": 627,
+   "caption": "[Midway Point cliff.]",
+   "credit": "Photo: Randy Weisser, fall 2020 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/midway/cliff.jpg"
+  },
+  "k_midway_bunker_1237": {
+   "file": "kadiak/midway/midway_bunker_1237.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "[Midway Point bunker.]",
+   "credit": "Photo: Randy Weisser, fall 2020 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/midway/bunker-1237.jpg"
+  },
+  "k_1944annex_47b": {
+   "file": "kadiak/midway/1944annex_47b.webp",
+   "w": 1400,
+   "h": 942,
+   "caption": "This is site No. 6, Exhibit 47B. The DEC is also marked \"DUB. STA.\" Elevation of S/L No. 9 is 50 feet. Elevation of S/L No. 10 is 63 feet.",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/47b.jpg"
+  }
+ },
+ "features": {
+  "kd_midway": [
+   "k_midway_midway_april_61l_010",
+   "k_midway_midway1",
+   "k_midway_midway2_774x1045",
+   "k_midway_cliff",
+   "k_midway_bunker_1237",
+   "k_1944annex_47b"
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (Chiniak Maps)",
+  "label": "kadiak.org — Chiniak Maps",
+  "url": "https://www.kadiak.org/chiniak/chinmap.html",
+  "note": "Photos, map and text keyed A–R from kadiak.org (Kodiak Military History Museum site). Text by Joe Stevens."
+ },
+ "photos": {
+  "cm_D": {
+   "file": "chiniak/chiniak_guns.webp",
+   "w": 746,
+   "h": 490,
+   "caption": "D - The eight-inch guns were here at St. Peter's Head, Battery No. 1. There is a two-story underground ready ammunition bunker.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/guns.jpg"
+  },
+  "cm_E": {
+   "file": "chiniak/chiniak_bald3.webp",
+   "w": 750,
+   "h": 496,
+   "caption": "E - WW II Distant Electrical Control bunker on Bald Hill (Site 3) between St. Peters Head and Cape Chiniak. View to the east. Controls searchlight No. 8. Photo by j0e circa 1985.",
+   "credit": "Photo: Joe Stevens, c. 1985 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/bald3.jpg"
+  },
+  "cm_F": {
+   "file": "chiniak/chiniak_mar21_27.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "F - Approximate site of the log house erected in 1960 by Pete Azzole and company. It's a short distance from the main road and is not visible from the main road. Just across the road from the turnoff to this house is the small, still intact pump house.",
+   "credit": "Photo: Curt Law, AL7LQ, 21 March 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/mar21_27.jpg"
+  },
+  "cm_H2": {
+   "file": "chiniak/chiniak_array.webp",
+   "w": 738,
+   "h": 534,
+   "caption": "H - Lloyd Johnson and Curt Law at the 1945 DF foundation. There are remains of four different structures in this area: The 1945 USCG HF DF site, the newer Navy secure building (later a schoolhouse), the array of pipes with these conduits at the center located a little further down the road (at the end of the trail) marked LOW BAND ARRAY AR-1 on the topo map 4A, and the HIGH BAND ARRAY AR-2. Located in a line tangent to array AR-2 is a row of concrete pillars about three feet high with numbers stamped into a steel strap poured into the top of the pillar. The posts are marked (first post(s) in a tangle of undergrowth) 50-00, 56-40, 60-00, 86-40, (another post in dense undergrowth), 80-00, 83-20, 86-40, 90-00, 100-00, 110-00, 120-00, 130-00, 140-00, 150-00.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/array.jpg"
+  },
+  "cm_M1": {
+   "file": "chiniak/chiniak_wideview.webp",
+   "w": 735,
+   "h": 529,
+   "caption": "M - Searchlight bunker with intact telephone terminal and nearby eagle nest. This is where the views of the Navy site were taken in 1960 and another in 1998. There is an antenna coupler on a pole along the trail to this bunker, remains of xmtr. antenna VT-1 shown on topo map 4A. The Navy building is just visible in the trees in these 1998 views.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/chiniak/wideview.jpg"
+  },
+  "cm_M2": {
+   "file": "chiniak/chiniak_longshot.webp",
+   "w": 738,
+   "h": 420,
+   "caption": "M - Searchlight bunker with intact telephone terminal and nearby eagle nest. This is where the views of the Navy site were taken in 1960 and another in 1998. There is an antenna coupler on a pole along the trail to this bunker, remains of xmtr. antenna VT-1 shown on topo map 4A. The Navy building is just visible in the trees in these 1998 views.",
+   "credit": "Photo via kadiak.org (Joe Stevens), 1998",
+   "orig": "https://www.kadiak.org/chiniak/longshot.jpg"
+  }
+ },
+ "features": {
+  "chm_dec8": [
+   "cm_E"
+  ],
+  "chm_sl8": [
+   "cm_E"
+  ],
+  "chm_loghouse": [
+   "cm_F"
+  ],
+  "milh_29": [
+   "cm_H2"
+  ],
+  "chm_slM": [
+   "cm_M1",
+   "cm_M2"
+  ],
+  "milp_0": [
+   "cm_D"
+  ]
+ }
+}

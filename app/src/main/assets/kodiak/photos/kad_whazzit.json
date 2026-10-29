@@ -1,0 +1,86 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, WHAZZIT?",
+  "label": "kadiak.org — WHAZZIT? (Cliff Point)",
+  "url": "https://www.kadiak.org/whazzit/index.html",
+  "note": "\"Things we don't know what they are\": the unexplained structure and Rumsey pump near Cliff Point (kadiak.org)."
+ },
+ "photos": {
+  "k_whazzit_cl_pt_1": {
+   "file": "kadiak/whazzit/whazzit_cl_pt_1.webp",
+   "w": 486,
+   "h": 343,
+   "caption": "Medium view looking slightly up with me standing inside the structure for size comparison.",
+   "credit": "Photo via kadiak.org (contributor not named)",
+   "orig": "https://www.kadiak.org/whazzit/cl-pt_1.jpg"
+  },
+  "k_whazzit_cl_pt_2": {
+   "file": "kadiak/whazzit/whazzit_cl_pt_2.webp",
+   "w": 492,
+   "h": 346,
+   "caption": "Close up of structure showing Barometer Mt. & USCG base in background.",
+   "credit": "Photo via kadiak.org (contributor not named)",
+   "orig": "https://www.kadiak.org/whazzit/cl-pt_2.jpg"
+  },
+  "k_whazzit_cl_pt_3": {
+   "file": "kadiak/whazzit/whazzit_cl_pt_3.webp",
+   "w": 342,
+   "h": 491,
+   "caption": "Close up of chain drive sprockets, looking East.",
+   "credit": "Photo via kadiak.org (contributor not named)",
+   "orig": "https://www.kadiak.org/whazzit/cl-pt_3.jpg"
+  },
+  "k_whazzit_cl_pt_5": {
+   "file": "kadiak/whazzit/whazzit_cl_pt_5.webp",
+   "w": 492,
+   "h": 346,
+   "caption": "Quonset hut site, antenna pedestal is a little blip on the ridge beyond.",
+   "credit": "Photo via kadiak.org (contributor not named)",
+   "orig": "https://www.kadiak.org/whazzit/cl-pt_5.jpg"
+  },
+  "k_whazzit_cl_pt_6": {
+   "file": "kadiak/whazzit/whazzit_cl_pt_6.webp",
+   "w": 490,
+   "h": 336,
+   "caption": "Medium view looking southeast shows more of lower structure.",
+   "credit": "Photo via kadiak.org (contributor not named)",
+   "orig": "https://www.kadiak.org/whazzit/cl-pt_6.jpg"
+  },
+  "k_whazzit_rumsey1_640": {
+   "file": "kadiak/whazzit/whazzit_rumsey1_640.webp",
+   "w": 640,
+   "h": 419,
+   "caption": "[Rumsey pump at Cliff Point. Page heading: 'Pump or engine made by Rumsey at Cliff Point'.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/whazzit/rumsey1_640.jpg"
+  },
+  "k_whazzit_rumsey2_640": {
+   "file": "kadiak/whazzit/whazzit_rumsey2_640.webp",
+   "w": 640,
+   "h": 381,
+   "caption": "[Rumsey pump at Cliff Point, second view.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/whazzit/rumsey2_640.jpg"
+  },
+  "k_whazzit_rumsey3_640": {
+   "file": "kadiak/whazzit/whazzit_rumsey3_640.webp",
+   "w": 640,
+   "h": 426,
+   "caption": "[Rumsey pump at Cliff Point, third view.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/whazzit/rumsey3_640.jpg"
+  }
+ },
+ "features": {
+  "kd_whazzit": [
+   "k_whazzit_cl_pt_1",
+   "k_whazzit_cl_pt_2",
+   "k_whazzit_cl_pt_3",
+   "k_whazzit_cl_pt_5",
+   "k_whazzit_cl_pt_6",
+   "k_whazzit_rumsey1_640",
+   "k_whazzit_rumsey2_640",
+   "k_whazzit_rumsey3_640"
+  ]
+ }
+}

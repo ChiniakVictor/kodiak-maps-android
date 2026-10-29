@@ -1,0 +1,41 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Alaska Communication System",
+  "label": "kadiak.org — ACS Kodiak",
+  "url": "https://www.kadiak.org/acs/index.html",
+  "note": "Alaska Communication System (Army Signal Corps) at Kodiak (kadiak.org)."
+ },
+ "photos": {
+  "k_acs_plan": {
+   "file": "kadiak/acs/acs_plan.webp",
+   "w": 1198,
+   "h": 566,
+   "caption": "Site plan on notepad paper found with pictures at NARA Anchorage. The building on the site built in June 1954 is still in use by AT&T Alascom in 2013.",
+   "credit": "Found at NARA Anchorage, via kadiak.org",
+   "orig": "https://www.kadiak.org/acs/plan.jpg"
+  },
+  "k_acs_1954_1": {
+   "file": "kadiak/acs/acs_1954_1.webp",
+   "w": 1400,
+   "h": 1050,
+   "caption": "[1954 ACS building drawing; page text: 'from one sheet of many gives quite a bit of information about who built it.']",
+   "credit": "Via kadiak.org",
+   "orig": "https://www.kadiak.org/acs/1954_1.jpg"
+  },
+  "k_radios_signal_hill1958_joe_hacker": {
+   "file": "kadiak/acs/radios_signal_hill1958_joe_hacker.webp",
+   "w": 1000,
+   "h": 592,
+   "caption": "Joe Hacker sent a large image of the town of Kodiak in 1958. This is the lower right portion showing Signal Hill and the 1954 building. Dairy barn to the right.",
+   "credit": "Photo: Joe Hacker, 1958 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/radios/signal_hill1958_joe_hacker.jpg"
+  }
+ },
+ "features": {
+  "kd_acs": [
+   "k_acs_plan",
+   "k_acs_1954_1",
+   "k_radios_signal_hill1958_joe_hacker"
+  ]
+ }
+}

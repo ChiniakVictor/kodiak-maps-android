@@ -1,0 +1,100 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Long Island",
+  "label": "kadiak.org — Long Island",
+  "url": "https://www.kadiak.org/long_is/li.html",
+  "note": "Battery 5 (6-inch) at Castle Bluff and the Fort Tidball buildings, Long Island (kadiak.org, Joe Stevens)."
+ },
+ "photos": {
+  "k_long_is_jun22_18": {
+   "file": "kadiak/castle/long_is_jun22_18.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Aerial view of battery with North Cape off to the top of the picture. This bunker containins a BD-74 telephone switchboard on the lower level and the battery spotting and plotting room. Photo June 22, 1998.",
+   "credit": "Photo: Joe Stevens, from a helicopter, 22 June 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/jun22_18.jpg"
+  },
+  "k_long_is_li07": {
+   "file": "kadiak/castle/long_is_li07.webp",
+   "w": 483,
+   "h": 336,
+   "caption": "This is the lower level entrance to the bunker. It is located to the left just under the trees in the above photo.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/long_is/li07.jpg"
+  },
+  "k_long_is_li09": {
+   "file": "kadiak/castle/long_is_li09.webp",
+   "w": 490,
+   "h": 336,
+   "caption": "Both of the 6-inch M1903A2 gun barrels are missing. This is gun No. 1 looking toward the battery command post.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/long_is/li09.jpg"
+  },
+  "k_long_is_li10": {
+   "file": "kadiak/castle/long_is_li10.webp",
+   "w": 480,
+   "h": 333,
+   "caption": "The splinter shield of the north gun, No. 2, is upside-down.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/long_is/li10.jpg"
+  },
+  "k_long_is_296wide": {
+   "file": "kadiak/castle/long_is_296wide.webp",
+   "w": 738,
+   "h": 540,
+   "caption": "[SCR-296A steel radar tower, Castle Bluff, from the helicopter, 22 June 1998.]",
+   "credit": "Photo: Joe Stevens, from a helicopter, 22 June 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/296wide.jpg"
+  },
+  "k_long_is_aug03_04": {
+   "file": "kadiak/castle/long_is_aug03_04.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Several electrical poles are still standing. Ft. Tidball had an extensive overhead electrical distribution system.",
+   "credit": "Photo: Curt Law, 2 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/aug03_04.jpg"
+  },
+  "k_long_is_aug03_05": {
+   "file": "kadiak/castle/long_is_aug03_05.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Even though this mess hall has collapsed, the sink is in comparatively good condition.",
+   "credit": "Photo: Curt Law, 2 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/aug03_05.jpg"
+  },
+  "k_long_is_aug03_12": {
+   "file": "kadiak/castle/long_is_aug03_12.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "The huts have numbers painted on them to help the Corps of Engineers cleanup contractor tell where they are.",
+   "credit": "Photo: Curt Law, 2 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/aug03_12.jpg"
+  },
+  "k_long_is_aug03_13": {
+   "file": "kadiak/castle/long_is_aug03_13.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "This interior clearly demonstrates the roof framing. The KIMSUL Insulation (by Kimberly Clark) is still hanging in there.",
+   "credit": "Photo: Curt Law, 2 August 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/aug03_13.jpg"
+  }
+ },
+ "features": {
+  "milg_bat5": [
+   "k_long_is_jun22_18",
+   "k_long_is_li07",
+   "k_long_is_li09",
+   "k_long_is_li10",
+   "k_long_is_296wide"
+  ],
+  "milp_49": [
+   "k_long_is_296wide"
+  ],
+  "milg_licamp": [
+   "k_long_is_aug03_04",
+   "k_long_is_aug03_05",
+   "k_long_is_aug03_12",
+   "k_long_is_aug03_13"
+  ]
+ }
+}

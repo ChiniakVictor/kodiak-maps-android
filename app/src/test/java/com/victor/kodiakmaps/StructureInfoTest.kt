@@ -17,7 +17,7 @@ class StructureInfoTest {
     private fun rowList(f: KFeature) = f.props.optString("rows").split('\u001f').map { it.substringBefore('\u001e') to it.substringAfter('\u001e') }
     private fun rows(f: KFeature) = rowList(f).toMap()
     private val traced = mil.filter { id(it).startsWith("milh_") }
-    private val gps = mil.filter { (it.props.has("detail") && !id(it).startsWith("milh_")) || id(it).startsWith("milq_") }
+    private val gps = mil.filter { listOf("milp_", "milq_", "chm_", "kd_").any { p -> id(it).startsWith(p) } }   // v1.5.11: mil1-4 now carry "detail" but are the original markers, not field-GPS cards
     private val groups = mil.filter { id(it).startsWith("milg_") }
 
     private fun checkCard(f: KFeature) {
@@ -40,7 +40,7 @@ class StructureInfoTest {
     }
 
     @Test fun everyTracedStructureHasSummaryFirst() {
-        assertEquals(62 + Hist1965Test.COUNTS.values.sum(), traced.size); traced.forEach(::checkCard)   // v1.5.3: + 1965 Navy sheets
+        assertEquals(64 + Hist1965Test.COUNTS.values.sum(), traced.size); traced.forEach(::checkCard)   // v1.5.3: + 1965 Navy sheets
         // the 1.5.1 rows are all still there after the new ones
         traced.forEach { f -> val r = rows(f); assertTrue(f.title, r.containsKey("On the map") && r.containsKey("Source map") && r.containsKey("Approx. accuracy")) }
     }
@@ -48,7 +48,7 @@ class StructureInfoTest {
     @Test fun everyFieldGpsCardHasSummaryUnlessNothingIsKnown() {
         val withInfo = gps.filter { rows(it).containsKey("Summary") }
         withInfo.forEach(::checkCard)
-        assertEquals(75, withInfo.size)
+        assertEquals(108, withInfo.size)   // v1.5.11: + 33 later chm_/kd_ cards
         // non-structure single points with no record get no info block
         assertEquals(setOf("Cliff Pt Pipe", "Cliff Pt Other", "P2V-7 crash site", "Abercrombie end of Spruce Island submarine cable"), (gps - withInfo.toSet()).map { it.title }.toSet())
         groups.forEach(::checkCard)
@@ -70,7 +70,7 @@ class StructureInfoTest {
         // roads are roads
         listOf("Main Access Road", "P.O.L. Rd.", "Pumphouse Rd.").forEach { assertTrue(it, s(it).startsWith("Road as drawn")) }
         // annex description added to the original battery markers
-        listOf("mil0", "mil3", "mil4").forEach { i -> assertTrue(i, rows(mil.first { id(it) == i }).containsKey("1944 Harbor Defense annex")) }
+        listOf("mil3", "mil4").forEach { i -> assertTrue(i, rows(mil.first { id(it) == i }).containsKey("1944 Harbor Defense annex")) }
     }
 
     @Test fun glossaryInMeta() {

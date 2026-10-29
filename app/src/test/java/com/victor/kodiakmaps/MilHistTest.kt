@@ -8,11 +8,17 @@ import java.io.File
 
 /** v1.5: field-GPS military points (mil_extra.py); v1.5.1: features traced from the kadiak.org old maps (mil_hist.py). */
 class MilHistTest {
+    companion object {
+        /** poi_mil features outside the 1965 Navy sheets. v1.5.11 test update: 154 (1.5.3) - Fort J. H. Smith star (1.5.8)
+         *  + 33 later chm_ / kd_ points (Chiniak key map, kadiak.org sites) + 2 traced (milh_aft_garage, milh_plot_b1). */
+        const val MIL_NOW = 188
+    }
     private val fs = KGeo.parse(File("src/main/assets/kodiak/poi.geojson").readText())
     private val mil = fs.filter { it.k == "poi_mil" }
     private val mil15 = mil.filter { !id(it).startsWith("milh_") }
+    private val later = mil15.filter { id(it).startsWith("chm_") || id(it).startsWith("kd_") }   // added after 1.5 (not field-GPS points)
     private fun id(f: com.victor.kodiakmaps.core.KFeature) = f.props.optString("id")
-    private val detail = mil.filter { it.props.has("detail") && !id(it).startsWith("milh_") }
+    private val detail = mil.filter { it.props.has("detail") && id(it).startsWith("milp_") }   // v1.5.11: later chm_/kd_ points also carry "detail"
     private val summary = mil.filter { id(it).startsWith("milg_") }
     private val single = mil.filter { id(it).startsWith("milq_") }
     private val original = mil.filter { id(it).matches(Regex("mil\\d")) }
@@ -22,20 +28,21 @@ class MilHistTest {
     }
 
     @Test fun counts() {
-        assertEquals(92, mil15.size); assertEquals(154 + Hist1965Test.COUNTS.values.sum(), mil.size)
-        assertEquals(72, detail.size); assertEquals(8, summary.size); assertEquals(7, single.size); assertEquals(5, original.size)
+        assertEquals(91, (mil15 - later.toSet()).size); assertEquals(33, later.size);   // 92 - Fort J. H. Smith star (1.5.8)
+        assertEquals(MilHistTest.MIL_NOW + Hist1965Test.COUNTS.values.sum(), mil.size)
+        assertEquals(72, detail.size); assertEquals(8, summary.size); assertEquals(7, single.size); assertEquals(4, original.size)
         val g = detail.groupingBy { it.props.optString("grp") }.eachCount()
         assertEquals(mapOf("BAT1" to 3, "BAT2" to 1, "BAT3" to 2, "BUSKIN" to 10, "BAT4" to 23, "LICAMP" to 3, "BAT5" to 9, "BAT6" to 10, "SL23" to 4, "SL25" to 7), g)
     }
 
     @Test fun originalPointsUnchanged() {
-        val want = mapOf("mil0" to (57.62420 to -152.19482), "mil1" to (57.61429 to -152.19594), "mil2" to (57.59811 to -152.17988),
+        val want = mapOf("mil1" to (57.61429 to -152.19594), "mil2" to (57.59811 to -152.17988),
             "mil3" to (57.59 to -152.15722), "mil4" to (57.61917 to -152.22252))
         want.forEach { (i, ll) -> val p = original.first { id(it) == i }.point!!; assertEquals(ll.first, p[0], 1e-6); assertEquals(ll.second, p[1], 1e-6) }
     }
 
     @Test fun coordinatesInRange() {
-        mil15.forEach { f -> val p = f.point!!
+        mil15.forEach { f -> val p = f.point ?: f.lines.first().first()   // chm_posts is a line
             assertTrue(f.title, p[0] in 56.5..58.7 && p[1] in -154.9..-151.5) }  // Kodiak archipelago
         (detail + single + summary).forEach { f -> val p = f.point!!
             assertTrue(f.title, p[0] in 57.55..57.95 && p[1] in -152.70..-152.10) }  // surveyed sites: Chiniak, Buskin, Long Island, Fort Abercrombie, Spruce Island, Kizhuyak
@@ -53,7 +60,8 @@ class MilHistTest {
         for (i in pts.indices) for (j in i + 1 until pts.size) assertTrue("same spot $i $j", distM(pts[i], pts[j]) > 1.0)
         // a new group summary never sits within 150 m of an existing Military point (BAT1/BAT2 enrich mil0/mil4 instead)
         summary.forEach { s -> (original + summary.filter { it !== s }).forEach { o -> assertTrue("${s.title} ~ ${o.title}", distM(s.point!!, o.point!!) > 150.0) } }
-        assertTrue(original.first { id(it) == "mil0" }.props.optString("rows").contains("BAT1 GUN1"))
+        assertTrue(original.none { id(it) == "mil0" })  // Fort J. H. Smith star removed (1.5.8); its history moved to BAT1 EBC
+        assertTrue(detail.first { id(it) == "milp_0" }.props.optString("rows").contains("Fort J. H. Smith\u001e"))
         assertTrue(original.first { id(it) == "mil4" }.props.optString("rows").contains("BAT2 GUN1"))
     }
 
@@ -79,11 +87,11 @@ class MilHistTest {
     private fun allPts(f: com.victor.kodiakmaps.core.KFeature) = listOfNotNull(f.point) + f.lines.flatten() + f.polys.flatten()
 
     @Test fun tracedFeatureCounts() {
-        assertEquals(62, traced.size)
+        assertEquals(64, traced.size)   // + Garage (osm) and Plotting Room (chinmap3)
         val bySheet = traced.groupingBy { it.props.optString("src_map") }.eachCount()
-        assertEquals(mapOf("chinmap2" to 3, "chinmap3" to 6, "chinmap5" to 2, "chinmap7" to 5, "lilnav3" to 31, "track9" to 15), bySheet)
+        assertEquals(mapOf("chinmap2" to 3, "chinmap3" to 7, "osm" to 1, "chinmap5" to 2, "chinmap7" to 5, "lilnav3" to 31, "track9" to 15), bySheet)
         val shapes = traced.groupingBy { it.props.optString("shape") }.eachCount()
-        assertEquals(mapOf("pt" to 47, "ln" to 8, "poly" to 7), shapes)
+        assertEquals(mapOf("pt" to 48, "ln" to 8, "poly" to 8), shapes)
         // points are detail points (zoom 14+), lines/polygons are not
         traced.forEach { f -> assertEquals(f.title, f.props.optString("shape") == "pt", f.props.has("detail")) }
         listOf("Composite Bldg.", "Tower C", "P.O.L. Tank", "AR-1 Low Band Array", "DW-1 Wide Band Doublet Trans Antenna No. 5", "VAM", "D20",
@@ -116,7 +124,7 @@ class MilHistTest {
             assertTrue(l, rows(g)["Old map"]!!.contains("kadiak.org"))
             traced.mapNotNull { it.point?.let { p -> it.title to p } }.forEach { (t, p) -> assertTrue("$t duplicates $l", distM(p, g.point!!) > 30.0) } }
         assertEquals(3, traced.count { it.title.startsWith("Circle") })   // chinmap7 circles 2–4
-        listOf("mil0", "mil1", "mil2", "mil4").forEach { i -> assertTrue(i, rows(original.first { id(it) == i }).containsKey("Old maps")) }
+        listOf("mil1", "mil2", "mil4").forEach { i -> assertTrue(i, rows(original.first { id(it) == i }).containsKey("Old maps")) }
         assertEquals(traced.size, traced.map { it.title + allPts(it).first()[0] }.toSet().size)
     }
 

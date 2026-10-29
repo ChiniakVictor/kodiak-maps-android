@@ -37,6 +37,8 @@ fun PoiDetails(f: KFeature, phone: PhoneFix?, metric: Boolean, onNavigate: () ->
         TextButton(onClose) { Text("✕") }
     }
     p.optString("cat_label").takeIf { it.isNotBlank() }?.let { Text(it, fontSize = 13.sp, color = poiColor(f), fontWeight = FontWeight.Bold) }
+    // v1.5.4: bundled historic photos (kadiak.org AF Tracking Station page) with captions and a credit link
+    p.optString("id").takeIf { it.isNotBlank() }?.let { PoiPhotoGallery(it) }
     phone?.let { ph ->
         val n = f.nearestTo(ph.lat, ph.lon); val d = Geo.distanceM(ph.lat, ph.lon, n[0], n[1])
         Text("${Geo.formatDistance(d, metric)} ${Geo.cardinal(Geo.bearingDeg(ph.lat, ph.lon, n[0], n[1]))}", fontSize = 15.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
@@ -79,7 +81,7 @@ fun PoiLayerSwitches() {
     if (s.food) FoodLegend()
     sw("Travel", "Airports, ferry, floatplanes, harbors, air taxis", Color(0xFF29B6F6), s.travel) { v -> PoiPrefs.update(ctx) { it.copy(travel = v) } }
     sw("Schools", "KIBSD schools and attendance areas", Color(0xFFE53935), s.schools) { v -> PoiPrefs.update(ctx) { it.copy(schools = v) } }
-    sw("Military history", "WWII and Cold War sites: Chiniak, Long Island, Fort Abercrombie, Buskin + field-GPS points and features traced from kadiak.org old maps (zoom in)", Color(0xFF8D6E63), s.mil) { v -> PoiPrefs.update(ctx) { it.copy(mil = v) } }
+    sw("Military history", "WWII and Cold War sites: Chiniak, Long Island, Fort Abercrombie, Buskin, Puffin Island, Spruce Cape, Woody Island, Pillar Mt. + field-GPS points, old kadiak.org map features and kadiak.org photos (zoom in)", Color(0xFF8D6E63), s.mil) { v -> PoiPrefs.update(ctx) { it.copy(mil = v) } }
     sw("Community", "Chiniak Public Library", Color(0xFFAB47BC), s.community) { v -> PoiPrefs.update(ctx) { it.copy(community = v) } }
 }
 

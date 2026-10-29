@@ -1,0 +1,41 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, SCR-296A Radar Site at Castle Bluff, Long Island",
+  "label": "kadiak.org — SCR-296A, Castle Bluff",
+  "url": "https://www.kadiak.org/long_is/scr296.html",
+  "note": "Photos by Curt Law, AL7LQ, and Joe Stevens, WL7AML, 1998 (kadiak.org)."
+ },
+ "photos": {
+  "k_long_is_li296_4": {
+   "file": "kadiak/castle_scr296/long_is_li296_4.webp",
+   "w": 340,
+   "h": 483,
+   "caption": "Looking up at the tower which is very solid. Portions of the ladder are missing.",
+   "credit": "Photo: Curt Law, AL7LQ, or Joe Stevens, WL7AML, 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/li296_4.jpg"
+  },
+  "k_long_is_li296_5": {
+   "file": "kadiak/castle_scr296/long_is_li296_5.webp",
+   "w": 463,
+   "h": 336,
+   "caption": "The antenna and rotor are still on top but are laying flat over. Is this one of only two SCR-296A antennas is existence?",
+   "credit": "Photo: Curt Law, AL7LQ, or Joe Stevens, WL7AML, 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/li296_5.jpg"
+  },
+  "k_long_is_li296_3": {
+   "file": "kadiak/castle_scr296/long_is_li296_3.webp",
+   "w": 343,
+   "h": 486,
+   "caption": "SCR-296A transmitter-receiver cabinet. A very RARE item.",
+   "credit": "Photo: Curt Law, AL7LQ, or Joe Stevens, WL7AML, 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/long_is/li296_3.jpg"
+  }
+ },
+ "features": {
+  "milp_49": [
+   "k_long_is_li296_4",
+   "k_long_is_li296_5",
+   "k_long_is_li296_3"
+  ]
+ }
+}

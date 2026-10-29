@@ -1,0 +1,169 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (Chiniak Maps)",
+  "label": "kadiak.org — Chiniak Maps",
+  "url": "https://www.kadiak.org/chiniak/chinmap.html",
+  "note": "Key map and the maps linked from kadiak.org Chiniak Maps (1944 Harbor Defense annex sheets; 1998 Corps of Engineers site maps)."
+ },
+ "photos": {
+  "cm_key": {
+   "file": "chiniak/chiniak_chiniak_topo.webp",
+   "w": 726,
+   "h": 1400,
+   "caption": "[kadiak.org Chiniak map, letters A–R. Page text: 'Photos and text keyed to the map above'.]",
+   "credit": "Map via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/chiniak_topo.jpg"
+  },
+  "cm_28b": {
+   "file": "chiniak/1944annex_28b.webp",
+   "w": 1400,
+   "h": 932,
+   "caption": "[MAP linked at D] D - The eight-inch guns were here at St. Peter's Head, Battery No. 1. There is a two-story underground ready ammunition bunker.",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/28b.jpg"
+  },
+  "cm_46b": {
+   "file": "chiniak/1944annex_46b.webp",
+   "w": 771,
+   "h": 1400,
+   "caption": "[MAP linked at E] E - WW II Distant Electrical Control bunker on Bald Hill (Site 3) between St. Peters Head and Cape Chiniak. View to the east. Controls searchlight No. 8. Photo by j0e circa 1985.",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/46b.jpg"
+  },
+  "cm_24b": {
+   "file": "chiniak/1944annex_24b.webp",
+   "w": 1400,
+   "h": 1382,
+   "caption": "[MAP linked at N] N - WWII SCR-296A radar site.",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/24b.jpg"
+  },
+  "cm_32b": {
+   "file": "chiniak/1944annex_32b.webp",
+   "w": 1357,
+   "h": 1400,
+   "caption": "[MAP linked at P] P - Cape Greville site of WWII B3/2. This site is reached via a spur road that is somewhat overgrown. (Possible WWII loran site.)",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/32b.jpg"
+  },
+  "cm_30b": {
+   "file": "chiniak/1944annex_30b.webp",
+   "w": 1400,
+   "h": 929,
+   "caption": "R - Soquel Point Searchlights 3,4, DEC, B3/1.",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/30b.jpg"
+  },
+  "cm_fig14": {
+   "file": "chiniak/maps_fig1_4.webp",
+   "w": 622,
+   "h": 858,
+   "caption": "Navy site - DF building, gen bldg, log cabins, pump house",
+   "credit": "Map: Jacobs Engineering for the U.S. Army Corps of Engineers, 1998 conditions (via kadiak.org)",
+   "orig": "https://www.kadiak.org/maps/fig1-4.jpg"
+  },
+  "cm_fig41": {
+   "file": "chiniak/maps_fig4_1.webp",
+   "w": 767,
+   "h": 836,
+   "caption": "Navy Site - boring locations",
+   "credit": "Map: Jacobs Engineering for the U.S. Army Corps of Engineers, 1998 conditions (via kadiak.org)",
+   "orig": "https://www.kadiak.org/maps/fig4-1.jpg"
+  },
+  "cm_af13": {
+   "file": "chiniak/maps_af1_3.webp",
+   "w": 1120,
+   "h": 751,
+   "caption": "AF Tracking Station",
+   "credit": "Map: Jacobs Engineering for the U.S. Army Corps of Engineers, 1998 conditions (via kadiak.org)",
+   "orig": "https://www.kadiak.org/maps/af1-3.jpg"
+  }
+ },
+ "features": {
+  "chm_A": [
+   "cm_key"
+  ],
+  "milh_plot_b1": [
+   "cm_key"
+  ],
+  "chm_dgps": [
+   "cm_key"
+  ],
+  "chm_sl8": [
+   "cm_key",
+   "cm_46b"
+  ],
+  "chm_dec8": [
+   "cm_key",
+   "cm_46b"
+  ],
+  "chm_loghouse": [
+   "cm_key",
+   "cm_fig14"
+  ],
+  "milh_40": [
+   "cm_key",
+   "cm_fig14",
+   "cm_fig41"
+  ],
+  "milh_41": [
+   "cm_key",
+   "cm_fig14"
+  ],
+  "chm_hfdf": [
+   "cm_key"
+  ],
+  "chm_quonJ": [
+   "cm_key"
+  ],
+  "chm_nasa": [
+   "cm_key"
+  ],
+  "chm_sl7": [
+   "cm_key"
+  ],
+  "chm_slM": [
+   "cm_key"
+  ],
+  "milh_12": [
+   "cm_key",
+   "cm_24b"
+  ],
+  "mil2": [
+   "cm_key",
+   "cm_af13"
+  ],
+  "mil3": [
+   "cm_key",
+   "cm_32b"
+  ],
+  "chm_Q": [
+   "cm_key"
+  ],
+  "chm_soq_b31": [
+   "cm_key",
+   "cm_30b"
+  ],
+  "chm_soq_sl3": [
+   "cm_key",
+   "cm_30b"
+  ],
+  "chm_soq_sl4": [
+   "cm_key",
+   "cm_30b"
+  ],
+  "chm_soq_dec": [
+   "cm_key",
+   "cm_30b"
+  ],
+  "milp_0": [
+   "cm_28b"
+  ],
+  "chm_cabin2": [
+   "cm_fig14"
+  ],
+  "chm_pump": [
+   "cm_fig14"
+  ]
+ }
+}

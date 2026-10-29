@@ -180,6 +180,13 @@ fun TrailMap(
                 val kbox = android.graphics.RectF(pt.x - 28, pt.y - 28, pt.x + 28, pt.y + 28)
                 runCatching { m.queryRenderedFeatures(kbox, "kd-tide-icon") }.getOrNull()?.firstOrNull()?.getStringProperty("id")?.let { tideTap(it); return@addOnMapClickListener true }
                 PoiMap.pickPoint(m, kbox)?.let { kodiakTap(it, ll.latitude, ll.longitude); return@addOnMapClickListener true }
+                // v1.5.10: far-zoom breadcrumb dot (military old-map / field-GPS point) -> zoom in on it
+                PoiMap.farDotAt(m, android.graphics.RectF(pt.x - 18, pt.y - 18, pt.x + 18, pt.y + 18))?.let { at ->
+                    val z = maxOf(m.cameraPosition.zoom + 2.0, PoiMap.FAR_TAP_ZOOM_TO).coerceAtMost(17.0)
+                    m.animateCamera(org.maplibre.android.camera.CameraUpdateFactory.newLatLngZoom(at, z), 700)
+                    com.victor.kodiakmaps.service.AppLog.log("POI tap: far-zoom dot, zooming to ${"%.1f".format(z)}")
+                    return@addOnMapClickListener true
+                }
                 val kf = runCatching { m.queryRenderedFeatures(kbox, "kd-fish-icon", "kd-esmt-pt", "kd-esmt-line", "kd-esmt-area", "kd-row-fill", *KD_TRAIL_TAP, *KD_LOG_TAP, *KD_BIKE_TAP, "kd-road-line") }.getOrNull()
                 if (!kf.isNullOrEmpty()) {
                     // prefer easements over the ROW band, points over lines

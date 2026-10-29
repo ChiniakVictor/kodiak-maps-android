@@ -1,0 +1,98 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History (Cape Greville)",
+  "label": "kadiak.org — Cape Greville",
+  "url": "https://www.kadiak.org/greville/index.html",
+  "note": "Photos by Joe Stevens (fall 2000), via kadiak.org."
+ },
+ "photos": {
+  "g_view": {
+   "file": "chiniak/greville_view.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "The view at the top is looking toward Narrow Cape and Soquel Pt.",
+   "credit": "Photo: Joe Stevens, fall 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/greville/view.jpg"
+  },
+  "g_hut_ext": {
+   "file": "chiniak/greville_hut_ext.webp",
+   "w": 435,
+   "h": 480,
+   "caption": "The shiplap hut is fairly small and has been in use by campers in recent years.",
+   "credit": "Photo: Joe Stevens, fall 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/greville/hut_ext.jpg"
+  },
+  "g_hut_int": {
+   "file": "chiniak/greville_hut_int.webp",
+   "w": 320,
+   "h": 480,
+   "caption": "The shiplap hut is fairly small and has been in use by campers in recent years.",
+   "credit": "Photo: Joe Stevens, fall 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/greville/hut_int.jpg"
+  },
+  "g_quon_ext": {
+   "file": "chiniak/greville_quon_ext.webp",
+   "w": 480,
+   "h": 320,
+   "caption": "Quonset hut.",
+   "credit": "Photo: Joe Stevens, fall 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/greville/quon_ext.jpg"
+  },
+  "g_quon_int": {
+   "file": "chiniak/greville_quon_int.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "Quonset hut.",
+   "credit": "Photo: Joe Stevens, fall 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/greville/quon_int.jpg"
+  },
+  "g_quon_side": {
+   "file": "chiniak/greville_quon_side.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "Quonset hut.",
+   "credit": "Photo: Joe Stevens, fall 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/greville/quon_side.jpg"
+  },
+  "g_graves": {
+   "file": "chiniak/greville_graves.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "Pet cemetary, modern. Engraved markers.",
+   "credit": "Photo: Joe Stevens, fall 2000 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/greville/graves.jpg"
+  },
+  "g_6a2": {
+   "file": "chiniak/1944annex_6a2.webp",
+   "w": 858,
+   "h": 1400,
+   "caption": "figure 6A sheet 2, Land Map.",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/6a2.jpg"
+  },
+  "g_3b": {
+   "file": "chiniak/1944annex_3b.webp",
+   "w": 1400,
+   "h": 981,
+   "caption": "battery map [Btry. No. 2 (155 mm), Constr. No. F42-5, Exhibit No. 3B]",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/3b.jpg"
+  }
+ },
+ "features": {
+  "mil3": [
+   "g_view",
+   "g_hut_ext",
+   "g_hut_int",
+   "g_quon_ext",
+   "g_quon_int",
+   "g_quon_side",
+   "g_graves",
+   "g_6a2",
+   "g_3b"
+  ],
+  "mil4": [
+   "g_3b"
+  ]
+ }
+}

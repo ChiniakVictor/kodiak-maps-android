@@ -62,6 +62,13 @@ fun KodiakStrip(f: KFeature, phone: PhoneFix?, metric: Boolean) {
     }
 }
 
+/** Photo-manifest key for a Kodiak-layer feature: fishing spots by name ("fish:<name>"), trails by id ("trail:<id>"). */
+fun kodiakPhotoKey(f: KFeature): String? = when (f.k) {
+    "fish" -> f.props.optString("name").takeIf { it.isNotBlank() }?.let { "fish:$it" }
+    "trail" -> f.props.optString("id").takeIf { it.isNotBlank() }?.let { "trail:$it" }
+    else -> null
+}
+
 @Composable
 fun KodiakDetails(f: KFeature, phone: PhoneFix?, metric: Boolean, onNavigate: () -> Unit, onClose: () -> Unit) {
     if (f.k.startsWith("poi_")) { PoiDetails(f, phone, metric, onNavigate, onClose); return }
@@ -72,6 +79,9 @@ fun KodiakDetails(f: KFeature, phone: PhoneFix?, metric: Boolean, onNavigate: ()
         Text(f.title, fontSize = 18.sp, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f))
         TextButton(onClose) { Text("✕") }
     }
+    // v1.5.11: photo gallery at the top of fishing-spot and trail popups (same gallery + credit link as the military layer).
+    // Only added above; every detail line below is unchanged. Pins without bundled photos show nothing here.
+    kodiakPhotoKey(f)?.let { PoiPhotoGallery(it) }
     phone?.let { ph ->
         val n = f.nearestTo(ph.lat, ph.lon); val d = Geo.distanceM(ph.lat, ph.lon, n[0], n[1])
         val b = Geo.bearingDeg(ph.lat, ph.lon, n[0], n[1])

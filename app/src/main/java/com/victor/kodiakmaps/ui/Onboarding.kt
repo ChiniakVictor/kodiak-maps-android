@@ -50,6 +50,8 @@ object Onboarding {
     fun startTour() = set(Stage.TOUR)
     /** Settings → Privacy. */
     fun openPrivacy() = set(Stage.PRIVACY_AGAIN)
+    /** v1.5.10: the layers-bar tip shows once per process. */
+    @Volatile var layersTipShown = false
 }
 
 fun Modifier.tourTarget(key: String): Modifier = composed {
@@ -78,7 +80,41 @@ fun OnboardingHost(appName: String, privacy: List<String>, steps: List<TourStep>
             onLater = { Onboarding.set(Onboarding.Stage.DONE) },
             onNever = { PoiPrefs.update(ctx) { it.copy(tourNever = true) }; Onboarding.set(Onboarding.Stage.DONE) })
         Onboarding.Stage.TOUR -> TourOverlay(steps) { Onboarding.set(Onboarding.Stage.DONE) }
+        Onboarding.Stage.DONE -> LayersTip()
         else -> {}
+    }
+}
+
+/** v1.5.10 (Victor): once per app start, after the privacy note / tour, a small callout next to the layers bar.
+ *  Not modal: only the card itself takes touches, the map stays usable. "Got it" hides it until next start; "Don't show again" for good. */
+@Composable
+fun LayersTip() {
+    val ctx = LocalContext.current
+    val never = PoiPrefs.state.collectAsState().value.layersTipNever
+    var shown by remember { mutableStateOf(Onboarding.layersTipShown) }
+    if (never || shown) return
+    val rail = Onboarding.targets["rail"]?.takeIf { it.width > 0f && it.height > 0f } ?: return
+    fun hide() { Onboarding.layersTipShown = true; shown = true }
+    val d = LocalDensity.current
+    val bg = Color(0xF21E2328); val accent = Color(0xFFFFC107)
+    val x = rail.right + with(d) { 2.dp.toPx() }
+    val y = rail.top + with(d) { 48.dp.toPx() }
+    Row(Modifier.offset { IntOffset(x.toInt(), y.toInt()) }.widthIn(max = 320.dp), verticalAlignment = Alignment.Top) {
+        Canvas(Modifier.padding(top = 20.dp).size(14.dp, 24.dp)) {
+            val path = androidx.compose.ui.graphics.Path().apply { moveTo(size.width, 0f); lineTo(0f, size.height / 2f); lineTo(size.width, size.height); close() }
+            drawPath(path, bg)
+        }
+        Card(shape = RoundedCornerShape(14.dp), colors = CardDefaults.cardColors(containerColor = bg, contentColor = Color.White)) {
+            Column(Modifier.padding(start = 14.dp, end = 8.dp, top = 12.dp, bottom = 2.dp)) {
+                Text("Pick your layers", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = accent)
+                Text("Tap the layers bar to choose the layers you want to see: fishing, trails, food, military history and more.",
+                    fontSize = 14.sp, modifier = Modifier.padding(top = 4.dp, end = 6.dp))
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
+                    TextButton({ PoiPrefs.update(ctx) { it.copy(layersTipNever = true) }; hide() }) { Text("Don't show again", color = Color(0xFFB0BEC5)) }
+                    TextButton({ hide() }) { Text("Got it", color = accent, fontWeight = FontWeight.Bold) }
+                }
+            }
+        }
     }
 }
 

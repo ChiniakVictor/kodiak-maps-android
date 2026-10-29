@@ -1,0 +1,32 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Woody Island Radio Range",
+  "label": "kadiak.org — Woody Island Radio Range",
+  "url": "https://www.kadiak.org/woody_is/range.html",
+  "note": "CAA/Navy radio range beacon at Elephant Lake, Woody Island (kadiak.org)."
+ },
+ "photos": {
+  "k_maps_old_sectional": {
+   "file": "kadiak/woody_range/maps_old_sectional.webp",
+   "w": 850,
+   "h": 1100,
+   "caption": "[Old aeronautical sectional chart showing the Woody Island radio range legs.]",
+   "credit": "Chart via kadiak.org",
+   "orig": "https://www.kadiak.org/maps/old_sectional.jpg"
+  },
+  "k_radios_ca_308_page3": {
+   "file": "kadiak/woody_range/radios_ca_308_page3.webp",
+   "w": 1062,
+   "h": 1400,
+   "caption": "page 3",
+   "credit": "Document via kadiak.org",
+   "orig": "https://www.kadiak.org/radios/ca-308-page3.jpg"
+  }
+ },
+ "features": {
+  "kd_woody_range": [
+   "k_maps_old_sectional",
+   "k_radios_ca_308_page3"
+  ]
+ }
+}

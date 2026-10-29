@@ -1,0 +1,119 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Fort Abercrombie",
+  "label": "kadiak.org — Fort Abercrombie",
+  "url": "https://www.kadiak.org/abercrombie/abercrom.html",
+  "note": "Photos and text from kadiak.org (Kodiak Military History Museum site). Text by Joe Stevens."
+ },
+ "photos": {
+  "k_abercrombie_miller_pt_aerial_2001may1": {
+   "file": "kadiak/abercrombie/abercrombie_miller_pt_aerial_2001may1.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[Miller Point, Fort Abercrombie, aerial, 1 May 2001 (from the file name). Page text: 'This is a World War II Coastal Defense installation with two eight inch guns. The remnants of both guns are on display.']",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/abercrombie/miller_pt_aerial_2001may1.jpg"
+  },
+  "k_abercrombie_gunb": {
+   "file": "kadiak/abercrombie/abercrombie_gunb.webp",
+   "w": 744,
+   "h": 500,
+   "caption": "Miller Point Bunker before restoration",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/abercrombie/gunb.jpg"
+  },
+  "k_abercrombie_ready": {
+   "file": "kadiak/abercrombie/abercrombie_ready.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "Miller Point Bunker after restoration",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/abercrombie/ready.jpg"
+  },
+  "k_abercrombie_8inch_1943": {
+   "file": "kadiak/abercrombie/abercrombie_8inch_1943.webp",
+   "w": 598,
+   "h": 480,
+   "caption": "The eight-inch Mark VI guns were designed as battleship guns for World War I. The photo shows Seabees installing a gun at Miller Point in 1943.",
+   "credit": "WWII photo via kadiak.org",
+   "orig": "https://www.kadiak.org/abercrombie/8inch_1943.jpg"
+  },
+  "k_abercrombie_aber_fc_tower_": {
+   "file": "kadiak/abercrombie/abercrombie_aber_fc_tower_.webp",
+   "w": 751,
+   "h": 600,
+   "caption": "[Fort Abercrombie fire-control tower; the page labels it 1957.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/abercrombie/aber_fc_tower_.jpg"
+  },
+  "k_photos_don_warner_don_warner_8": {
+   "file": "kadiak/abercrombie/photos_don_warner_don_warner_8.webp",
+   "w": 816,
+   "h": 568,
+   "caption": "Gun battery emergency command station on top of ready ammo bunker.",
+   "credit": "Photo: Don Warner (via kadiak.org)",
+   "orig": "https://www.kadiak.org/photos/don_warner/don_warner_8.jpg"
+  },
+  "k_vfw_pic19": {
+   "file": "kadiak/abercrombie/vfw_pic19.webp",
+   "w": 681,
+   "h": 547,
+   "caption": "SCR-296 radar building looking east, 1 August 1943 NOB Kodiak (VFW collection)",
+   "credit": "VFW collection, via kadiak.org",
+   "orig": "https://www.kadiak.org/vfw/pic19.jpg"
+  },
+  "k_abercrombie_sl21a": {
+   "file": "kadiak/abercrombie/abercrombie_sl21a.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "Searchlight bunker No. 21.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/abercrombie/sl21a.jpg"
+  },
+  "k_abercrombie_sl21dec1": {
+   "file": "kadiak/abercrombie/abercrombie_sl21dec1.webp",
+   "w": 667,
+   "h": 1000,
+   "caption": "DEC for S/L 21 seen from S/L 21.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/abercrombie/sl21dec1.jpg"
+  },
+  "k_abercrombie_burton2": {
+   "file": "kadiak/abercrombie/abercrombie_burton2.webp",
+   "w": 640,
+   "h": 469,
+   "caption": "Inside the Quonset hut used as a canteen. A pool table is located behind the group. The white square above their heads is a movie screen. Taken just before the arrival of Stan Musial and group.",
+   "credit": "Photo from Reuben Burton, Jr. (via kadiak.org)",
+   "orig": "https://www.kadiak.org/abercrombie/burton2.jpg"
+  },
+  "k_1944annex_41b": {
+   "file": "kadiak/abercrombie/1944annex_41b.webp",
+   "w": 1382,
+   "h": 1400,
+   "caption": "[Fort Abercrombie map from the 1944 Harbor Defense Project annex. Page text: 'Google Earth coordinates of the 8-inch gun bunker: 57 50 12N 152 21 12W.']",
+   "credit": "Map: 1944 Harbor Defense Project of Kodiak (declassified), via kadiak.org",
+   "orig": "https://www.kadiak.org/1944annex/41b.jpg"
+  }
+ },
+ "features": {
+  "milg_bat6": [
+   "k_abercrombie_miller_pt_aerial_2001may1",
+   "k_abercrombie_gunb",
+   "k_abercrombie_ready",
+   "k_abercrombie_8inch_1943",
+   "k_abercrombie_aber_fc_tower_",
+   "k_photos_don_warner_don_warner_8",
+   "k_vfw_pic19",
+   "k_abercrombie_sl21a",
+   "k_abercrombie_sl21dec1",
+   "k_abercrombie_burton2",
+   "k_1944annex_41b"
+  ],
+  "milq_2": [
+   "k_abercrombie_gunb",
+   "k_abercrombie_ready",
+   "k_photos_don_warner_don_warner_8",
+   "k_1944annex_41b"
+  ]
+ }
+}

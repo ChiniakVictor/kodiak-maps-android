@@ -1,0 +1,141 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (NSGA Chiniak Navy DF)",
+  "label": "kadiak.org — NSGA Chiniak Navy DF",
+  "url": "https://www.kadiak.org/chiniak/df.html",
+  "note": "Photos and text from kadiak.org (Joe Stevens). Map made from Navy microfilm."
+ },
+ "photos": {
+  "df1": {
+   "file": "chiniak/chiniak_df1.webp",
+   "w": 663,
+   "h": 466,
+   "caption": "1 - This is how the DF building looked circa 1960.",
+   "credit": "Photo c. 1960; 4×5 negative held by Joe Stevens (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/df1.jpg"
+  },
+  "df2_19": {
+   "file": "chiniak/chiniak_mar21_19.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "2 - In 1998 this is all that remained of building D-1.",
+   "credit": "Photo: Curt Law, AL7LQ, 21 March 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/mar21_19.jpg"
+  },
+  "df2_20": {
+   "file": "chiniak/chiniak_mar21_20.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "2 - In 1998 this is all that remained of building D-1.",
+   "credit": "Photo: Curt Law, AL7LQ, 21 March 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/mar21_20.jpg"
+  },
+  "df3": {
+   "file": "chiniak/chiniak_ln927_09.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "3 - Located in a line tangent to array AR-2 and running for hundreds of feet is a row of concrete pillars about three feet high with numbers stamped into a metal strap poured into the top of the pillar. The posts are marked (first post(s) in a tangle of undergrowth) 50-00, 56-40, 60-00, 86-40, (another post in dense undergrowth), 80-00, 83-20, 86-40, 90-00, 100-00, 110-00, 120-00, 130-00, 140-00, 150-00.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/ln927_09.jpg"
+  },
+  "df4_ln927_08": {
+   "file": "chiniak/chiniak_ln927_08.webp",
+   "w": 344,
+   "h": 411,
+   "caption": "4 - Closeup of a concrete post with numbers on top.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/ln927_08.jpg"
+  },
+  "df4_74": {
+   "file": "chiniak/chiniak_74.webp",
+   "w": 400,
+   "h": 600,
+   "caption": "4 - Closeup of a concrete post with numbers on top.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/74.jpg"
+  },
+  "dfmapx": {
+   "file": "chiniak/maps_chinmapx.webp",
+   "w": 652,
+   "h": 608,
+   "caption": "Here is a map marked with the approximate location of the posts.",
+   "credit": "Map via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/maps/chinmapx.jpg"
+  },
+  "df5": {
+   "file": "chiniak/chiniak_array.webp",
+   "w": 738,
+   "h": 534,
+   "caption": "5 - AR-1 Low band array is at the end of the trail/road. You can drive to this one.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/array.jpg"
+  },
+  "dfar2_ln927_10": {
+   "file": "chiniak/chiniak_ln927_10.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "6 - AR-2 High band array off to the northwest across a ditch and through the woods. Boots are necessary to get here. The small trees make it hard to find.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/ln927_10.jpg"
+  },
+  "dfar2_ln927_11": {
+   "file": "chiniak/chiniak_ln927_11.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "6 - AR-2 High band array off to the northwest across a ditch and through the woods. Boots are necessary to get here. The small trees make it hard to find.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/ln927_11.jpg"
+  },
+  "dfar2_73": {
+   "file": "chiniak/chiniak_73.webp",
+   "w": 600,
+   "h": 400,
+   "caption": "7 - AR-2 High band array off to the northwest across a ditch and through the woods. Boots are necessary to get here. The small trees make it hard to find.",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/chiniak/73.jpg"
+  },
+  "dfmap4": {
+   "file": "chiniak/maps_chinmap4.webp",
+   "w": 652,
+   "h": 608,
+   "caption": "8 - Map made from 120mm microfilm, printed 8x10 and scanned. Up is Northwest.",
+   "credit": "Map: U.S. Navy Cape Chiniak sheet, c. 1960 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/maps/chinmap4.jpg"
+  }
+ },
+ "features": {
+  "milh_41": [
+   "df1",
+   "df2_19",
+   "df2_20",
+   "dfmap4"
+  ],
+  "chm_posts": [
+   "df3",
+   "df4_ln927_08",
+   "df4_74",
+   "dfmapx"
+  ],
+  "milh_28": [
+   "df3",
+   "dfar2_ln927_10",
+   "dfar2_ln927_11",
+   "dfar2_73"
+  ],
+  "milh_29": [
+   "df5"
+  ],
+  "milh_40": [
+   "dfmap4"
+  ],
+  "chm_hfdf": [
+   "dfmap4"
+  ],
+  "chm_q2": [
+   "dfmap4"
+  ],
+  "chm_lfdf": [
+   "dfmap4"
+  ]
+ }
+}

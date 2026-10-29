@@ -1,0 +1,221 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Island Alaska World War II (Round Top Radar Site at Cape Chiniak)",
+  "label": "kadiak.org — Round Top Radar Site",
+  "url": "https://www.kadiak.org/chiniak/scr296.html",
+  "note": "Photos by Curt Law, AL7LQ (18 July 1998); text by Joe Stevens."
+ },
+ "photos": {
+  "r_jul20_01": {
+   "file": "chiniak/chiniak_jul20_01.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "The Tower — SCR-296A radar tower at Round Top, Cape Chiniak, Alaska. All photos taken 1998 July 18. The tower is in excellent condition.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_01.jpg"
+  },
+  "r_jul20_02": {
+   "file": "chiniak/chiniak_jul20_02.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "The Tower — SCR-296A radar tower at Round Top, Cape Chiniak, Alaska. All photos taken 1998 July 18. The tower is in excellent condition.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_02.jpg"
+  },
+  "r_jul20_11": {
+   "file": "chiniak/chiniak_jul20_11.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "The Tower — SCR-296A radar tower at Round Top, Cape Chiniak, Alaska. All photos taken 1998 July 18. The tower is in excellent condition.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_11.jpg"
+  },
+  "r_chinrad4": {
+   "file": "chiniak/chiniak_chinrad4.webp",
+   "w": 272,
+   "h": 394,
+   "caption": "The Tower — SCR-296A radar tower at Round Top, Cape Chiniak, Alaska. All photos taken 1998 July 18. The tower is in excellent condition.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad4.jpg"
+  },
+  "r_chinrad8": {
+   "file": "chiniak/chiniak_chinrad8.webp",
+   "w": 268,
+   "h": 394,
+   "caption": "The Tower — SCR-296A radar tower at Round Top, Cape Chiniak, Alaska. All photos taken 1998 July 18. The tower is in excellent condition.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad8.jpg"
+  },
+  "r_chinrad9": {
+   "file": "chiniak/chiniak_chinrad9.webp",
+   "w": 394,
+   "h": 282,
+   "caption": "The Tower — SCR-296A radar tower at Round Top, Cape Chiniak, Alaska. All photos taken 1998 July 18. The tower is in excellent condition.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad9.jpg"
+  },
+  "r_scr296tower": {
+   "file": "chiniak/radios_scr296tower.webp",
+   "w": 1082,
+   "h": 1400,
+   "caption": "Detailed drawing of radar tower dated 9-1-45.",
+   "credit": "Drawing via kadiak.org",
+   "orig": "https://www.kadiak.org/radios/scr296tower.jpg"
+  },
+  "r_scr296tower_elevation": {
+   "file": "chiniak/radios_scr296tower_elevation.webp",
+   "w": 561,
+   "h": 1400,
+   "caption": "left portion only shows tower elevation",
+   "credit": "Drawing via kadiak.org",
+   "orig": "https://www.kadiak.org/radios/scr296tower_elevation.jpg"
+  },
+  "r_scr296tower_title": {
+   "file": "chiniak/radios_scr296tower_title.webp",
+   "w": 716,
+   "h": 352,
+   "caption": "title block of drawing",
+   "credit": "Drawing via kadiak.org",
+   "orig": "https://www.kadiak.org/radios/scr296tower_title.jpg"
+  },
+  "r_scr296tower_top": {
+   "file": "chiniak/radios_scr296tower_top.webp",
+   "w": 629,
+   "h": 1149,
+   "caption": "wooden WATER TANK top disguise radome",
+   "credit": "Drawing via kadiak.org",
+   "orig": "https://www.kadiak.org/radios/scr296tower_top.jpg"
+  },
+  "r_jul20_05": {
+   "file": "chiniak/chiniak_jul20_05.webp",
+   "w": 331,
+   "h": 237,
+   "caption": "Antenna rotor — This is on the ground directly beneath the tower.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_05.jpg"
+  },
+  "r_jul20_06": {
+   "file": "chiniak/chiniak_jul20_06.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Antenna rotor — This is on the ground directly beneath the tower.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_06.jpg"
+  },
+  "r_jul20_07": {
+   "file": "chiniak/chiniak_jul20_07.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Antenna rotor — This is on the ground directly beneath the tower.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_07.jpg"
+  },
+  "r_jul20_08": {
+   "file": "chiniak/chiniak_jul20_08.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Antenna rotor — This is on the ground directly beneath the tower.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_08.jpg"
+  },
+  "r_jul20_09": {
+   "file": "chiniak/chiniak_jul20_09.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Antenna rotor — This is on the ground directly beneath the tower.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_09.jpg"
+  },
+  "r_jul20_10": {
+   "file": "chiniak/chiniak_jul20_10.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "Antenna rotor — This is on the ground directly beneath the tower.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_10.jpg"
+  },
+  "r_chinrad1": {
+   "file": "chiniak/chiniak_chinrad1.webp",
+   "w": 268,
+   "h": 394,
+   "caption": "Quonset seen from the tower.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad1.jpg"
+  },
+  "r_chinrad2": {
+   "file": "chiniak/chiniak_chinrad2.webp",
+   "w": 392,
+   "h": 274,
+   "caption": "Main rectangular metal radar equipment building.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad2.jpg"
+  },
+  "r_chinrad3": {
+   "file": "chiniak/chiniak_chinrad3.webp",
+   "w": 392,
+   "h": 274,
+   "caption": "Main rectangular metal radar equipment building.",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad3.jpg"
+  },
+  "r_chinrad5": {
+   "file": "chiniak/chiniak_chinrad5.webp",
+   "w": 392,
+   "h": 276,
+   "caption": "Loading dock",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad5.jpg"
+  },
+  "r_chinrad6": {
+   "file": "chiniak/chiniak_chinrad6.webp",
+   "w": 272,
+   "h": 394,
+   "caption": "Wooden water tower",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad6.jpg"
+  },
+  "r_chinrad7": {
+   "file": "chiniak/chiniak_chinrad7.webp",
+   "w": 272,
+   "h": 396,
+   "caption": "Main radar building as seen from the water tower",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/chinrad7.jpg"
+  },
+  "r_jul20_03": {
+   "file": "chiniak/chiniak_jul20_03.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "This pile of timbers is all that remains of the Group No. 1 command and observation post. It was a 50-foot, single-level wooden tower completed 17 November 1943. This tower was equipped with an M1 DPF, class 4, and an SCR-828 FM radio to communicate with the plotting room near St. Peter's Head. Radar page END",
+   "credit": "Photo: Curt Law, AL7LQ, 18 July 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/jul20_03.jpg"
+  }
+ },
+ "features": {
+  "milh_12": [
+   "r_jul20_01",
+   "r_jul20_02",
+   "r_jul20_11",
+   "r_chinrad4",
+   "r_chinrad8",
+   "r_chinrad9",
+   "r_scr296tower",
+   "r_scr296tower_elevation",
+   "r_scr296tower_title",
+   "r_scr296tower_top",
+   "r_jul20_05",
+   "r_jul20_06",
+   "r_jul20_07",
+   "r_jul20_08",
+   "r_jul20_09",
+   "r_jul20_10",
+   "r_chinrad1",
+   "r_chinrad2",
+   "r_chinrad3",
+   "r_chinrad5",
+   "r_chinrad6",
+   "r_chinrad7",
+   "r_jul20_03"
+  ]
+ }
+}

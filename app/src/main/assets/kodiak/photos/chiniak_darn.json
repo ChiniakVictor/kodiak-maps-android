@@ -1,0 +1,41 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska, Super DARN",
+  "label": "kadiak.org — SuperDARN Chiniak",
+  "url": "https://www.kadiak.org/darn/index.html",
+  "note": "Photos September 1999, via kadiak.org."
+ },
+ "photos": {
+  "darn1": {
+   "file": "chiniak/darn_1_1152.webp",
+   "w": 1000,
+   "h": 750,
+   "caption": "[SuperDARN (Super Dual Auroral Radar Network), Chiniak. The page gives no caption beyond 'Photos September 1999'.]",
+   "credit": "Photo via kadiak.org, September 1999",
+   "orig": "https://www.kadiak.org/darn/1_1152.jpg"
+  },
+  "darn2": {
+   "file": "chiniak/darn_2_1152.webp",
+   "w": 1000,
+   "h": 750,
+   "caption": "[SuperDARN (Super Dual Auroral Radar Network), Chiniak. The page gives no caption beyond 'Photos September 1999'.]",
+   "credit": "Photo via kadiak.org, September 1999",
+   "orig": "https://www.kadiak.org/darn/2_1152.jpg"
+  },
+  "darnmap": {
+   "file": "chiniak/darn_map.webp",
+   "w": 650,
+   "h": 608,
+   "caption": "Map showing Miller Field and approximate location of SuperDARN Chiniak. From a WW II map of the area.",
+   "credit": "Map via kadiak.org",
+   "orig": "https://www.kadiak.org/darn/map.jpg"
+  }
+ },
+ "features": {
+  "chm_darn": [
+   "darn1",
+   "darn2",
+   "darnmap"
+  ]
+ }
+}

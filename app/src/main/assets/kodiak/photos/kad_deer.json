@@ -1,0 +1,74 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Fort Tidball, Deer Point, Long Island",
+  "label": "kadiak.org — Fort Tidball, Deer Point",
+  "url": "https://www.kadiak.org/long_is/deer.html",
+  "note": "Fort Tidball, Group 2 and Battery 4 at Deer Point, Long Island (kadiak.org, Joe Stevens)."
+ },
+ "photos": {
+  "k_maps_li_map": {
+   "file": "kadiak/deer/maps_li_map.webp",
+   "w": 597,
+   "h": 554,
+   "caption": "[Long Island map. Page heading next to it: 'Magazines and Plotting & Spotting'.]",
+   "credit": "Map via kadiak.org",
+   "orig": "https://www.kadiak.org/maps/li_map.jpg"
+  },
+  "k_long_is_deer1_1200x800": {
+   "file": "kadiak/deer/long_is_deer1_1200x800.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "On the hill above the spotting and plotting bunker are remains of several wooden buildings. Photo March 2000",
+   "credit": "Photo via kadiak.org (Joe Stevens), March 2000",
+   "orig": "https://www.kadiak.org/long_is/deer1_1200x800.jpg"
+  },
+  "k_long_is_deer2_800x1200": {
+   "file": "kadiak/deer/long_is_deer2_800x1200.webp",
+   "w": 667,
+   "h": 1000,
+   "caption": "Seen from above is the spotting and plotting bunker. Photo March 2000",
+   "credit": "Photo via kadiak.org (Joe Stevens), March 2000",
+   "orig": "https://www.kadiak.org/long_is/deer2_800x1200.jpg"
+  },
+  "k_long_is_deer3_1200x800": {
+   "file": "kadiak/deer/long_is_deer3_1200x800.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "The walls of the spotting and plotting bunker are solid studs with no space between. Little of the roof remains intact. Photo March 2000",
+   "credit": "Photo via kadiak.org (Joe Stevens), March 2000",
+   "orig": "https://www.kadiak.org/long_is/deer3_1200x800.jpg"
+  },
+  "k_long_is_deer4_1200x800": {
+   "file": "kadiak/deer/long_is_deer4_1200x800.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "Front of plotting and spotting. Photo March 2000",
+   "credit": "Photo via kadiak.org (Joe Stevens), March 2000",
+   "orig": "https://www.kadiak.org/long_is/deer4_1200x800.jpg"
+  },
+  "k_long_is_deer8_1200x800": {
+   "file": "kadiak/deer/long_is_deer8_1200x800.webp",
+   "w": 1000,
+   "h": 667,
+   "caption": "Above the bunker shown above are what appears to be lightning rod bases. Photo March 2000",
+   "credit": "Photo via kadiak.org (Joe Stevens), March 2000",
+   "orig": "https://www.kadiak.org/long_is/deer8_1200x800.jpg"
+  }
+ },
+ "features": {
+  "milg_bat4": [
+   "k_maps_li_map",
+   "k_long_is_deer1_1200x800",
+   "k_long_is_deer2_800x1200",
+   "k_long_is_deer3_1200x800",
+   "k_long_is_deer4_1200x800",
+   "k_long_is_deer8_1200x800"
+  ],
+  "milg_bat5": [
+   "k_maps_li_map"
+  ],
+  "milg_licamp": [
+   "k_maps_li_map"
+  ]
+ }
+}

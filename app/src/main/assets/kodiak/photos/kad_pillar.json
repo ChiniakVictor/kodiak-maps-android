@@ -1,0 +1,104 @@
+{
+ "source": {
+  "title": "kadiak.org — Military History in Kodiak Alaska, WACS",
+  "label": "kadiak.org — White Alice (WACS)",
+  "url": "https://www.kadiak.org/wacs/wacs.html",
+  "note": "White Alice Communications System station PMY on Pillar Mountain, c. 1956–1979, dismantled 1997 (kadiak.org)."
+ },
+ "photos": {
+  "k_wacs_wa6": {
+   "file": "kadiak/pillar/wacs_wa6.webp",
+   "w": 768,
+   "h": 273,
+   "caption": "[White Alice station PMY, Pillar Mountain. Page text: 'The Kodiak station, PMY, was on Pillar Mountain. It was dismantled during the summer of 1997.']",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/wacs/wa6.jpg"
+  },
+  "k_wacs_pillar_aerial": {
+   "file": "kadiak/pillar/wacs_pillar_aerial.webp",
+   "w": 640,
+   "h": 480,
+   "caption": "[Aerial view of the Pillar Mountain White Alice site.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/wacs/pillar_aerial.jpg"
+  },
+  "k_wacs_r_ak2": {
+   "file": "kadiak/pillar/wacs_r_ak2.webp",
+   "w": 567,
+   "h": 418,
+   "caption": "[White Alice construction, Pillar Mountain, March 1957.]",
+   "credit": "Photo by 'Will', March 1957 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/wacs/r_ak2.jpg"
+  },
+  "k_wacs_r_ak3": {
+   "file": "kadiak/pillar/wacs_r_ak3.webp",
+   "w": 585,
+   "h": 405,
+   "caption": "[White Alice construction, Pillar Mountain, March 1957.]",
+   "credit": "Photo by 'Will', March 1957 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/wacs/r_ak3.jpg"
+  },
+  "k_wacs_r_ak4": {
+   "file": "kadiak/pillar/wacs_r_ak4.webp",
+   "w": 572,
+   "h": 387,
+   "caption": "[White Alice construction, Pillar Mountain, March 1957.]",
+   "credit": "Photo by 'Will', March 1957 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/wacs/r_ak4.jpg"
+  },
+  "k_wacs_r_ak7": {
+   "file": "kadiak/pillar/wacs_r_ak7.webp",
+   "w": 556,
+   "h": 387,
+   "caption": "In the first photo is George Kost from Michigan Bell.",
+   "credit": "Photo by 'Will', March 1957 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/wacs/r_ak7.jpg"
+  },
+  "k_wacs_wa1": {
+   "file": "kadiak/pillar/wacs_wa1.webp",
+   "w": 340,
+   "h": 493,
+   "caption": "[Pillar Mountain White Alice station.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/wacs/wa1.jpg"
+  },
+  "k_wacs_wa3": {
+   "file": "kadiak/pillar/wacs_wa3.webp",
+   "w": 308,
+   "h": 444,
+   "caption": "[Pillar Mountain White Alice station.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/wacs/wa3.jpg"
+  },
+  "k_wacs_wa5": {
+   "file": "kadiak/pillar/wacs_wa5.webp",
+   "w": 441,
+   "h": 309,
+   "caption": "[Pillar Mountain White Alice station.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/wacs/wa5.jpg"
+  },
+  "k_wacs_kodiak_60_footer": {
+   "file": "kadiak/pillar/wacs_kodiak_60_footer.webp",
+   "w": 768,
+   "h": 512,
+   "caption": "[Kodiak (PMY) 60-foot antenna.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/wacs/kodiak_60_footer.jpg"
+  }
+ },
+ "features": {
+  "kd_pillar": [
+   "k_wacs_wa6",
+   "k_wacs_pillar_aerial",
+   "k_wacs_r_ak2",
+   "k_wacs_r_ak3",
+   "k_wacs_r_ak4",
+   "k_wacs_r_ak7",
+   "k_wacs_wa1",
+   "k_wacs_wa3",
+   "k_wacs_wa5",
+   "k_wacs_kodiak_60_footer"
+  ]
+ }
+}

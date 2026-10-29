@@ -1,0 +1,117 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Alaska Military History (Bald Hill Searchlight Shelter and Distant Electric Control)",
+  "label": "kadiak.org — Bald Hill searchlight & DEC",
+  "url": "https://www.kadiak.org/chiniak/bald.html",
+  "note": "Photos by J. Stevens (4 July 1999) and veteran Walter Dangel, via kadiak.org."
+ },
+ "photos": {
+  "b2": {
+   "file": "chiniak/chiniak_bald2.webp",
+   "w": 640,
+   "h": 462,
+   "caption": "Searchlight No. 8",
+   "credit": "Photo: J. Stevens, 4 July 1999 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/bald2.jpg"
+  },
+  "b3": {
+   "file": "chiniak/chiniak_bald3.webp",
+   "w": 750,
+   "h": 496,
+   "caption": "DEC for Searchlight No. 8 looking toward Cape Chiniak",
+   "credit": "Photo: J. Stevens, 4 July 1999 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/bald3.jpg"
+  },
+  "b4": {
+   "file": "chiniak/chiniak_bald4.webp",
+   "w": 800,
+   "h": 240,
+   "caption": "DEC bunker for Searchlight No. 8 Isador Is. and St. Peters Head beyond to the right. This photo taken from atop the searchlight shelter.",
+   "credit": "Photo: J. Stevens, 4 July 1999 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/chiniak/bald4.jpg"
+  },
+  "bd_light1": {
+   "file": "chiniak/dangel_light1.webp",
+   "w": 249,
+   "h": 410,
+   "caption": "WW II photos by Walter Dangel",
+   "credit": "Photo: Walter Dangel, WWII (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/light1.jpg"
+  },
+  "bd_light2": {
+   "file": "chiniak/dangel_light2.webp",
+   "w": 221,
+   "h": 332,
+   "caption": "WW II photos by Walter Dangel",
+   "credit": "Photo: Walter Dangel, WWII (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/light2.jpg"
+  },
+  "bd_light3": {
+   "file": "chiniak/dangel_light3.webp",
+   "w": 338,
+   "h": 220,
+   "caption": "WW II photos by Walter Dangel",
+   "credit": "Photo: Walter Dangel, WWII (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/light3.jpg"
+  },
+  "bd_light4": {
+   "file": "chiniak/dangel_light4.webp",
+   "w": 444,
+   "h": 179,
+   "caption": "WW II photos by Walter Dangel",
+   "credit": "Photo: Walter Dangel, WWII (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/light4.jpg"
+  },
+  "bd_bald6": {
+   "file": "chiniak/dangel_bald6.webp",
+   "w": 384,
+   "h": 280,
+   "caption": "1978 Photos by Walter Dangel — These were taken in 1978 of my searchlight position and living quarters. The character in them is Walter Dangel. In the long shot you can see the house and the small power plant (for lighting) is seen near the lake level.",
+   "credit": "Photo: Walter Dangel, 1978 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/bald6.jpg"
+  },
+  "bd_bald7": {
+   "file": "chiniak/dangel_bald7.webp",
+   "w": 382,
+   "h": 287,
+   "caption": "1978 Photos by Walter Dangel — These were taken in 1978 of my searchlight position and living quarters. The character in them is Walter Dangel. In the long shot you can see the house and the small power plant (for lighting) is seen near the lake level.",
+   "credit": "Photo: Walter Dangel, 1978 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/bald7.jpg"
+  },
+  "bd_bald8": {
+   "file": "chiniak/dangel_bald8.webp",
+   "w": 380,
+   "h": 190,
+   "caption": "1978 Photos by Walter Dangel — These were taken in 1978 of my searchlight position and living quarters. The character in them is Walter Dangel. In the long shot you can see the house and the small power plant (for lighting) is seen near the lake level.",
+   "credit": "Photo: Walter Dangel, 1978 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/bald8.jpg"
+  },
+  "bd_bald9": {
+   "file": "chiniak/dangel_bald9.webp",
+   "w": 390,
+   "h": 227,
+   "caption": "1978 Photos by Walter Dangel — These were taken in 1978 of my searchlight position and living quarters. The character in them is Walter Dangel. In the long shot you can see the house and the small power plant (for lighting) is seen near the lake level.",
+   "credit": "Photo: Walter Dangel, 1978 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/dangel/bald9.jpg"
+  }
+ },
+ "features": {
+  "chm_sl8": [
+   "b2",
+   "b3",
+   "b4",
+   "bd_light1",
+   "bd_light2",
+   "bd_light3",
+   "bd_light4",
+   "bd_bald6",
+   "bd_bald7",
+   "bd_bald8",
+   "bd_bald9"
+  ],
+  "chm_dec8": [
+   "b3",
+   "b4"
+  ]
+ }
+}

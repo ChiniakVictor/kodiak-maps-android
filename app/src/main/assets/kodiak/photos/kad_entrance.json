@@ -1,0 +1,32 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Entrance Point",
+  "label": "kadiak.org — Entrance Point",
+  "url": "https://www.kadiak.org/entrance-point/index.html",
+  "note": "Kodiak Naval Operating Base Entrance Point Anti-Aircraft Training Center, Neva Cove (kadiak.org)."
+ },
+ "photos": {
+  "k_entrance_point_map": {
+   "file": "kadiak/entrance/entrance_point_map.webp",
+   "w": 818,
+   "h": 1400,
+   "caption": "Map showing buildings June 30, 1943.",
+   "credit": "Map via kadiak.org",
+   "orig": "https://www.kadiak.org/entrance-point/map.jpg"
+  },
+  "k_entrance_point_map_title_block": {
+   "file": "kadiak/entrance/entrance_point_map_title_block.webp",
+   "w": 610,
+   "h": 1256,
+   "caption": "This map is sheet 7 of 7 but it is the only one we have.",
+   "credit": "Map via kadiak.org",
+   "orig": "https://www.kadiak.org/entrance-point/map-title-block.jpg"
+  }
+ },
+ "features": {
+  "kd_entrance": [
+   "k_entrance_point_map",
+   "k_entrance_point_map_title_block"
+  ]
+ }
+}

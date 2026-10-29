@@ -1,0 +1,334 @@
+{
+ "source": {
+  "title": "Trail photos",
+  "url": "https://commons.wikimedia.org/",
+  "note": "Per-photo credit, licence and link shown with each photo. EXIF/GPS stripped.",
+  "label": "Wikimedia Commons",
+  "heading": "Photos"
+ },
+ "photos": {
+  "c048": {
+   "file": "places/c048_barometer_mountain_kodiak.webp",
+   "w": 1280,
+   "h": 851,
+   "caption": "Barometer Mountain",
+   "credit": "Photo: naql",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Barometer_Mountain,_Kodiak.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c049": {
+   "file": "places/c049_barometer_mountain_kodiak_isl.webp",
+   "w": 1280,
+   "h": 547,
+   "caption": "East side of Barometer Mountain",
+   "credit": "Photo: USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Barometer_Mountain,_Kodiak_Isl.jpg"
+  },
+  "c050": {
+   "file": "places/c050_barometer_mountain_nw.webp",
+   "w": 1280,
+   "h": 715,
+   "caption": "Barometer Mountain from the northwest",
+   "credit": "Photo: naql",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Barometer_Mountain_nw.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c051": {
+   "file": "places/c051_barometer_mountain_at_sunset.webp",
+   "w": 1280,
+   "h": 1046,
+   "caption": "Barometer Mountain at sunset",
+   "credit": "Photo: naql",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Barometer_Mountain_at_Sunset.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c052": {
+   "file": "places/c052_barometer_mountain_8431824710.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "Barometer Mountain",
+   "credit": "Photo: USFWS (Salmon Camp participant) (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Barometer_Mountain_(8431824710).jpg"
+  },
+  "c053": {
+   "file": "places/c053_barometer_mountain.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "Barometer Mountain",
+   "credit": "Photo: Nutriawood",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Barometer_Mountain.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "c054": {
+   "file": "places/c054_210712_fort_abercrombie_51312201779.webp",
+   "w": 1280,
+   "h": 738,
+   "caption": "Fort Abercrombie, July 2021",
+   "credit": "Photo: James Brooks",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:210712_Fort_Abercrombie_(51312201779).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c055": {
+   "file": "places/c055_fort_abercrombie.webp",
+   "w": 1280,
+   "h": 968,
+   "caption": "Fort Abercrombie",
+   "credit": "Photo: 61north",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fort_Abercrombie.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "c056": {
+   "file": "places/c056_fort_abercrombie.webp",
+   "w": 1280,
+   "h": 853,
+   "caption": "Fort Abercrombie",
+   "credit": "Photo: kennakenai",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fort_abercrombie.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c057": {
+   "file": "places/c057_miller_point_gun_enplacement.webp",
+   "w": 1280,
+   "h": 848,
+   "caption": "Miller Point gun emplacement, Fort Abercrombie",
+   "credit": "Photo: Geoff0522",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Miller_Point_Gun_Enplacement.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "c058": {
+   "file": "places/c058_moss_covered_sitka_spruce_trees_in_fort_.webp",
+   "w": 853,
+   "h": 1280,
+   "caption": "Moss-covered Sitka spruce in Fort Abercrombie State Historical Park",
+   "credit": "Photo: Hiart (CC0, public domain dedication)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Moss-covered_Sitka_spruce_trees_in_Fort_Abercrombie_State_Historical_Park.jpg"
+  },
+  "c059": {
+   "file": "places/c059_210714_kodiak_from_pillar_mountain_51325.webp",
+   "w": 1280,
+   "h": 790,
+   "caption": "Kodiak from Pillar Mountain, July 2021",
+   "credit": "Photo: James Brooks",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:210714_Kodiak_from_Pillar_Mountain_(51325957909).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c060": {
+   "file": "places/c060_kodiak_view_from_pillar_mountain.webp",
+   "w": 1024,
+   "h": 768,
+   "caption": "View from Pillar Mountain",
+   "credit": "Photo: Katie Walker",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Kodiak,_View_from_Pillar_Mountain.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c061": {
+   "file": "places/c061_210714_kodiak_from_pillar_mountain.webp",
+   "w": 1280,
+   "h": 680,
+   "caption": "Kodiak from Pillar Mountain, July 2021",
+   "credit": "Photo: James Brooks",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:210714_Kodiak_from_Pillar_Mountain.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c062": {
+   "file": "places/c062_devils_prongs_kodiak.webp",
+   "w": 1280,
+   "h": 494,
+   "caption": "Devils Prongs from the east",
+   "credit": "Photo: USFWS (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Devils_Prongs,_Kodiak.jpg"
+  },
+  "c063": {
+   "file": "places/c063_devils_prongs.webp",
+   "w": 1280,
+   "h": 853,
+   "caption": "Devils Prongs",
+   "credit": "Photo: naql",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Devils_Prongs.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c064": {
+   "file": "places/c064_devils_prongs_north.webp",
+   "w": 1280,
+   "h": 851,
+   "caption": "Devils Prongs from the north",
+   "credit": "Photo: naql",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Devils_Prongs_north.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c065": {
+   "file": "places/c065_210714_three_sisters_kodiak_51325435833.webp",
+   "w": 1280,
+   "h": 771,
+   "caption": "The Three Sisters, July 2021",
+   "credit": "Photo: James Brooks",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:210714_Three_Sisters_Kodiak_(51325435833).jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c066": {
+   "file": "places/c066_pyramid_mountain_alaska.webp",
+   "w": 1280,
+   "h": 952,
+   "caption": "Pyramid Mountain",
+   "credit": "Photo: naql",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Pyramid_Mountain,_Alaska.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c067": {
+   "file": "places/c067_termination_point.webp",
+   "w": 1280,
+   "h": 720,
+   "caption": "Termination Point",
+   "credit": "Photo: Swfisher3",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Termination_Point.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "c068": {
+   "file": "places/c068_narrow_cape_formation_by_nick_longrich.webp",
+   "w": 960,
+   "h": 1280,
+   "caption": "Narrow Cape Formation at Fossil Beach",
+   "credit": "Photo: Nick Longrich",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Narrow_Cape_Formation_by_Nick_Longrich.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "c069": {
+   "file": "places/c069_bivalve_fossils_in_rock_on_kodiak_island.webp",
+   "w": 1280,
+   "h": 960,
+   "caption": "Fossil bivalves in a rock at Fossil Beach",
+   "credit": "Photo: NOAA Ship Fairweather crew (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Bivalve_Fossils_in_Rock_on_Kodiak_Island_in_Alaska.jpg"
+  },
+  "c070": {
+   "file": "places/c070_kodiak_island_bison.webp",
+   "w": 1280,
+   "h": 878,
+   "caption": "Bison on the Narrow Cape ranch, July 2021",
+   "credit": "Photo: James Brooks",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Kodiak_Island_bison.jpg",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "c071": {
+   "file": "places/c071_lupines_on_woody_island_near_kodiak_isla.webp",
+   "w": 668,
+   "h": 510,
+   "caption": "Lupines on Woody Island, July 1899 (Harriman Expedition)",
+   "credit": "Photo: Edward S. Curtis (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Lupines_on_Woody_Island_near_Kodiak_Island,_Alaska,_July_1899_(HARRIMAN_160).jpg"
+  },
+  "c072": {
+   "file": "places/c072_long_island_near_kodiak_island_alaska_ju.webp",
+   "w": 642,
+   "h": 510,
+   "caption": "Long Island near Kodiak, July 1899 (Harriman Expedition)",
+   "credit": "Photo: Edward S. Curtis (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Long_Island_near_Kodiak_Island,_Alaska,_July_1899_(HARRIMAN_226).jpg"
+  },
+  "c074": {
+   "file": "places/c074_fox_farm_on_long_island_east_of_kodiak_i.webp",
+   "w": 647,
+   "h": 510,
+   "caption": "Fox farm on Long Island, July 1899 (Harriman Expedition)",
+   "credit": "Photo: Edward S. Curtis (public domain)",
+   "label": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fox_farm_on_Long_Island_east_of_Kodiak_Island,_Alaska,_July_1899_(HARRIMAN_221).jpg"
+  }
+ },
+ "features": {
+  "trail:t2": [
+   "c048",
+   "c049",
+   "c050",
+   "c051",
+   "c052",
+   "c053"
+  ],
+  "trail:t16": [
+   "c054",
+   "c055",
+   "c056",
+   "c057",
+   "c058"
+  ],
+  "trail:t40": [
+   "c059",
+   "c060",
+   "c061"
+  ],
+  "trail:t41": [
+   "c059",
+   "c060",
+   "c061"
+  ],
+  "trail:t42": [
+   "c062",
+   "c063",
+   "c064"
+  ],
+  "trail:t71": [
+   "c065"
+  ],
+  "trail:t43": [
+   "c066"
+  ],
+  "trail:t69": [
+   "c067"
+  ],
+  "trail:t28": [
+   "c068",
+   "c069",
+   "c070"
+  ],
+  "trail:t76": [
+   "c071"
+  ],
+  "trail:t24": [
+   "c072",
+   "c074"
+  ]
+ }
+}

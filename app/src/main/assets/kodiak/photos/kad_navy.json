@@ -1,0 +1,117 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, U.S. Naval Base Kodiak",
+  "label": "kadiak.org — U.S. Naval Base Kodiak",
+  "url": "https://www.kadiak.org/navy/index.html",
+  "note": "Index of 4x5 negatives in Navy collection received from Bud Cassidy (kadiak.org)."
+ },
+ "photos": {
+  "k_navy_b36_1_": {
+   "file": "kadiak/navy/navy_b36_1_.webp",
+   "w": 381,
+   "h": 480,
+   "caption": "Control Tower May 25, 1961",
+   "credit": "U.S. Navy 4×5 negative, Navy collection received from Bud Cassidy (via kadiak.org)",
+   "orig": "https://www.kadiak.org/navy/b36_1_.jpg"
+  },
+  "k_navy_b519_1": {
+   "file": "kadiak/navy/navy_b519_1.webp",
+   "w": 605,
+   "h": 480,
+   "caption": "Building 519 EM club April 27, 1961",
+   "credit": "U.S. Navy 4×5 negative, Navy collection received from Bud Cassidy (via kadiak.org)",
+   "orig": "https://www.kadiak.org/navy/b519_1.jpg"
+  },
+  "k_navy_b519_3": {
+   "file": "kadiak/navy/navy_b519_3.webp",
+   "w": 602,
+   "h": 480,
+   "caption": "Building 519 EM club May 24, 1961",
+   "credit": "U.S. Navy 4×5 negative, Navy collection received from Bud Cassidy (via kadiak.org)",
+   "orig": "https://www.kadiak.org/navy/b519_3.jpg"
+  },
+  "k_navy_b3_519_1": {
+   "file": "kadiak/navy/navy_b3_519_1.webp",
+   "w": 602,
+   "h": 480,
+   "caption": "Building 519 EM club August 14, 1961",
+   "credit": "U.S. Navy 4×5 negative, Navy collection received from Bud Cassidy (via kadiak.org)",
+   "orig": "https://www.kadiak.org/navy/b3_519_1.jpg"
+  },
+  "k_navy_b_s34_1": {
+   "file": "kadiak/navy/navy_b_s34_1.webp",
+   "w": 602,
+   "h": 480,
+   "caption": "Building S34, Civilian Womens Barracks, 1-30-61, R.L. Osborn",
+   "credit": "U.S. Navy 4×5 negative, Navy collection received from Bud Cassidy (via kadiak.org); photo R.L. Osborn",
+   "orig": "https://www.kadiak.org/navy/b_s34_1.jpg"
+  },
+  "k_navy_b_s1_3": {
+   "file": "kadiak/navy/navy_b_s1_3.webp",
+   "w": 602,
+   "h": 480,
+   "caption": "Bldg 1, Admin, to be painted, June 12, 1961, Gilless",
+   "credit": "U.S. Navy 4×5 negative, Navy collection received from Bud Cassidy (via kadiak.org); photo Gilless",
+   "orig": "https://www.kadiak.org/navy/b_s1_3.jpg"
+  },
+  "k_navy_b7_1": {
+   "file": "kadiak/navy/navy_b7_1.webp",
+   "w": 602,
+   "h": 480,
+   "caption": "Old buildings to be removed from old Army Town, January 10, 1961, R.M. Hinkson, PH2",
+   "credit": "U.S. Navy 4×5 negative, Navy collection received from Bud Cassidy (via kadiak.org); photo R.M. Hinkson, PH2",
+   "orig": "https://www.kadiak.org/navy/b7__1.jpg"
+  },
+  "k_navy_jessup9000": {
+   "file": "kadiak/navy/navy_jessup9000.webp",
+   "w": 974,
+   "h": 1000,
+   "caption": "Navy base from 9000 feet 1950",
+   "credit": "Jessup photo via kadiak.org",
+   "orig": "https://www.kadiak.org/navy/jessup9000.jpg"
+  },
+  "k_navy_jessup_vp931": {
+   "file": "kadiak/navy/navy_jessup_vp931.webp",
+   "w": 1000,
+   "h": 727,
+   "caption": "VP-931 hangar 1952",
+   "credit": "Jessup photo via kadiak.org",
+   "orig": "https://www.kadiak.org/navy/jessup_vp931.jpg"
+  },
+  "k_navy_p2v_and_pb4y_at_nas_kodiak_1949": {
+   "file": "kadiak/navy/navy_p2v_and_pb4y_at_nas_kodiak_1949.webp",
+   "w": 1000,
+   "h": 572,
+   "caption": "P2V and PB4Y at NAS Kodiak 1949",
+   "credit": "Photo via kadiak.org",
+   "orig": "https://www.kadiak.org/navy/p2v_and_pb4y_at_nas_kodiak_1949.jpg"
+  },
+  "k_navy_p_40s_at_kodiak": {
+   "file": "kadiak/navy/navy_p_40s_at_kodiak.webp",
+   "w": 958,
+   "h": 722,
+   "caption": "Canadian P-40s at Kodiak",
+   "credit": "WWII photo via kadiak.org",
+   "orig": "https://www.kadiak.org/navy/p-40s_at_kodiak.jpg"
+  }
+ },
+ "features": {
+  "kd_navy": [
+   "k_navy_b36_1_",
+   "k_navy_b_s1_3",
+   "k_navy_b7_1",
+   "k_navy_jessup9000",
+   "k_navy_jessup_vp931",
+   "k_navy_p2v_and_pb4y_at_nas_kodiak_1949",
+   "k_navy_p_40s_at_kodiak"
+  ],
+  "milh_81": [
+   "k_navy_b519_1",
+   "k_navy_b519_3",
+   "k_navy_b3_519_1"
+  ],
+  "milh_110": [
+   "k_navy_b_s34_1"
+  ]
+ }
+}

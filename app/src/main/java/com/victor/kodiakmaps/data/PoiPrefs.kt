@@ -10,6 +10,8 @@ object PoiPrefs {
         val food: Boolean = false, val travel: Boolean = false, val mil: Boolean = false,
         val schools: Boolean = false, val community: Boolean = false,
         val privacyOk: Boolean = false, val tourNever: Boolean = false,
+        /** v1.5.10: "Don't show again" on the startup layers-bar tip. */
+        val layersTipNever: Boolean = false,
     )
     private const val FILE = "poi_onboarding"
     private val _s = MutableStateFlow(S())
@@ -19,8 +21,11 @@ object PoiPrefs {
     @Synchronized fun load(ctx: Context): S {
         if (loaded) return _s.value
         val p = ctx.getSharedPreferences(FILE, Context.MODE_PRIVATE)
+        // v1.5.13: one-time reset of the POI layers to off (privacy note / tour / layers-tip choices are kept)
+        LayerDefaults.migrate(p, LayerDefaults.POI.associateWith { false })
         _s.value = S(p.getBoolean("food", false), p.getBoolean("travel", false), p.getBoolean("mil", false),
-            p.getBoolean("schools", false), p.getBoolean("community", false), p.getBoolean("privacyOk", false), p.getBoolean("tourNever", false))
+            p.getBoolean("schools", false), p.getBoolean("community", false), p.getBoolean("privacyOk", false), p.getBoolean("tourNever", false),
+            p.getBoolean("layersTipNever", false))
         loaded = true; return _s.value
     }
 
@@ -28,6 +33,6 @@ object PoiPrefs {
         load(ctx); val n = f(_s.value); _s.value = n
         ctx.getSharedPreferences(FILE, Context.MODE_PRIVATE).edit()
             .putBoolean("food", n.food).putBoolean("travel", n.travel).putBoolean("mil", n.mil).putBoolean("schools", n.schools)
-            .putBoolean("community", n.community).putBoolean("privacyOk", n.privacyOk).putBoolean("tourNever", n.tourNever).apply()
+            .putBoolean("community", n.community).putBoolean("privacyOk", n.privacyOk).putBoolean("tourNever", n.tourNever).putBoolean("layersTipNever", n.layersTipNever).apply()
     }
 }

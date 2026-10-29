@@ -1,0 +1,86 @@
+{
+ "source": {
+  "title": "kadiak.org — Kodiak Military History, Airport",
+  "label": "kadiak.org — Airport",
+  "url": "https://www.kadiak.org/adq/index.html",
+  "note": "The original Navy and Army airfield (c. 1940), AUW compound, crash hangar 456, Bldg 585 and Bldg 99 (kadiak.org)."
+ },
+ "photos": {
+  "k_adq_auw1": {
+   "file": "kadiak/airport/adq_auw1.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "[AUW compound. Page text: 'This was a heavily guarded weapons storage compound. It is called the Advanced Underwater Weapons shop on some references.']",
+   "credit": "Photo: Joe Stevens, 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/adq/auw1.jpg"
+  },
+  "k_adq_auw3": {
+   "file": "kadiak/airport/adq_auw3.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "[AUW compound.]",
+   "credit": "Photo: Joe Stevens, 1998 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/adq/auw3.jpg"
+  },
+  "k_adq_585": {
+   "file": "kadiak/airport/adq_585.webp",
+   "w": 1000,
+   "h": 659,
+   "caption": "Building 585",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/adq/585.jpg"
+  },
+  "k_adq_456a": {
+   "file": "kadiak/airport/adq_456a.webp",
+   "w": 640,
+   "h": 427,
+   "caption": "[Building 456, near the mouth of the river.]",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/adq/456a.jpg"
+  },
+  "k_adq_map": {
+   "file": "kadiak/airport/adq_map.webp",
+   "w": 320,
+   "h": 480,
+   "caption": "Large plan of runways found in building 456. (Labels not on original.)",
+   "credit": "Plan via kadiak.org",
+   "orig": "https://www.kadiak.org/adq/map.jpg"
+  },
+  "k_bob_leonard_airport_1956_65_0391": {
+   "file": "kadiak/airport/bob_leonard_airport_1956_65_0391.webp",
+   "w": 1000,
+   "h": 750,
+   "caption": "Bob Leonard photos during 1956-1957 while flying in P2V-7s. Note the absence of the AUW compound shown above. Building 456 is visible near the mouth of the river.",
+   "credit": "Photo: Bob Leonard, 1956–57 (via kadiak.org)",
+   "orig": "https://www.kadiak.org/bob_leonard/airport-1956-65-0391.jpg"
+  },
+  "k_adq_kodiak3": {
+   "file": "kadiak/airport/adq_kodiak3.webp",
+   "w": 1000,
+   "h": 707,
+   "caption": "[Kodiak airfield, circa 1965. A reader wrote that it looks like an HU-16 just landed on Runway 25 and a P2-V ready for takeoff.]",
+   "credit": "Photo via kadiak.org, c. 1965",
+   "orig": "https://www.kadiak.org/adq/kodiak3.jpg"
+  },
+  "k_adq_airport_from_pillar_01jan09": {
+   "file": "kadiak/airport/adq_airport_from_pillar_01jan09.webp",
+   "w": 1000,
+   "h": 750,
+   "caption": "2009 January 1",
+   "credit": "Photo via kadiak.org (Joe Stevens)",
+   "orig": "https://www.kadiak.org/adq/airport-from-pillar-01jan09.jpg"
+  }
+ },
+ "features": {
+  "kd_airport": [
+   "k_adq_auw1",
+   "k_adq_auw3",
+   "k_adq_585",
+   "k_adq_456a",
+   "k_adq_map",
+   "k_bob_leonard_airport_1956_65_0391",
+   "k_adq_kodiak3",
+   "k_adq_airport_from_pillar_01jan09"
+  ]
+ }
+}

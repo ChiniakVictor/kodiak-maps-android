@@ -4,6 +4,7 @@ import android.content.Context
 import com.victor.kodiakmaps.core.KFeature
 import com.victor.kodiakmaps.core.KGeo
 import com.victor.kodiakmaps.data.PoiPrefs
+import com.victor.kodiakmaps.service.AppLog
 import org.maplibre.android.maps.MapLibreMap
 import org.maplibre.android.style.expressions.Expression
 import org.maplibre.android.style.expressions.Expression.*
@@ -30,8 +31,16 @@ object PoiMap {
     const val EDGE = "#1F120D"; const val EDGE_W_Z11 = 1.2f; const val EDGE_W_Z14 = 1.8f; const val EDGE_W_Z16 = 2.4f
     const val LINE = "#6D4C41"; const val LINE_BOUNDARY = "#5D4037"; const val LINE_RUNWAY = "#8D6E63"
     const val HIST_PT = "#4E342E"; const val HIST_PT_MIN_ZOOM = 13f
-    /** Detail points (field-GPS survey points, property detail=1) only show from this zoom so the map is not cluttered; their group summary shows at every zoom. */
+    /** Detail points (field-GPS survey points, property detail=1) show full size and tappable from this zoom; their group summary shows at every zoom. */
     const val DETAIL_MIN_ZOOM = 14f
+    /** v1.5.10 (Victor: "make the pins visible from a farther out zoom, I want people to know where to zoom in at"):
+     *  old-map points and field-GPS points now draw from these zooms as small "breadcrumb" dots (no stroke, no labels),
+     *  growing to full size at [HIST_PT_MIN_ZOOM] / [DETAIL_MIN_ZOOM]. Below the full-size zoom they are not opened by a tap
+     *  (tap priority is exactly as before); a tap on one zooms the map in on it instead ([farDotAt]). */
+    const val HIST_PT_FAR_MIN_ZOOM = 9f
+    const val DETAIL_FAR_MIN_ZOOM = 10f
+    /** Zoom a breadcrumb tap goes to (at least), so the full points and their labels are on screen. */
+    const val FAR_TAP_ZOOM_TO = 14.5
     val ICON = mapOf("poi_food" to "🍴", "poi_travel" to "✈", "poi_mil" to "★", "poi_school" to "🏫", "poi_comm" to "📚")
     @Volatile var json: String? = null; private set
     @Volatile var labels: List<Pair<String, Int>> = emptyList(); private set
@@ -71,11 +80,13 @@ object PoiMap {
             circleColor(col), circleRadius(interpolate(linear(), zoom(), stop(8, 6f), stop(14, 11f), stop(17, 14f))),
             circleStrokeColor("#FFFFFF"), circleStrokeWidth(2f)))
         st.addLayer(CircleLayer("kd-poi-dpt", SRC).withFilter(all(neq(get("k"), literal("poi_zone")), has("detail"), Expression.not(has("src_map")))).withProperties(hidden,
-            circleColor(col), circleRadius(interpolate(linear(), zoom(), stop(14, 4.5f), stop(17, 8f))),
-            circleStrokeColor("#FFFFFF"), circleStrokeWidth(1.5f)).also { it.minZoom = DETAIL_MIN_ZOOM })
+            circleColor(col), circleRadius(interpolate(linear(), zoom(), stop(DETAIL_FAR_MIN_ZOOM, 2f), stop(13, 3f), stop(14, 4.5f), stop(17, 8f))),
+            circleOpacity(interpolate(linear(), zoom(), stop(DETAIL_FAR_MIN_ZOOM, 0.75f), stop(DETAIL_MIN_ZOOM, 1f))),
+            circleStrokeColor("#FFFFFF"), circleStrokeWidth(interpolate(linear(), zoom(), stop(12, 0f), stop(DETAIL_MIN_ZOOM, 1.5f)))).also { it.minZoom = DETAIL_FAR_MIN_ZOOM })
         st.addLayer(CircleLayer("kd-poi-hpt", SRC).withFilter(all(eq(get("k"), literal("poi_mil")), isHistPt)).withProperties(hidden,
-            circleColor(HIST_PT), circleRadius(interpolate(linear(), zoom(), stop(13, 4f), stop(17, 8f))),
-            circleStrokeColor("#FFFFFF"), circleStrokeWidth(1.5f)).also { it.minZoom = HIST_PT_MIN_ZOOM })
+            circleColor(HIST_PT), circleRadius(interpolate(linear(), zoom(), stop(HIST_PT_FAR_MIN_ZOOM, 2f), stop(12, 3f), stop(13, 4f), stop(17, 8f))),
+            circleOpacity(interpolate(linear(), zoom(), stop(HIST_PT_FAR_MIN_ZOOM, 0.8f), stop(HIST_PT_MIN_ZOOM, 1f))),
+            circleStrokeColor("#FFFFFF"), circleStrokeWidth(interpolate(linear(), zoom(), stop(11, 0.6f), stop(HIST_PT_MIN_ZOOM, 1.5f)))).also { it.minZoom = HIST_PT_FAR_MIN_ZOOM })
         st.addLayer(SymbolLayer("kd-poi-icon", SRC).withFilter(neq(get("k"), literal("poi_zone"))).withProperties(hidden,
             iconImage(concat(literal("poi-ic-"), get("k"))), iconSize(interpolate(linear(), zoom(), stop(8, 0.45f), stop(14, 0.7f))), iconAllowOverlap(true), iconIgnorePlacement(true)))
         st.addLayer(SymbolLayer("kd-poi-label", SRC).withFilter(all(has("label"), neq(get("k"), literal("poi_zone")))).withProperties(hidden,
@@ -122,8 +133,59 @@ object PoiMap {
     }
 
     /** Tapped POI (points win over attendance areas), as a KFeature for the detail sheet. */
-    fun pickPoint(m: MapLibreMap, box: android.graphics.RectF): KFeature? =
-        byId(runCatching { m.queryRenderedFeatures(box, "kd-poi-icon", "kd-poi-pt", "kd-poi-dpt", "kd-poi-hpt", "kd-poi-hedge", "kd-poi-hline", "kd-poi-hfill") }.getOrNull()?.firstOrNull()?.getStringProperty("id"))
+    fun pickPoint(m: MapLibreMap, box: android.graphics.RectF): KFeature? {
+        // v1.5.7: rank explicitly instead of trusting query order: points beat lines beat building polygons,
+        // and among points the one nearest the tap wins (the plotting-room dot sits on a garrison building).
+        // v1.5.10: the small dots now draw farther out, but only count for a tap from their old zooms (unchanged priority).
+        val z = m.cameraPosition.zoom
+        val layers = buildList {
+            add("kd-poi-icon"); add("kd-poi-pt"); if (z >= DETAIL_MIN_ZOOM) add("kd-poi-dpt"); if (z >= HIST_PT_MIN_ZOOM) add("kd-poi-hpt")
+            add("kd-poi-hedge"); add("kd-poi-hline"); add("kd-poi-hfill")
+        }.toTypedArray()
+        val fs = runCatching { m.queryRenderedFeatures(box, *layers) }.getOrNull()
+            ?.filter { it.getStringProperty("id") != null } ?: return null
+        val cx = box.centerX(); val cy = box.centerY()
+        fun rank(f: org.maplibre.geojson.Feature): Int = when (f.geometry()) { is org.maplibre.geojson.Point -> 0; is org.maplibre.geojson.LineString, is org.maplibre.geojson.MultiLineString -> 1; else -> 2 }
+        fun dist(f: org.maplibre.geojson.Feature): Float = (f.geometry() as? org.maplibre.geojson.Point)?.let {
+            val q = m.projection.toScreenLocation(org.maplibre.android.geometry.LatLng(it.latitude(), it.longitude())); (q.x - cx) * (q.x - cx) + (q.y - cy) * (q.y - cy) } ?: 0f
+        val best = fs.minWithOrNull(compareBy<org.maplibre.geojson.Feature>({ rank(it) }, { dist(it) }))
+        AppLog.log("POI tap: " + fs.joinToString { (it.getStringProperty("id") ?: "?") + "/" + (it.geometry()?.type() ?: "?") })
+        if (best == null || rank(best) != 0) histPointNear(m, cx, cy, maxOf(box.width(), box.height()) / 2f)?.let { AppLog.log("POI tap: nearest old-map point $it"); return byId(it) }
+        return best?.let { byId(it.getStringProperty("id")) }
+    }
+
+    /** v1.5.10: a tap on a far-zoom breadcrumb dot (old-map or field-GPS point shown smaller than its full-size zoom):
+     *  the dot's position, so the caller can zoom in there. Only asked after [pickPoint] found nothing. */
+    fun farDotAt(m: MapLibreMap, box: android.graphics.RectF): org.maplibre.android.geometry.LatLng? {
+        val z = m.cameraPosition.zoom
+        val layers = buildList { if (z < HIST_PT_MIN_ZOOM) add("kd-poi-hpt"); if (z < DETAIL_MIN_ZOOM) add("kd-poi-dpt") }
+        if (layers.isEmpty()) return null
+        val cx = box.centerX(); val cy = box.centerY()
+        return runCatching { m.queryRenderedFeatures(box, *layers.toTypedArray()) }.getOrNull().orEmpty()
+            .mapNotNull { (it.geometry() as? org.maplibre.geojson.Point)?.let { p -> org.maplibre.android.geometry.LatLng(p.latitude(), p.longitude()) } }
+            .minByOrNull { val q = m.projection.toScreenLocation(it); (q.x - cx) * (q.x - cx) + (q.y - cy) * (q.y - cy) }
+    }
+
+    /** Fallback when the rendered query misses a small old-map dot drawn over a building: nearest visible poi_mil point from the bundled JSON. */
+    private var histPts: List<Triple<String, Double, Double>>? = null
+    private fun histPointNear(m: MapLibreMap, cx: Float, cy: Float, r: Float): String? {
+        val layer = m.style?.getLayer("kd-poi-hpt") ?: return null
+        if (layer.visibility.value != Property.VISIBLE || m.cameraPosition.zoom < HIST_PT_MIN_ZOOM) return null
+        val pts = histPts ?: runCatching {
+            val fs = JSONObject(json ?: return null).getJSONArray("features")
+            (0 until fs.length()).map { fs.getJSONObject(it) }.filter { f ->
+                val p = f.getJSONObject("properties"); val g = f.optJSONObject("geometry")
+                p.optString("k") == "poi_mil" && p.has("detail") && p.has("src_map") && g?.optString("type") == "Point" && p.optString("id").isNotEmpty()
+            }.map { f -> val c = f.getJSONObject("geometry").getJSONArray("coordinates"); Triple(f.getJSONObject("properties").getString("id"), c.getDouble(1), c.getDouble(0)) }
+        }.getOrNull()?.also { histPts = it } ?: return null
+        var bestId: String? = null; var bestD = r * r
+        for ((id, lat, lon) in pts) {
+            val q = m.projection.toScreenLocation(org.maplibre.android.geometry.LatLng(lat, lon))
+            val d = (q.x - cx) * (q.x - cx) + (q.y - cy) * (q.y - cy)
+            if (d <= bestD) { bestD = d; bestId = id }
+        }
+        return bestId
+    }
     /** Attendance area under the tap (checked last, so other layers win). */
     fun pickZone(m: MapLibreMap, pt: android.graphics.PointF): KFeature? =
         byId(runCatching { m.queryRenderedFeatures(pt, "kd-poi-zone-fill") }.getOrNull()?.firstOrNull()?.getStringProperty("id"))
